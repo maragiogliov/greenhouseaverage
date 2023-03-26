@@ -1,0 +1,139 @@
+.secondary-electricity-container  {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.7rem;
+    margin-top: 16px;
+    //background-color: #b397d7;
+}
+.secondary-number-people{
+    max-width: 5rem;
+    font-size: 16px;
+    //background-color: #f2f2ee;
+}
+.secondary-calculate-button-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    //background-color: darkblue;
+}
+.secondary-calculate-footprint-button{
+    padding:0;
+    min-width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+.secondary-result-trashcan-icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-left: 0.5rem;
+    padding: 1;
+    max-height: 2.5rem;
+    max-width: 2.5rem;
+    //background-color: crimson;
+}
+.secondary-header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+    //background-color: #5a1942c5;
+}
+.secondary-header-container-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    min-height: 48px;
+    //background-color: #86c79dc5;
+}
+.secondary-header-container-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+    //background-color: #1e62b0c5;
+}
+.secondary-results{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    border-bottom: 2px solid rgba(169, 169, 169, 0.147);
+    //background-color: rgb(194, 97, 194);
+}
+.secondary-results-container{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.448);
+    width: 100%;
+    //background-color: aqua;
+}
+.secondary-result-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2rem;
+    min-height: 3rem;
+    //background-color: rgba(0, 255, 255, 0.157);
+}
+.secondary-block-middle-form{
+    max-width: 33%;
+    min-width: 33%;
+    font-size: 16px;
+    margin-left: 0.2rem;
+    margin-bottom: 0.2rem;
+    //background-color: aqua;
+}
+.secondary-inputs-results-container{
+    display: flex;
+    flex-direction: row;
+    //background-color: aqua;
+}
+.secondary-inputs-container{
+    width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+    //background-color: lightgreen;
+}
+.secondary-results-big-container{
+    width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+    padding : 1rem;
+    padding-right: 0rem;
+    padding-left: 2rem;
+    padding-top: 2.1rem;
+    //background-color: rgb(58, 113, 216);
+}
+.secondary-left-block-results{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.secondary-right-block-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.secondary-calculator-icon{
+    margin-left: 0.7rem;
+}

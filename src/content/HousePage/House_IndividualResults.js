@@ -1,0 +1,225 @@
+import React from 'react';
+import { useDispatch, useSelector } from "react-redux";
+
+import { 
+    setShowElectricityResult, 
+    resetElectricityFootprint,
+    
+    setShowNaturalGasResult,
+    resetNaturalGasFootprint,
+
+    setShowHeatingOilResult,
+    resetHeatingOilFootprint,
+
+    setShowCoalResult,
+    resetCoalFootprint,
+
+    setShowLPGResult,
+    resetLPGFootprint,
+
+    setShowPropaneResult,
+    resetPropaneFootprint,
+
+    setShowWoodenPelletsResult,
+    resetWoodenPelletsFootprint
+
+} from "../../redux/house";
+
+import countryFactors from '../../countryFactors'
+
+import { Button } from '@carbon/react';
+import { TrashCan } from '@carbon/react/icons';
+
+const HouseElectricity = () => {
+  const {
+    selectedCountry,
+
+    electricity,
+    userElectricityFactor,
+    electricityFootprint,
+    showElectricityResult,
+    
+    naturalGas,
+    unitNaturalGas,
+    naturalGasFootprint,
+    showNaturalGasResult,
+
+    heatingOil,
+    unitHeatingOil,
+    heatingOilFootprint,
+    showHeatingOilResult,
+
+    coal,
+    unitCoal,
+    coalFootprint,
+    showCoalResult,
+
+    LPG,
+    unitLPG,
+    LPGFootprint,
+    showLPGResult,
+
+    propane,
+    unitPropane,
+    propaneFootprint,
+    showPropaneResult,
+
+    woodenPellets,
+    unitWoodenPellets,
+    woodenPelletsFootprint,
+    showWoodenPelletsResult
+
+    } = useSelector(
+    (state) => state.house
+  );
+  const dispatch = useDispatch();
+
+  const resetFootprintElectricity = () => {
+    dispatch(resetElectricityFootprint());
+    dispatch(setShowElectricityResult(false))
+  };
+  const resetFootprintNaturalGas = () => {
+    dispatch(resetNaturalGasFootprint());
+    dispatch(setShowNaturalGasResult(false))
+  };
+  const resetFootprintHeatingOil = () => {
+    dispatch(resetHeatingOilFootprint());
+    dispatch(setShowHeatingOilResult(false))
+  };
+  const resetFootprintCoal = () => {
+    dispatch(resetCoalFootprint());
+    dispatch(setShowCoalResult(false))
+  };
+  const resetFootprintLPG = () => {
+    dispatch(resetLPGFootprint());
+    dispatch(setShowLPGResult(false))
+  };
+  const resetFootprintPropane = () => {
+    dispatch(resetPropaneFootprint());
+    dispatch(setShowPropaneResult(false))
+  };
+  const resetFootprintWoodenPellets = () => {
+    dispatch(resetWoodenPelletsFootprint());
+    dispatch(setShowWoodenPelletsResult(false))
+  };
+
+  return <>  
+
+    {showElectricityResult && electricity > 0 &&  (
+        <section className='house-result-section'>
+          <h5 
+            className='house-results-container'>
+            {electricityFootprint} metric tons:	{electricity} kWh of Electricity at {userElectricityFactor !== null 
+            ? userElectricityFactor 
+            : countryFactors[selectedCountry].electricity_factor || "" } kgCO2e/kWh	
+          </h5>
+          <Button
+            kind='ghost'
+            size='lg'
+            className='house-result-trashcan-icon-container'
+            onClick={resetFootprintElectricity} >
+            <TrashCan />
+          </Button>
+        </section>
+      )
+    }
+    {showNaturalGasResult && naturalGas > 0 &&  (
+        <section className='house-result-section'>
+          <h5 
+            className='house-results-container'>
+            {naturalGasFootprint} metric tons:	{naturalGas}   {unitNaturalGas} of Natural Gas
+          </h5>
+          <Button
+            kind='ghost'
+            size='md'
+            className='house-result-trashcan-icon-container'
+            onClick={resetFootprintNaturalGas} >
+            <TrashCan />
+          </Button>
+        </section>
+      )
+    }
+    {showHeatingOilResult && heatingOil > 0 &&  (
+        <section className='house-result-section'>
+          <h5 
+            className='house-results-container'>
+            {heatingOilFootprint} metric tons:	{heatingOil}   {unitHeatingOil} of Heating Oil
+          </h5>
+          <Button
+            kind='ghost'
+            size='md'
+            className='house-result-trashcan-icon-container'
+            onClick={resetFootprintHeatingOil} >
+            <TrashCan />
+          </Button>
+        </section>
+      )
+    }
+    {showCoalResult && coal > 0 &&  (
+        <section className='house-result-section'>
+          <h5 
+            className='house-results-container'>
+            {coalFootprint} metric tons:	{coal}   {unitCoal} of Coal
+          </h5>
+          <Button
+            kind='ghost'
+            size='md'
+            className='house-result-trashcan-icon-container'
+            onClick={resetFootprintCoal} >
+            <TrashCan />
+          </Button>
+        </section>
+      )
+    }
+    {showLPGResult && LPG > 0 &&  (
+        <section className='house-result-section'>
+          <h5 
+            className='house-results-container'>
+            {LPGFootprint} metric tons:	{LPG}   {unitLPG} of Liquefied Petroleum Gas
+          </h5>
+          <Button
+            kind='ghost'
+            size='md'
+            className='house-result-trashcan-icon-container'
+            onClick={resetFootprintLPG} >
+            <TrashCan />
+          </Button>
+        </section>
+      )
+    }
+    {showPropaneResult && propane > 0 &&  (
+        <section className='house-result-section'>
+          <h5 
+            className='house-results-container'>
+            {propaneFootprint} metric tons:	{propane}   {unitPropane} of Propane
+          </h5>
+          <Button
+            kind='ghost'
+            size='md'
+            className='house-result-trashcan-icon-container'
+            onClick={resetFootprintPropane} >
+            <TrashCan />
+          </Button>
+        </section>
+      )
+    }
+    {showWoodenPelletsResult && woodenPellets > 0 &&  (
+        <section className='house-result-section'>
+          <h5 
+            className='house-results-container'>
+            {woodenPelletsFootprint} metric tons:	{woodenPellets}   {unitWoodenPellets} of Wooden Pellets
+          </h5>
+          <Button
+            kind='ghost'
+            size='md'
+            className='house-result-trashcan-icon-container'
+            onClick={resetFootprintWoodenPellets} >
+            <TrashCan />
+          </Button>
+        </section>
+      )
+    }
+  </>
+};
+
+export default HouseElectricity;

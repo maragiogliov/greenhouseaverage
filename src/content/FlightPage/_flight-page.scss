@@ -1,0 +1,268 @@
+.block-middle-form-flights{
+    max-width: 40%;
+    min-width: 40%;
+    font-size: 16px;
+    margin-bottom: 0.2rem;
+    margin-left: 0.2rem;
+    //background-color: darkviolet;
+}
+.block-middle-3-flights-container-last-child{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height:fit-content;
+   // background-color: darkviolet;
+}
+.block-middle-form-flights-last-child {
+    max-width: 40%;
+    min-width: 40%;
+    margin-bottom: 0.2rem;
+    margin-left: 0.2rem;
+    //background-color: darkviolet;
+  }
+  .flight-radio-button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   // background-color: darkviolet;
+}
+.flight-radio-button-container-2{
+    margin-bottom: 1rem;
+    width: 50%;
+}
+.block-middle-titles-flights{
+    max-width: 10%;
+    min-width: 10%;
+    font-size: 16px;
+    margin-bottom: 0.2rem;
+    margin-left: 0.2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.448);
+    //background-color: aquamarine;
+}
+.block-middle-3-flights-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:fit-content;
+}
+.flight-inputs-container{
+    //background-color: rgba(0, 255, 255, 0.298)  ;
+    width: 100%;
+}
+.block-middle-3-flights{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 0.7rem;
+    //background-color: lightsteelblue;
+}
+.block-middle-form-flights{
+    max-width: 80%;
+    min-width: 80%;
+    margin-bottom: 0.2rem;
+    margin-left: 0.2rem;
+}
+.flight-radio-button-container-2{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.block-middle-titles-flights{
+    max-width: 20%;
+    min-width: 20%;
+    font-size: 16px;
+}
+
+////
+/// 
+/// 
+.flight-electricity-container2  {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+width: 100%;
+margin-bottom: 0.7rem;
+margin-top: 16px;
+//background-color: #b397d7;
+}
+.flight-number-people{
+max-width: 5rem;
+font-size: 16px;
+//background-color: #f2f2ee;
+}
+.flight-calculate-button-container{
+width: 100%;
+display: flex;
+flex-direction: column;
+margin-bottom: 0.5rem;
+align-items: center;
+//background-color: darkblue;
+}
+.flight-calculate-footprint-button{
+padding:0;
+min-width:100%;
+display: flex;
+flex-direction: row;
+justify-content: center ;
+}
+.flight-result-trashcan-icon-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 0;
+margin-left: 0.5rem;
+padding: 1;
+max-height: 2.5rem;
+max-width: 2.5rem;
+//background-color: crimson;
+}
+.flight-header-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 100%;
+min-height: 48px;
+//background-color: #5a1942c5;
+}
+.flight-header-container-left {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: right;
+width: 100%;
+min-height: 48px;
+//background-color: #86c79dc5;
+}
+.flight-header-container-right {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 100%;
+min-height: 48px;
+//background-color: #1e62b0c5;
+}
+.flight-results{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 48px;
+border-bottom: 2px solid rgba(169, 169, 169, 0.147);
+//background-color: rgb(194, 97, 194);
+}
+.flight-results-container{
+display: flex;
+flex-direction: column;
+border-bottom: 1px solid rgba(255, 255, 255, 0.448);
+width: 100%;
+//background-color: aqua;
+}
+.flight-result-section{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-bottom: 0.2rem;
+min-height: 3rem;
+//background-color: rgba(0, 255, 255, 0.157);
+}
+.flight-block-middle-form{
+min-width: 33%;
+font-size: 16px;
+margin-bottom: 0.2rem;
+//background-color: aqua;
+}
+.flight-block-middle-form-combobox{
+   width: 100%;
+    font-size: 16px;
+    margin-bottom: 0.2rem;
+    background-color: rgb(34, 170, 0);
+    }
+.flight-inputs-results-container{
+display: flex;
+flex-direction: row;
+//background-color: aqua;
+}
+.flight-inputs-container{
+width: 100%;
+min-height: 400px;
+max-height: 400px;
+//background-color: lightgreen;
+}
+.flight-results-big-container{
+width: 100%;
+min-height: 400px;
+max-height: 400px;
+padding : 1rem;
+padding-right: 0rem;
+padding-left: 2rem;
+padding-top: 2.1rem;
+//background-color: rgb(58, 113, 216);
+}
+.flight-left-block-results{
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+.flight-right-block-inputs{
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+
+.flight-calculator-icon{
+margin-left: 0.7rem;
+}
+
+.global-inputs-containers1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 0.7rem;
+    //background-color: rgb(34, 93, 171);
+}
+.flight-inputs-containers1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 0.7rem;
+    //background-color: rgb(34, 93, 171);
+}
+
+
+
+.global-input-description3{
+    max-width: 33%;
+    min-width: 33%;
+    font-size: 16px;
+    margin-bottom: 0.2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 3rem;
+    border-bottom: none;
+    //background-color: rgba(0, 255, 110, 0.658);
+}

@@ -1,0 +1,87 @@
+@use '@carbon/react';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#root{
+    margin: 0;
+    padding:0;
+    background-color: #161616;
+    height: 100vh;
+    //overflow: hidden;  
+}
+.cds--text-input--lg {
+    font-size: 16px;
+    border-radius: 0px;
+}
+/////////////////////// Re-styling the Button Component
+.global-re-styled-button-back-and-forth{
+    width: 10rem;
+    margin: 0;
+    margin-left: 0.5rem;
+    padding: 15px;
+}
+.global-buttons-link-back-and-forth{
+    color: transparent  ;
+}
+.global-frame-calculator{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0;
+    //background-color: rgba(129, 196, 230, 0.463);
+}
+///////////////////////////////////
+.global-block-top{
+    width: 100%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    //background-color: rgba(255, 255, 0, 0.385);
+    margin-top:47px
+}
+.global-input-description{
+    max-width: 33%;
+    min-width: 33%;
+    font-size: 16px;
+    margin-bottom: 0.2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.448);
+    //background-color: rgba(0, 255, 110, 0.658);
+}
+
+.global-inputs-containers{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 0.7rem;
+    //background-color: lightsteelblue;
+}
+//////////////////////////////////// Block Bottoms
+.global-block-bottom{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   width: 100%;
+   //background-color: rgb(68, 5, 93);
+   border-bottom: 1px solid white;
+   position: fixed;
+   bottom: 0;
+}
+
+
+@media only screen and (max-width: 755px) {
+
+    .global-frame-calculator{
+        display: none;
+    }
+
+}
