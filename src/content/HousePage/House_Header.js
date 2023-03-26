@@ -28,8 +28,11 @@ const HouseNumberOfPeople = () => {
                 size='lg'
               />
            </div>
-           <div className='house-header-container-right' >
+           <div className='house-header-container-center' >
             Household Results
+           </div>
+           <div className='house-header-container-right' >
+            Household Data Visualization
            </div>
           </section>
       

@@ -15,7 +15,9 @@ import HouseLPG from './House_LPG'
 import HousePropane from './House_Propane'
 import HouseWoodenPellets from './House_WoodenPellets';
 import HouseFootprintsButton from './House_FootprintsButton'
-import HouseIndividualResults from './House_IndividualResults'
+import HouseIndividualResults from './House_IndividualResults';
+import HouseDataVisualization from './House_DataVisualization'
+
 import HouseTotalResults from './House_TotalResults'
 
 import Waves from '../Waves'
@@ -35,6 +37,7 @@ const HousePage = () => {
       {/* ------------------------------------------------------------------- */}
         <HouseHeader/>
         <section className='house-inputs-results-container'>
+
           <div className='house-right-block-inputs'>
               <div className='house-inputs-container'>
                 <HouseElectricity />
@@ -50,12 +53,20 @@ const HousePage = () => {
               </div>
           </div>
 
-          <div className='house-left-block-results'>
+          <div className='house-center-block-results'>
             <div className='house-results-big-container'>
             <HouseIndividualResults />
             </div>
           <HouseTotalResults />
           </div>
+
+          <div className='house-left-block-results'>
+            <div className='house-datavisual-big-container'>
+            <HouseDataVisualization />
+            </div>
+          <HouseTotalResults />
+          </div>
+
         </section>
       {/* ------------------------------------------------------------------- */}
     </section>

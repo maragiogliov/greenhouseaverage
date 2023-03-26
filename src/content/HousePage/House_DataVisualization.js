@@ -1,0 +1,89 @@
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { DonutChart } from '@carbon/charts-react';
+
+const formatNumber = (number) => {
+  return number.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+const HouseElectricity = () => {
+  const {
+    electricityFootprint,
+    naturalGasFootprint,
+    heatingOilFootprint,
+    coalFootprint,
+    LPGFootprint,
+    propaneFootprint,
+    woodenPelletsFootprint,
+  } = useSelector((state) => state.house);
+
+  const totalElectricityFootprint = (parseFloat( electricityFootprint) || 0);
+  const totalNaturalGasFootprint = (parseFloat( naturalGasFootprint) || 0);
+
+  const totalHeatingOilFootprint = (parseFloat(heatingOilFootprint) || 0);
+  const totalCoalFootprint = (parseFloat(coalFootprint) || 0);
+  const totalLPGFootprint = (parseFloat(LPGFootprint) || 0);
+
+  const totalPropaneFootprint = (parseFloat(propaneFootprint) || 0);
+  const totalWoodenPelletsFootprint = (parseFloat(woodenPelletsFootprint) || 0);
+
+  // Define the data for the donut chart
+  const data = [
+    {
+      group: 'Electricity',
+      value: totalElectricityFootprint,
+    },
+    {
+      group: 'Natural Gas',
+      value: totalNaturalGasFootprint,
+    },
+    {
+      group: 'Heating Oil',
+      value: totalHeatingOilFootprint,
+    },
+    {
+      group: 'Coal',
+      value: totalCoalFootprint,
+    },
+    {
+      group: 'LPG',
+      value: totalLPGFootprint,
+    },
+    {
+      group: 'Propane',
+      value: totalPropaneFootprint,
+    },
+    {
+      group: 'Wooden Pellets',
+      value: totalWoodenPelletsFootprint,
+    },
+  ];
+
+  // Define the options for the donut chart
+  const options = {
+    "title": "",
+    "resizable": true,
+    "legend": {
+      "alignment": "center"
+    },
+    "donut": {
+      "center": {
+        "label": "Metric Tonnes of CO2e"
+      },
+      "precision": 2,
+      "alignment": "center"
+    },
+    "height": "390px",
+  }
+
+  return (
+    <>
+      <h1></h1>
+      <DonutChart data={data} options={options} />
+     
+    </>
+  );
+};
+
+export default HouseElectricity;
+
