@@ -1,20 +1,20 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { setRangeTextilesFactor } from "../../redux/secondary";
+import { setCarSizeFactor } from "../../redux/car";
 import countryFactors from '../../countryFactors'
 
 import { Select, SelectItem } from '@carbon/react';
 
-const SecondaryTextiles= () => {
-  const { rangeTextiles, selectedCountrySecondary } = useSelector(
-    (state) => state.secondary
+const CarSize= () => {
+  const { carSize, selectedCountryCar } = useSelector(
+    (state) => state.car
   );
   const dispatch = useDispatch();
 
-  const rangeOptions = Object.keys(countryFactors[selectedCountrySecondary].textilesRange);
+  const sizeOptions = Object.keys(countryFactors[selectedCountryCar].carSize);
 
-  const handleRangeChange = (e) => {
-    dispatch(setRangeTextilesFactor(e.target.value));
+  const handleSizeChange = (e) => {
+    dispatch(setCarSizeFactor(e.target.value));
   };
 
   return (
@@ -24,14 +24,14 @@ const SecondaryTextiles= () => {
       
           <Select
             id="unit-heating-oil-select"
-            defaultValue={rangeTextiles}
-            onChange={handleRangeChange}
+            defaultValue={carSize}
+            onChange={handleSizeChange}
             labelText=""
             className="car-block-middle-form"
             size='lg'
           >
-            {rangeOptions.map((range) => (
-              <SelectItem key={range} value={range} text={range} />
+            {sizeOptions.map((size) => (
+              <SelectItem key={size} value={size} text={size} />
             ))}
           </Select>
         </section>
@@ -39,4 +39,4 @@ const SecondaryTextiles= () => {
   );
 };
 
-export default SecondaryTextiles;
+export default CarSize;
