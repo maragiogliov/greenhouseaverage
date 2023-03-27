@@ -38,7 +38,7 @@ export const motorbikeSlice = createSlice({
       state.motorbikeFootprint = action.payload;
     },
     resetMotorbikeFootprint: state => {
-      state.motorbikeFootprint = initialState.busFootprint;
+      state.motorbikeFootprint = initialState.motorbikeFootprint;
     },
     setShowMotorbikeResult: (state, action) => {
       state.showMotorbikeResult = action.payload;

@@ -9,12 +9,9 @@ import IconsNavigation from '../IconsNavigation/IconsNavigation';
 import CarHeader from './Car_Header';
 
 import CarMileage from './Car_Mileage';
-import CarChooseVehicle from './Car_ChooseVehicle';
-import CarYear from './Car_Year'
-import CarManufacture from './Car_Manufacture'
-import CarModel from './Car_Models'
-import CarDerivative from './Car_Derivative'
-import CarEfficiency from './Car_Efficiency';
+import CarType from './Car_Type';
+import CarSize from './Car_Size'
+
 import CarTotalResults from './Car_TotalResults'
 
 import CarFootprintsButton from './Car_FootprintsButton'
@@ -29,7 +26,7 @@ const CarPage = () => {
         <section className='global-frame-calculator'>
           {/* ------------------------------------------------------------------- */}
               <div className='global-block-top'>
-                  <h4>Car</h4>
+                  <h4>Car & Motorbike</h4>
               </div>
           {/* ------------------------------------------------------------------- */}
             <CarHeader/>
@@ -37,12 +34,9 @@ const CarPage = () => {
               <div className='car-right-block-inputs'>
                   <div className='car-inputs-container'>
                     <CarMileage />
-                    <CarChooseVehicle />
-                    <CarYear />
-                    <CarManufacture /> 
-                    <CarModel />
-                    <CarDerivative />
-                    <CarEfficiency />
+                    <CarType />
+                    <CarSize />
+               
                   </div>
                   <div className='car-calculate-button-container'>
                     <CarFootprintsButton />

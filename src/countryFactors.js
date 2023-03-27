@@ -120,59 +120,32 @@ const countryFactors = {
         mpguk: {motorbikeEfficiency_factor: 30},
         mpgus: {motorbikeEfficiency_factor: 40},
       },
-      luggageSize: {
-        small: {luggageSize_factor: 10},
-        medium: {luggageSize_factor: 20},
-        large: {luggageSize_factor: 30}
+      carMileageUnits: {
+        km: {car_mileage_factor: 10},
+        miles: {car_mileage_factor: 20},
       },
-      flightClass: {
-        economy: {flightClass_factor: 10},
-        premiumEconomy: {flightClass_factor: 20},
-        Business: {flightClass_factor: 30},
-        FirstClass: {flightClass_factor: 40},
-        PrivateJet: {flightClass_factor: 50}
+      carType: {
+        electric: {
+          carType_factor: 10,
+          description: "average battery"
+        },
+        hybrid: {
+          carType_factor: 20,
+          description: "(full hybrid), average battery"
+        },
+        petrol: {
+          carType_factor: 30,
+          description: ""
+        },
+        diesel: {
+          carType_factor: 30,
+          description: ""
+        },
       },
-      airports: {
-        CPH: {
-          lat: 55.6205,
-          lon: 12.6495,
-          description: "Copenhagen Airport Kastrup Denmark"
-        },
-        EBJ: {
-          lat: 55.5247,
-          lon: 8.55388,
-          description: "Esbjerg Airport Esbjerg Denmark"
-        },
-        KRP: {
-          lat: 56.3028,
-          lon: 9.1141,
-          description: "Karup Airport K\u00e5rup Denmark"
-        },
-        RNN: {
-          lat: 55.0681,
-          lon: 14.7472,
-          description: "Bornholm Airport Ronne Denmark"
-        },
-        SGD: {
-          lat: 54.963,
-          lon: 9.78978,
-          description: "Sonderborg Airport Sonderborg Denmark"
-        },
-        AAL: {
-          lat: 57.0952,
-          lon: 9.85606,
-          description: "Aalborg Airport Norresundby Denmark"
-        },
-        AAR: {
-          lat: 56.3088,
-          lon: 10.6154,
-          description: "Tirstrup Airport Kolind Denmark"
-        },
-        BLL: {
-          lat: 55.742,
-          lon: 9.15354,
-          description: "Billund Airport Billund Denmark"
-        },
+      carSize: {
+        small: {car_size_factor: 10},
+        medium: {car_size_factor: 20},
+        large: {car_size_factor: 20},
       },
     },
     Finland: {
@@ -297,6 +270,33 @@ const countryFactors = {
         mpguk: {motorbikeEfficiency_factor: 30},
         mpgus: {motorbikeEfficiency_factor: 40},
       },
+      carMileageUnits: {
+        km: {car_mileage_factor: 10},
+        miles: {car_mileage_factor: 20},
+      },
+      carType: {
+        electric: {
+          carType_factor: 10,
+          description: "Electric, average battery"
+        },
+        hybrid: {
+          carType_factor: 20,
+          description: "Hybrid (full hybrid), average battery"
+        },
+        petrol: {
+          carType_factor: 30,
+          description: "Petrol, average battery"
+        },
+        diesel: {
+          carType_factor: 30,
+          description: "Diesel, average battery"
+        },
+      },
+      carSize: {
+        small: {car_size_factor: 10},
+        medium: {car_size_factor: 20},
+        large: {car_size_factor: 20},
+      },
     },
     Iceland: {
       flag_icon:'🇮🇸',
@@ -419,6 +419,33 @@ const countryFactors = {
         L100km: {motorbikeEfficiency_factor: 20},
         mpguk: {motorbikeEfficiency_factor: 30},
         mpgus: {motorbikeEfficiency_factor: 40},
+      },
+      carMileageUnits: {
+        km: {car_mileage_factor: 10},
+        miles: {car_mileage_factor: 20},
+      },
+      carType: {
+        electric: {
+          carType_factor: 10,
+          description: "Electric, average battery"
+        },
+        hybrid: {
+          carType_factor: 20,
+          description: "Hybrid (full hybrid), average battery"
+        },
+        petrol: {
+          carType_factor: 30,
+          description: "Petrol, average battery"
+        },
+        diesel: {
+          carType_factor: 30,
+          description: "Diesel, average battery"
+        },
+      },
+      carSize: {
+        small: {car_size_factor: 10},
+        medium: {car_size_factor: 20},
+        large: {car_size_factor: 20},
       },
     },
     Norway: {
@@ -543,6 +570,33 @@ const countryFactors = {
         mpguk: {motorbikeEfficiency_factor: 30},
         mpgus: {motorbikeEfficiency_factor: 40},
       },
+      carMileageUnits: {
+        km: {car_mileage_factor: 10},
+        miles: {car_mileage_factor: 20},
+      },
+      carType: {
+        electric: {
+          carType_factor: 10,
+          description: "Electric, average battery"
+        },
+        hybrid: {
+          carType_factor: 20,
+          description: "Hybrid (full hybrid), average battery"
+        },
+        petrol: {
+          carType_factor: 30,
+          description: "Petrol, average battery"
+        },
+        diesel: {
+          carType_factor: 30,
+          description: "Diesel, average battery"
+        },
+      },
+      carSize: {
+        small: {car_size_factor: 10},
+        medium: {car_size_factor: 20},
+        large: {car_size_factor: 20},
+      },
     },
     Sweden: {
       flag_icon:'🇸🇪',
@@ -665,6 +719,33 @@ const countryFactors = {
         L100km: {motorbikeEfficiency_factor: 20},
         mpguk: {motorbikeEfficiency_factor: 30},
         mpgus: {motorbikeEfficiency_factor: 40},
+      },
+      carMileageUnits: {
+        km: {car_mileage_factor: 10},
+        miles: {car_mileage_factor: 20},
+      },
+      carType: {
+        electric: {
+          carType_factor: 10,
+          description: "Electric, average battery"
+        },
+        hybrid: {
+          carType_factor: 20,
+          description: "Hybrid (full hybrid), average battery"
+        },
+        petrol: {
+          carType_factor: 30,
+          description: "Petrol, average battery"
+        },
+        diesel: {
+          carType_factor: 30,
+          description: "Diesel, average battery"
+        },
+      },
+      carSize: {
+        small: {car_size_factor: 10},
+        medium: {car_size_factor: 20},
+        large: {car_size_factor: 20},
       },
     }
   };

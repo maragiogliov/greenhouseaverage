@@ -5,6 +5,7 @@ import busrailReducer from "./busrail";
 import motorbikeReducer from "./motorbike";
 import totalfootprintReducer from "./totalfootprint";
 import flightsReducer from "./flights";
+import carReducer from "./car";
 
 export default configureStore({
   reducer: {
@@ -13,6 +14,7 @@ export default configureStore({
     busrail: busrailReducer,
     motorbike: motorbikeReducer,
     totalfootprint: totalfootprintReducer,
-    flights: flightsReducer
+    flights: flightsReducer,
+    car: carReducer
   }
 });
