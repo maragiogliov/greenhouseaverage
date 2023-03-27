@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import {  useSelector, useDispatch } from "react-redux";
 import { setHouseFootprint } from "../../redux/house";
 
+import { Button } from '@carbon/react';
+import { Calculator } from '@carbon/react/icons';
+
 
 const HouseTotalResult = () => {
   const dispatch = useDispatch();
@@ -17,8 +20,13 @@ const HouseTotalResult = () => {
 
 
   return <>
+
+      <Button 
+          kind='secondary'
+          className='house-calculate-footprint-button'
+          > OFFSET NOW!
+      </Button>
   
-           <div className='house-results'>Total House Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalHouseFootprint.toFixed(2))}</span> metric tons of CO2e</div>
   </>;
 };
 

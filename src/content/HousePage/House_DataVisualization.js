@@ -10,7 +10,6 @@ const HouseElectricity = () => {
   const {
     electricityFootprint,
     naturalGasFootprint,
-    heatingOilFootprint,
     coalFootprint,
     LPGFootprint,
     propaneFootprint,
@@ -20,7 +19,6 @@ const HouseElectricity = () => {
   const totalElectricityFootprint = (parseFloat( electricityFootprint) || 0);
   const totalNaturalGasFootprint = (parseFloat( naturalGasFootprint) || 0);
 
-  const totalHeatingOilFootprint = (parseFloat(heatingOilFootprint) || 0);
   const totalCoalFootprint = (parseFloat(coalFootprint) || 0);
   const totalLPGFootprint = (parseFloat(LPGFootprint) || 0);
 
@@ -36,10 +34,6 @@ const HouseElectricity = () => {
     {
       group: 'Natural Gas',
       value: totalNaturalGasFootprint,
-    },
-    {
-      group: 'Heating Oil',
-      value: totalHeatingOilFootprint,
     },
     {
       group: 'Coal',
@@ -68,7 +62,7 @@ const HouseElectricity = () => {
     },
     "donut": {
       "center": {
-        "label": "Metric Tonnes of CO2e"
+        "label": "Kg of CO2e"
       },
       "precision": 2,
       "alignment": "center"

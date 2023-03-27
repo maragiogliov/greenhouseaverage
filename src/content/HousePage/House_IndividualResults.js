@@ -109,7 +109,7 @@ const HouseElectricity = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {electricityFootprint} metric tons:	{electricity} kWh of Electricity at {userElectricityFactor !== null 
+            {electricityFootprint} Kg:	{electricity} kWh of Electricity at {userElectricityFactor !== null 
             ? userElectricityFactor 
             : countryFactors[selectedCountry].electricity_factor || "" } kgCO2e/kWh	
           </h5>
@@ -127,7 +127,7 @@ const HouseElectricity = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {naturalGasFootprint} metric tons:	{naturalGas}   {unitNaturalGas} of Natural Gas
+            {naturalGasFootprint} Kg:	{naturalGas}   {unitNaturalGas} of Natural Gas
           </h5>
           <Button
             kind='ghost'
@@ -139,27 +139,12 @@ const HouseElectricity = () => {
         </section>
       )
     }
-    {showHeatingOilResult && heatingOil > 0 &&  (
-        <section className='house-result-section'>
-          <h5 
-            className='house-results-container'>
-            {heatingOilFootprint} metric tons:	{heatingOil}   {unitHeatingOil} of Heating Oil
-          </h5>
-          <Button
-            kind='ghost'
-            size='md'
-            className='house-result-trashcan-icon-container'
-            onClick={resetFootprintHeatingOil} >
-            <TrashCan />
-          </Button>
-        </section>
-      )
-    }
+ 
     {showCoalResult && coal > 0 &&  (
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {coalFootprint} metric tons:	{coal}   {unitCoal} of Coal
+            {coalFootprint} Kg:	{coal}   {unitCoal} of Coal
           </h5>
           <Button
             kind='ghost'
@@ -175,7 +160,7 @@ const HouseElectricity = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {LPGFootprint} metric tons:	{LPG}   {unitLPG} of Liquefied Petroleum Gas
+            {LPGFootprint} Kg:	{LPG}   {unitLPG} of Liquefied Petroleum Gas
           </h5>
           <Button
             kind='ghost'
@@ -191,7 +176,7 @@ const HouseElectricity = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {propaneFootprint} metric tons:	{propane}   {unitPropane} of Propane
+            {propaneFootprint} Kg:	{propane}   {unitPropane} of Propane
           </h5>
           <Button
             kind='ghost'
@@ -207,7 +192,7 @@ const HouseElectricity = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {woodenPelletsFootprint} metric tons:	{woodenPellets}   {unitWoodenPellets} of Wooden Pellets
+            {woodenPelletsFootprint} Kg:	{woodenPellets}   {unitWoodenPellets} of Wooden Pellets
           </h5>
           <Button
             kind='ghost'

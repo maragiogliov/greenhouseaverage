@@ -9,7 +9,7 @@ import IconsNavigation from '../IconsNavigation/IconsNavigation';
 import HouseHeader from './House_Header';
 import HouseElectricity from './House_Electricity';
 import HouseNaturalGas from './House_NaturalGas';
-import HouseHeatingOil from './House_HeatingOil'
+// import HouseHeatingOil from './House_HeatingOil'
 import HouseCoal from './House_Coal'
 import HouseLPG from './House_LPG'
 import HousePropane from './House_Propane'
@@ -17,6 +17,7 @@ import HouseWoodenPellets from './House_WoodenPellets';
 import HouseFootprintsButton from './House_FootprintsButton'
 import HouseIndividualResults from './House_IndividualResults';
 import HouseDataVisualization from './House_DataVisualization'
+import HouseOffsetButton from './House_OffsetButton'
 
 import HouseTotalResults from './House_TotalResults'
 
@@ -42,7 +43,7 @@ const HousePage = () => {
               <div className='house-inputs-container'>
                 <HouseElectricity />
                 <HouseNaturalGas />
-                <HouseHeatingOil />
+                {/* <HouseHeatingOil /> */}
                 <HouseCoal /> 
                 <HouseLPG />
                 <HousePropane />
@@ -64,7 +65,7 @@ const HousePage = () => {
             <div className='house-datavisual-big-container'>
             <HouseDataVisualization />
             </div>
-          <HouseTotalResults />
+          <HouseOffsetButton />
           </div>
 
         </section>
