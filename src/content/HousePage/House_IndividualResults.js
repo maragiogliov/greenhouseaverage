@@ -109,7 +109,7 @@ const HouseElectricity = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {electricityFootprint} Kg:	{electricity} kWh of Electricity at {userElectricityFactor !== null 
+            {electricityFootprint} :	{electricity} kWh of Electricity at {userElectricityFactor !== null 
             ? userElectricityFactor 
             : countryFactors[selectedCountry].electricity_factor || "" } kgCO2e/kWh	
           </h5>
@@ -127,7 +127,7 @@ const HouseElectricity = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {naturalGasFootprint} Kg:	{naturalGas}   {unitNaturalGas} of Natural Gas
+            {naturalGasFootprint} :	{naturalGas}   {unitNaturalGas} of Natural Gas
           </h5>
           <Button
             kind='ghost'
@@ -144,7 +144,7 @@ const HouseElectricity = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {coalFootprint} Kg:	{coal}   {unitCoal} of Coal
+            {coalFootprint} :	{coal}   {unitCoal} of Coal
           </h5>
           <Button
             kind='ghost'
@@ -160,7 +160,7 @@ const HouseElectricity = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {LPGFootprint} Kg:	{LPG}   {unitLPG} of Liquefied Petroleum Gas
+            {LPGFootprint} :	{LPG}   {unitLPG} of Liquefied Petroleum Gas
           </h5>
           <Button
             kind='ghost'
@@ -176,7 +176,7 @@ const HouseElectricity = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {propaneFootprint} Kg:	{propane}   {unitPropane} of Propane
+            {propaneFootprint} :	{propane}   {unitPropane} of Propane
           </h5>
           <Button
             kind='ghost'
@@ -192,7 +192,7 @@ const HouseElectricity = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {woodenPelletsFootprint} Kg:	{woodenPellets}   {unitWoodenPellets} of Wooden Pellets
+            {woodenPelletsFootprint} :	{woodenPellets}   {unitWoodenPellets} of Wooden Pellets
           </h5>
           <Button
             kind='ghost'
