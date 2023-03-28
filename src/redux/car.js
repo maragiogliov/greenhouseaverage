@@ -4,7 +4,7 @@ const initialState = {
   selectedCountryCar: "Denmark",
 
   carMileage: 0,
-  unitCar: "km",
+  carUnit: "km",
   carType:"-select type-",
   carSize:"-select size-",
   carFootprint: 0,
@@ -23,7 +23,7 @@ export const carSlice = createSlice({
     setCarMileage: (state, action) => {
       state.carMileage = action.payload;
     },
-    setUnitCarFactor: (state, action) => {
+    setCarUnitFactor: (state, action) => {
       state.carUnit = action.payload;
     },
     setCarTypeFactor: (state, action) => {
@@ -46,10 +46,10 @@ export const carSlice = createSlice({
 });
 
 export const { 
-               selectCountryCar, 
+               selectedCountryCar, 
 
                setCarMileage, 
-               setUnitCarFactor,
+               setCarUnitFactor,
                setCarTypeFactor,
                setCarSizeFactor,
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { setCarMileage, setUnitCarFactor} from "../../redux/car";
+import { setCarMileage, setCarUnitFactor} from "../../redux/car";
 import countryFactors from '../../countryFactors'
 
 import { TextInput, Select, SelectItem } from '@carbon/react';
@@ -18,7 +18,7 @@ const CarMileage = () => {
   };
 
   const handleUnitChange = (e) => {
-    dispatch(setUnitCarFactor(e.target.value));
+    dispatch(setCarUnitFactor(e.target.value));
   };
 
   return (

@@ -41,7 +41,7 @@ const initialState = {
   showPropaneResult:false,
 
   woodenPellets: 0,
-  unitWoodenPellets: "Kg",
+  unitWoodenPellets: "Metric Tons",
   woodenPelletsFootprint: 0,
   resetWoodenPelletsFootprint:0,
   showWoodenPelletsResult:false,
