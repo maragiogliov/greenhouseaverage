@@ -107,7 +107,7 @@ const BusRailResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {busFootprint} metric tons:	{bus}   {unitBus} of Bus
+            {busFootprint} Kg:	{bus}   {unitBus} of Bus
           </h5>
           <Button
             kind='ghost'
@@ -123,7 +123,7 @@ const BusRailResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {coachFootprint} metric tons:	{coach}   {unitCoach} of Coach
+            {coachFootprint} Kg:	{coach}   {unitCoach} of Coach
           </h5>
           <Button
             kind='ghost'
@@ -139,7 +139,7 @@ const BusRailResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {localTrainFootprint} metric tons:	{localTrain}   {unitLocalTrain} of Local Train
+            {localTrainFootprint} Kg:	{localTrain}   {unitLocalTrain} of Local Train
           </h5>
           <Button
             kind='ghost'
@@ -155,7 +155,7 @@ const BusRailResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {longTrainFootprint} metric tons:	{longTrain}   {unitLongTrain} of Long Train
+            {longTrainFootprint} Kg:	{longTrain}   {unitLongTrain} of Long Train
           </h5>
           <Button
             kind='ghost'
@@ -171,7 +171,7 @@ const BusRailResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {tramFootprint} metric tons:	{tram}   {unitTram} of Tram
+            {tramFootprint} Kg:	{tram}   {unitTram} of Tram
           </h5>
           <Button
             kind='ghost'
@@ -187,7 +187,7 @@ const BusRailResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {subwayFootprint} metric tons:	{subway}   {unitSubway} of Subway
+            {subwayFootprint} Kg:	{subway}   {unitSubway} of Subway
           </h5>
           <Button
             kind='ghost'
@@ -203,7 +203,7 @@ const BusRailResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {taxiFootprint} metric tons:	{taxi}   {unitTaxi} of Taxi
+            {taxiFootprint} Kg:	{taxi}   {unitTaxi} of Taxi
           </h5>
           <Button
             kind='ghost'

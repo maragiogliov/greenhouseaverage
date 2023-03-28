@@ -8,7 +8,7 @@ const BusRailTotalResult = () => {
   const totalCarFootprint = (parseFloat(carFootprint)||  0);
 
   return <>
-          <div className='car-results'>Calculated Car & Motorbike Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalCarFootprint.toFixed(2))}</span> metric tons of CO2e</div>
+          <div className='car-results'>Calculated Car & Motorbike Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalCarFootprint.toFixed(2))}</span> Kg of CO2e</div>
   </>;
 };
 

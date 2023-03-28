@@ -103,7 +103,7 @@ const ResultsPage = () => {
     },
     "donut": {
       "center": {
-        "label": "Metric Tonnes of CO2e"
+        "label": "Kg of CO2e"
       },
       "alignment": "center"
     },
@@ -127,13 +127,13 @@ const ResultsPage = () => {
                   <div className='results-inputs-container'>
                   <fieldset className='results-fieldset-container'>
                     <legend ></legend>
-                    <Checkbox labelText={`Household Energy (${totalHouseFootprint} metric tones of CO2e)`} id="checkbox-label-1"  className="cbx" />
+                    <Checkbox labelText={`Household Energy (${totalHouseFootprint} Kg of CO2e)`} id="checkbox-label-1"  className="cbx" />
 
                     <Checkbox labelText={`Flights`} id="checkbox-label-2" className="cbx" />
                     <Checkbox labelText={`Car`} id="checkbox-label-3" className="cbx" />
-                    <Checkbox labelText={`Motorbike (${totalMotorbikeFootprint} metric tones of CO2e)`} id="checkbox-label-4" className="cbx" />
-                    <Checkbox labelText={`Bus & Rail (${totalBusRailFootprint} metric tones of CO2e)`} id="checkbox-label-5" className="cbx" />
-                    <Checkbox labelText={`Secondary (${totalSecondaryFootprint} metric tones of CO2e)`} id="checkbox-label-6" className="cbx" />
+                    <Checkbox labelText={`Motorbike (${totalMotorbikeFootprint} Kg of CO2e)`} id="checkbox-label-4" className="cbx" />
+                    <Checkbox labelText={`Bus & Rail (${totalBusRailFootprint} Kg of CO2e)`} id="checkbox-label-5" className="cbx" />
+                    <Checkbox labelText={`Secondary (${totalSecondaryFootprint} Kg of CO2e)`} id="checkbox-label-6" className="cbx" />
                   </fieldset>
                   </div>
                   <div className='car-calculate-button-container'>

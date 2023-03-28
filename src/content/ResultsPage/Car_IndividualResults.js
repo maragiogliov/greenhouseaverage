@@ -106,7 +106,7 @@ const SecondaryResults = () => {
         <section className='car-result-section'>
           <h5 
             className='car-results-container'>
-            {foodDrinksFootprint} metric tons:	{foodDrinks}  {rangeFoodDrinks} 
+            {foodDrinksFootprint} Kg:	{foodDrinks}  {rangeFoodDrinks} 
           </h5>
           <Button
             kind='ghost'
@@ -122,7 +122,7 @@ const SecondaryResults = () => {
         <section className='car-result-section'>
           <h5 
             className='car-results-container'>
-            {pharmaceuticalsFootprint} metric tons:	{pharmaceuticals}   {rangePharmaceuticals} 
+            {pharmaceuticalsFootprint} Kg:	{pharmaceuticals}   {rangePharmaceuticals} 
           </h5>
           <Button
             kind='ghost'
@@ -138,7 +138,7 @@ const SecondaryResults = () => {
         <section className='car-result-section'>
           <h5 
             className='car-results-container'>
-            {textilesFootprint} metric tons:	{textiles}   {rangeTextiles} 
+            {textilesFootprint} Kg:	{textiles}   {rangeTextiles} 
           </h5>
           <Button
             kind='ghost'
@@ -154,7 +154,7 @@ const SecondaryResults = () => {
         <section className='car-result-section'>
           <h5 
             className='car-results-container'>
-            {paperFootprint} metric tons:	{paper}   {rangePaper} 
+            {paperFootprint} Kg:	{paper}   {rangePaper} 
           </h5>
           <Button
             kind='ghost'
@@ -170,7 +170,7 @@ const SecondaryResults = () => {
         <section className='car-result-section'>
           <h5 
             className='car-results-container'>
-            {electronicsFootprint} metric tons:	{electronics}   {rangeElectronics} 
+            {electronicsFootprint} Kg:	{electronics}   {rangeElectronics} 
           </h5>
           <Button
             kind='ghost'
@@ -186,7 +186,7 @@ const SecondaryResults = () => {
         <section className='car-result-section'>
           <h5 
             className='car-results-container'>
-            {furnitureFootprint} metric tons:	{furniture}   {rangeFurniture} 
+            {furnitureFootprint} Kg:	{furniture}   {rangeFurniture} 
           </h5>
           <Button
             kind='ghost'
@@ -202,7 +202,7 @@ const SecondaryResults = () => {
         <section className='car-result-section'>
           <h5 
             className='car-results-container'>
-            {hotelsFootprint} metric tons:	{hotels}   {rangeHotels} 
+            {hotelsFootprint} Kg:	{hotels}   {rangeHotels} 
           </h5>
           <Button
             kind='ghost'

@@ -196,7 +196,7 @@ const SecondaryFootprint = () => {
     <Button 
         onClick={calculateAllHouseFootprint} 
         className='results-calculate-footprint-button'
-        > Offset Now
+        > Send Calculation To Email
     </Button>
   </>
 };

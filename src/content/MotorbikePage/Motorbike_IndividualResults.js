@@ -34,7 +34,7 @@ const MotorbikeResults = () => {
         <section className='motorbike-result-section'>
           <h5 
             className='motorbike-results-container'>
-            {motorbikeFootprint} metric tons:	{motorbikeMileage}  {unitMotorbike} 
+            {motorbikeFootprint} Kg:	{motorbikeMileage}  {unitMotorbike} 
           </h5>
           <Button
             kind='ghost'

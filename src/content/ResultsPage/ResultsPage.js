@@ -30,6 +30,9 @@ const ResultsPage = () => {
   const { motorbikeFootprint } = useSelector(
     (state) => state.motorbike
   );
+  const { carFootprint } = useSelector(
+    (state) => state.car
+  );
   const { busrailFootprint } = useSelector(
     (state) => state.busrail
   );
@@ -38,7 +41,7 @@ const ResultsPage = () => {
   );
   const totalHouseFootprint = (parseFloat(houseFootprint) || 0);
   const totalFlightFootprint = (parseFloat(flightFootprint) || 0);
-
+  const totalCarFootprint = (parseFloat(carFootprint) || 0);
   const totalMotorbikeFootprint = (parseFloat(motorbikeFootprint) || 0);
   const totalBusRailFootprint = (parseFloat(busrailFootprint) || 0);
   const totalSecondaryFootprint = (parseFloat(secondaryFootprint) || 0);
@@ -47,7 +50,7 @@ const ResultsPage = () => {
   const [checkboxState, setCheckboxState] = React.useState({
     house: true,
     flights: true,
-    car: false,
+    car: true,
     motorbike: true,
     busrail: true,
     secondary: true,
@@ -56,7 +59,7 @@ const ResultsPage = () => {
   const totalSelectedFootprint = (
     (checkboxState.house ? totalHouseFootprint : 0) +
     (checkboxState.flights ? totalFlightFootprint : 0) +
-    (checkboxState.car ? 0 : 0) +
+    (checkboxState.car ? totalCarFootprint : 0) +
     (checkboxState.motorbike ? totalMotorbikeFootprint : 0) +
     (checkboxState.busrail ? totalBusRailFootprint : 0) +
     (checkboxState.secondary ? totalSecondaryFootprint : 0)
@@ -77,7 +80,7 @@ const data = [
   },
   {
     group: "Car",
-    value: checkboxState.car ? 0 : 0,
+    value: checkboxState.car ? totalCarFootprint : 0,
   },
   {
     group: "Motorbike",
@@ -100,7 +103,7 @@ const options = {
   },
   "donut": {
     "center": {
-      "label": "Metric Tonnes of CO2e"
+      "label": "Kg of CO2e"
     },
     "precision": 2,
     "alignment": "center"
@@ -128,7 +131,7 @@ const options = {
   <Checkbox
   labelText={`Household Energy (${totalHouseFootprint.toFixed(
     2
-  )} metric tones of CO2e)`}
+  )} Kg of CO2e)`}
   id="checkbox-label-1"
   className="cbx"
   checked={totalHouseFootprint > 0 && checkboxState.house}
@@ -142,7 +145,7 @@ const options = {
 <Checkbox
   labelText={`Flights (${totalFlightFootprint.toFixed(
     2
-  )} kilograms of CO2e)`}
+  )} Kg of CO2e)`}
   id="checkbox-label-2"
   className="cbx"
   checked={totalFlightFootprint > 0 && checkboxState.house}
@@ -154,10 +157,12 @@ const options = {
   }
 />
 <Checkbox
-  labelText={`Car`}
+    labelText={`Car (${totalCarFootprint.toFixed(
+      2
+    )} Kg of CO2e)`}
   id="checkbox-label-3"
   className="cbx"
-  checked={checkboxState.car}
+  checked={totalCarFootprint > 0 && checkboxState.car}
   onChange={() =>
     setCheckboxState({
       ...checkboxState,
@@ -168,7 +173,7 @@ const options = {
 <Checkbox
   labelText={`Motorbike (${totalMotorbikeFootprint.toFixed(
     2
-  )} metric tones of CO2e)`}
+  )} Kg of CO2e)`}
   id="checkbox-label-4"
   className="cbx"
   checked={totalMotorbikeFootprint > 0 && checkboxState.motorbike}
@@ -182,7 +187,7 @@ const options = {
 <Checkbox
   labelText={`Bus & Rail (${totalBusRailFootprint.toFixed(
     2
-  )} metric tones of CO2e)`}
+  )} Kg of CO2e)`}
   id="checkbox-label-5"
   className="cbx"
   checked={totalBusRailFootprint > 0 && checkboxState.busrail}
@@ -196,7 +201,7 @@ const options = {
 <Checkbox
   labelText={`Secondary (${totalSecondaryFootprint.toFixed(
     2
-  )} metric tones of CO2e)`}
+  )} Kg of CO2e)`}
   id="checkbox-label-6"
   className="cbx"
   checked={totalSecondaryFootprint > 0 && checkboxState.secondary}

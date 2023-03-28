@@ -106,7 +106,7 @@ const SecondaryResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {foodDrinksFootprint} metric tons:	{foodDrinks}  {rangeFoodDrinks} of Food & Drinks
+            {foodDrinksFootprint} Kg:	{foodDrinks}  {rangeFoodDrinks} of Food & Drinks
           </h5>
           <Button
             kind='ghost'
@@ -122,7 +122,7 @@ const SecondaryResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {pharmaceuticalsFootprint} metric tons:	{pharmaceuticals}   {rangePharmaceuticals} of Pharmaceuticals
+            {pharmaceuticalsFootprint} Kg:	{pharmaceuticals}   {rangePharmaceuticals} of Pharmaceuticals
           </h5>
           <Button
             kind='ghost'
@@ -138,7 +138,7 @@ const SecondaryResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {textilesFootprint} metric tons:	{textiles}   {rangeTextiles} of Textiles
+            {textilesFootprint} Kg:	{textiles}   {rangeTextiles} of Textiles
           </h5>
           <Button
             kind='ghost'
@@ -154,7 +154,7 @@ const SecondaryResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {paperFootprint} metric tons:	{paper}   {rangePaper} of Paper products
+            {paperFootprint} Kg:	{paper}   {rangePaper} of Paper products
           </h5>
           <Button
             kind='ghost'
@@ -170,7 +170,7 @@ const SecondaryResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {electronicsFootprint} metric tons:	{electronics}   {rangeElectronics} of Electronics
+            {electronicsFootprint} Kg:	{electronics}   {rangeElectronics} of Electronics
           </h5>
           <Button
             kind='ghost'
@@ -186,7 +186,7 @@ const SecondaryResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {furnitureFootprint} metric tons:	{furniture}   {rangeFurniture} of Furniture
+            {furnitureFootprint} Kg:	{furniture}   {rangeFurniture} of Furniture
           </h5>
           <Button
             kind='ghost'
@@ -202,7 +202,7 @@ const SecondaryResults = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {hotelsFootprint} metric tons:	{hotels}   {rangeHotels} of Hotels
+            {hotelsFootprint} Kg:	{hotels}   {rangeHotels} of Hotels
           </h5>
           <Button
             kind='ghost'
