@@ -11,8 +11,6 @@ const SecondaryPharmaceuticals = () => {
   );
   const dispatch = useDispatch();
 
- 
-
   const typeOptions = [
     "-select type-",
     ...Object.keys(countryFactors[selectedCountryCar]?.carType || {})
@@ -27,7 +25,6 @@ const SecondaryPharmaceuticals = () => {
         <section className="global-inputs-containers1">
           <h5 className="global-input-description">Car Type:</h5>
        
-
           <Select
             id="pharmaceuticals-select"
             defaultValue={carType}

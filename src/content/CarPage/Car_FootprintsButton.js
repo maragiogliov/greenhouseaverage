@@ -40,7 +40,8 @@ const SecondaryFootprint = () => {
       } else {
         let total =
         parseFloat(carMileage) * 
-        (countryFactors[selectedCountryCar].carMileageUnits[carUnit].car_mileage_factor) * (0.001)
+        (countryFactors[selectedCountryCar].carMileageUnits[carUnit].car_mileage_factor)* 
+        (countryFactors[selectedCountryCar].carType[carType].carType_factor)
         
         dispatch(setCarFootprint(total.toFixed(2)));
         showFootprintResultsCar();

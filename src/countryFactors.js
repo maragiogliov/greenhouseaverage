@@ -138,8 +138,8 @@ const countryFactors = {
           description: ""
         },
         diesel: {
-          carType_factor: 30,
-          description: ""
+          carType_factor: 40,
+          description: " average battery"
         },
       },
       carSize: {
@@ -277,19 +277,19 @@ const countryFactors = {
       carType: {
         electric: {
           carType_factor: 10,
-          description: "Electric, average battery"
+          description: "average battery"
         },
         hybrid: {
           carType_factor: 20,
-          description: "Hybrid (full hybrid), average battery"
+          description: "(full hybrid), average battery"
         },
         petrol: {
           carType_factor: 30,
-          description: "Petrol, average battery"
+          description: " average battery"
         },
         diesel: {
-          carType_factor: 30,
-          description: "Diesel, average battery"
+          carType_factor: 40,
+          description: " average battery"
         },
       },
       carSize: {
@@ -427,19 +427,19 @@ const countryFactors = {
       carType: {
         electric: {
           carType_factor: 10,
-          description: "Electric, average battery"
+          description: "average battery"
         },
         hybrid: {
           carType_factor: 20,
-          description: "Hybrid (full hybrid), average battery"
+          description: "(full hybrid), average battery"
         },
         petrol: {
           carType_factor: 30,
-          description: "Petrol, average battery"
+          description: " average battery"
         },
         diesel: {
           carType_factor: 30,
-          description: "Diesel, average battery"
+          description: " average battery"
         },
       },
       carSize: {
@@ -577,19 +577,19 @@ const countryFactors = {
       carType: {
         electric: {
           carType_factor: 10,
-          description: "Electric, average battery"
+          description: "average battery"
         },
         hybrid: {
           carType_factor: 20,
-          description: "Hybrid (full hybrid), average battery"
+          description: "(full hybrid), average battery"
         },
         petrol: {
           carType_factor: 30,
-          description: "Petrol, average battery"
+          description: " average battery"
         },
         diesel: {
           carType_factor: 30,
-          description: "Diesel, average battery"
+          description: " average battery"
         },
       },
       carSize: {
@@ -727,19 +727,19 @@ const countryFactors = {
       carType: {
         electric: {
           carType_factor: 10,
-          description: "Electric, average battery"
+          description: "average battery"
         },
         hybrid: {
           carType_factor: 20,
-          description: "Hybrid (full hybrid), average battery"
+          description: "(full hybrid), average battery"
         },
         petrol: {
           carType_factor: 30,
-          description: "Petrol, average battery"
+          description: "average battery"
         },
         diesel: {
-          carType_factor: 30,
-          description: "Diesel, average battery"
+          carType_factor: 40,
+          description: "average battery"
         },
       },
       carSize: {
