@@ -38,15 +38,16 @@ const SecondaryFootprint = () => {
       if (isNaN(parseFloat(carMileage))) {
         dispatch(setCarFootprint("Please enter a valid number."));
       } else {
-        let total =
-        parseFloat(carMileage) * 
-        (countryFactors[selectedCountryCar].carMileageUnits[carUnit].car_mileage_factor)* 
-        (countryFactors[selectedCountryCar].carType[carType].carType_factor)
-        
+        let carTypeFactor = countryFactors[selectedCountryCar].carType[carType]?.carType_factor ?? 1;
+        let total = parseFloat(carMileage) * 
+          (countryFactors[selectedCountryCar].carMileageUnits[carUnit]?.car_mileage_factor ?? 1) * 
+          carTypeFactor;
+            
         dispatch(setCarFootprint(total.toFixed(2)));
         showFootprintResultsCar();
       }
     };
+    
     calculateCarFootprint();
   };
   /////////////////////////////////////////////////
