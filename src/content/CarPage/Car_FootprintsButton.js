@@ -39,9 +39,10 @@ const SecondaryFootprint = () => {
         dispatch(setCarFootprint("Please enter a valid number."));
       } else {
         let carTypeFactor = countryFactors[selectedCountryCar].carType[carType]?.carType_factor ?? 1;
+
         let total = parseFloat(carMileage) * 
           (countryFactors[selectedCountryCar].carMileageUnits[carUnit]?.car_mileage_factor ?? 1) * 
-          carTypeFactor;
+          carTypeFactor *  (countryFactors[selectedCountryCar].carSize[carSize]?.car_size_factor ?? 1) ;
             
         dispatch(setCarFootprint(total.toFixed(2)));
         showFootprintResultsCar();

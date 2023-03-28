@@ -143,9 +143,9 @@ const countryFactors = {
         },
       },
       carSize: {
-        small: {car_size_factor: 10},
-        medium: {car_size_factor: 20},
-        large: {car_size_factor: 20},
+        small: {car_size_factor: 5},
+        medium: {car_size_factor: 4},
+        large: {car_size_factor: 9},
       },
     },
     Finland: {
@@ -293,7 +293,7 @@ const countryFactors = {
         },
       },
       carSize: {
-        small: {car_size_factor: 10},
+        small: {car_size_factor: 33},
         medium: {car_size_factor: 20},
         large: {car_size_factor: 20},
       },
@@ -443,9 +443,9 @@ const countryFactors = {
         },
       },
       carSize: {
-        small: {car_size_factor: 10},
-        medium: {car_size_factor: 20},
-        large: {car_size_factor: 20},
+        small: {car_size_factor: 13},
+        medium: {car_size_factor: 2},
+        large: {car_size_factor: 3},
       },
     },
     Norway: {
@@ -593,9 +593,9 @@ const countryFactors = {
         },
       },
       carSize: {
-        small: {car_size_factor: 10},
-        medium: {car_size_factor: 20},
-        large: {car_size_factor: 20},
+        small: {car_size_factor: 4},
+        medium: {car_size_factor: 12},
+        large: {car_size_factor: 6},
       },
     },
     Sweden: {
@@ -743,9 +743,9 @@ const countryFactors = {
         },
       },
       carSize: {
-        small: {car_size_factor: 10},
-        medium: {car_size_factor: 20},
-        large: {car_size_factor: 20},
+        small: {car_size_factor: 1},
+        medium: {car_size_factor: 2},
+        large: {car_size_factor: 3},
       },
     }
   };
