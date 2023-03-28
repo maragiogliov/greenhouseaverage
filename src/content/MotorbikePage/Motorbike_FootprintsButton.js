@@ -10,34 +10,27 @@ const MotorbikeFootprint = () => {
     selectedCountryMotorbike, 
     motorbikeMileage,
     unitMotorbike,
-    motorbikeSize,
-    efficiencyMotorbike,
-    efficiencyMotorbikeUnit
+
+    motorbikeSize
 
   } = useSelector(
     (state) => state.motorbike
   );
   const dispatch = useDispatch();
 
-
-// In this function motorbikeMileage is being multiplied by the factor and also by the efficiency but once I try to select the motorbikeMotorSize stop working.
-
-// I am disabling the input fields of efficiency when the user select a MotorSize
   const showFootprintResultsMotorbike = () => {
-    console.log('efficiency factor', efficiencyMotorbike);
-    console.log('efficiency unit', efficiencyMotorbikeUnit);
     
     if (
       isNaN(parseFloat(motorbikeMileage)) 
-       //|| motorbikeSize === "-select type-" || !countryFactors[selectedCountryMotorbike].motorbikeMotorSize[motorbikeSize]
+
     ) {
       dispatch(setMotorbikeFootprint("Error, check your input"));
     } else {
-      const efficiency = parseFloat(efficiencyMotorbike);
       let total = 
       parseFloat(motorbikeMileage) * 
-      countryFactors[selectedCountryMotorbike].motorbikeMileageUnits[unitMotorbike].motorbikeMileage_factor * efficiency *
-      //countryFactors[selectedCountryMotorbike].motorbikeMotorSize[motorbikeSize].motorbikeSize_factor * 
+      countryFactors[selectedCountryMotorbike].motorbikeMileageUnits[unitMotorbike].motorbikeMileage_factor *  
+      countryFactors[selectedCountryMotorbike].motorbikeMotorSize[motorbikeSize].motorbikeSize_factor *
+
       0.001;
 
       dispatch (setMotorbikeFootprint(total.toFixed(2)));

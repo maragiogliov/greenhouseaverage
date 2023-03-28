@@ -10,7 +10,6 @@ import MotorbikeHeader from './Motorbike_Header';
 
 import MotorbikeMileage from './Motorbike_Mileage';
 import MotorbikeMotorSize from './Motorbike_MotorSize';
-import MotorbikeEfficiency from './Motorbike_Efficiency';
 
 import MotorbikeTotalResults from './Motorbike_TotalResults'
 import MotorbikeFootprintsButton from './Motorbike_FootprintsButton'
@@ -34,7 +33,6 @@ const MotorbikePage = () => {
                   <div className='motorbike-inputs-container'>
                     <MotorbikeMileage/>
                     <MotorbikeMotorSize/>
-                    <MotorbikeEfficiency />
                   </div>
                   <div className='motorbike-calculate-button-container'>
                     <MotorbikeFootprintsButton />

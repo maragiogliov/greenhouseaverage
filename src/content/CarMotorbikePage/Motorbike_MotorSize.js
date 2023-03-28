@@ -24,7 +24,7 @@ const MotorbikeSize = () => {
   return (
     <>
       <section className="motorbike-inputs-containers">
-        <h5 className="global-input-description">Motorbike Size</h5>
+        <h5 className="global-input-description"> Motorbike Type:</h5>
 
         <Select
           id="motorbike-select"

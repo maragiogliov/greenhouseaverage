@@ -2,10 +2,8 @@ import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
 
 import { 
-  setCarResult,
   setCarFootprint,
   setShowCarResult 
-
  } from "../../redux/car";
 
 import countryFactors from '../../countryFactors'
@@ -13,7 +11,7 @@ import countryFactors from '../../countryFactors'
 import { Button } from '@carbon/react';
 import { Calculator } from '@carbon/react/icons';
 
-const SecondaryFootprint = () => {
+const CarFootprint = () => {
   const { 
     selectedCountryCar, 
     carMileage,
@@ -48,6 +46,7 @@ const SecondaryFootprint = () => {
         showFootprintResultsCar();
       }
     };
+
     
     calculateCarFootprint();
   };
@@ -64,4 +63,4 @@ const SecondaryFootprint = () => {
   </>
 };
 
-export default SecondaryFootprint;
+export default CarFootprint;

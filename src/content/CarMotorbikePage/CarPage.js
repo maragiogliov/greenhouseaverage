@@ -1,5 +1,7 @@
 import React from 'react';
 import './_car-page.scss';
+import './_motorbike-page.scss';
+
 
 import { Button } from '@carbon/react';
 import { Link } from 'react-router-dom';
@@ -16,9 +18,14 @@ import CarTotalResults from './Car_TotalResults'
 
 import CarFootprintsButton from './Car_FootprintsButton'
 import CarIndividualResults from './Car_IndividualResults';
+
+import MotorbikeMileage from './Motorbike_Mileage';
+import MotorbikeMotorSize from './Motorbike_MotorSize';
+
+
 import Waves from '../Waves'
 
-const CarPage = () => {
+const CarMotorbikePage = () => {
   
   return <>
 <IconsNavigation />
@@ -36,8 +43,12 @@ const CarPage = () => {
                     <CarMileage />
                     <CarType />
                     <CarSize />
-               
+                    <MotorbikeMileage/>
+                    <MotorbikeMotorSize/>
+  
                   </div>
+            
+             
                   <div className='car-calculate-button-container'>
                     <CarFootprintsButton />
                   </div>
@@ -74,4 +85,4 @@ const CarPage = () => {
 
 };
 
-export default CarPage;
+export default CarMotorbikePage;
