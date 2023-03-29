@@ -19,8 +19,6 @@ import CarTotalResults from './Car_TotalResults'
 import CarFootprintsButton from './Car_FootprintsButton'
 import CarIndividualResults from './Car_IndividualResults';
 
-import MotorbikeMileage from './Motorbike_Mileage';
-import MotorbikeMotorSize from './Motorbike_MotorSize';
 
 
 import Waves from '../Waves'
@@ -43,8 +41,7 @@ const CarMotorbikePage = () => {
                     <CarMileage />
                     <CarType />
                     <CarSize />
-                    <MotorbikeMileage/>
-                    <MotorbikeMotorSize/>
+
   
                   </div>
             

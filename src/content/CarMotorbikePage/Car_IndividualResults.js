@@ -13,8 +13,6 @@ const CarResults = () => {
   const {
     carMileage,
     carUnit,
-    carType,
-    carSize,
     carFootprint,
     showCarResult,
   } = useSelector((state) => state.car);
