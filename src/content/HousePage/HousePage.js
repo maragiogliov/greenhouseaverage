@@ -63,9 +63,9 @@ const HousePage = () => {
 
           <div className='house-left-block-results'>
             <div className='house-datavisual-big-container'>
-            <HouseDataVisualization />
+              <HouseDataVisualization />
             </div>
-          <HouseOffsetButton />
+            <HouseOffsetButton />
           </div>
 
         </section>

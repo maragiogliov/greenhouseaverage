@@ -79,7 +79,7 @@ const FlightsPage = () => {
           >House
           </Button>
         </Link>
-        <Link className='global-buttons-link-back-and-forth' to="/car-motorbike">
+        <Link className='global-buttons-link-back-and-forth' to="/car">
           <Button 
           renderIcon={NextOutline}
            className="global-re-styled-button-back-and-forth"

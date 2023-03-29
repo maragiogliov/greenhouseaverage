@@ -21,6 +21,24 @@
     align-items: center;
     //background-color: darkblue;
 }
+.car-header-container-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+    background-color: #1e62b0c5;
+}
+.car-header-container-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+    background-color: #41e2a7c5;
+}
 .car-calculate-footprint-button{
     padding:0;
     min-width:100%;
@@ -53,10 +71,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     width: 100%;
     min-height: 48px;
-    //background-color: #86c79dc5;
+    background-color: #86c79dc5;
 }
 .car-header-container-right {
     display: flex;
@@ -84,15 +102,28 @@
     width: 100%;
     //background-color: aqua;
 }
+.car-left-block-results{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 1rem;
+}
+.car-datavisual-big-container{
+    width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+    //background-color: rgba(1, 168, 115, 0.88);
+}
 .car-result-section{
     width: 100%;
+    max-height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-bottom: 0.2rem;
-    min-height: 3rem;
-    //background-color: rgba(0, 255, 255, 0.157);
+    padding-left: 1rem;
+    //background-color: rgba(31, 56, 56, 0.747);
 }
 .car-block-middle-form{
    
@@ -123,21 +154,27 @@
     width: 100%;
     min-height: 400px;
     max-height: 400px;
-    padding : 1rem;
-    padding-right: 0rem;
-    padding-left: 2rem;
-    padding-top: 2.1rem;
-    //background-color: rgb(58, 113, 216);
+    //background-color: rgba(109, 168, 1, 0.88);
+    padding-top: 1.5rem;
 }
 .car-left-block-results{
     display: flex;
     flex-direction: column;
     width: 50%;
 }
+.car-center-block-results{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-right: 2px solid rgba(255, 255, 255, 0.388);
+
+}
 .car-right-block-inputs{
     display: flex;
     flex-direction: column;
     width: 50%;
+    padding-right: 1rem;
+    border-right: 2px solid rgba(255, 255, 255, 0.388);
 }
 
 .car-calculator-icon{

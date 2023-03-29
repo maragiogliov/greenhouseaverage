@@ -8,7 +8,7 @@ import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
 import WelcomePage from './content/WelcomePage';
 import HousePage from './content/HousePage';
-import CarMotorbikePage from './content/CarMotorbikePage';
+import CarPage from './content/CarPage';
 import MotorbikePage from './content/MotorbikePage';
 import BusRailPage from './content/BusRailPage';
 import SecondaryPage from './content/SecondaryPage'
@@ -30,7 +30,7 @@ class App extends Component {
             <Route path="/welcome" component={WelcomePage} />
             <Route path="/house" component={HousePage} />
             <Route path="/flight" component={FlightPage} />
-            <Route path="/car-motorbike" component={CarMotorbikePage} />
+            <Route path="/car" component={CarPage} />
             <Route path="/motorbike" component={MotorbikePage} />
             <Route path="/bus-rail" component={BusRailPage} />
             <Route path="/secondary" component={SecondaryPage} />

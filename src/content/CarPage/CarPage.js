@@ -12,16 +12,15 @@ import CarHeader from './Car_Header';
 
 import CarMileage from './Car_Mileage';
 import CarType from './Car_Type';
-import CarSize from './Car_Size'
+import CarSize from './Car_Size';
 
-import CarTotalResults from './Car_TotalResults'
-
-import CarFootprintsButton from './Car_FootprintsButton'
+import CarTotalResults from './Car_TotalResults';
+import CarFootprintsButton from './Car_FootprintsButton';
 import CarIndividualResults from './Car_IndividualResults';
+import CarDataVisualization from './Car_DataVisualization'
+import CarOffsetButton from './Car_OffsetButton';
 
-
-
-import Waves from '../Waves'
+import Waves from '../Waves';
 
 const CarMotorbikePage = () => {
   
@@ -36,26 +35,32 @@ const CarMotorbikePage = () => {
           {/* ------------------------------------------------------------------- */}
             <CarHeader/>
             <section className='car-inputs-results-container'>
+
               <div className='car-right-block-inputs'>
                   <div className='car-inputs-container'>
                     <CarMileage />
                     <CarType />
                     <CarSize />
-
-  
                   </div>
-            
-             
                   <div className='car-calculate-button-container'>
                     <CarFootprintsButton />
                   </div>
               </div>
-              <div className='car-left-block-results'>
+
+              <div className='car-center-block-results'>
                 <div className='car-results-big-container'>
                 <CarIndividualResults />
                 </div>
                 <CarTotalResults />
               </div>
+
+              <div className='car-left-block-results'>
+                <div className='car-datavisual-big-container'>
+                  <CarDataVisualization />
+                </div>
+                  <CarOffsetButton />
+              </div>
+
             </section>
           {/* ------------------------------------------------------------------- */}
         </section>
