@@ -47,16 +47,16 @@
     justify-content: center;
     width: 100%;
     min-height: 48px;
-    //background-color: #5a1942c5;
+    background-color: #5a1942c5;
 }
 .motorbike-header-container-left {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     width: 100%;
     min-height: 48px;
-    //background-color: #86c79dc5;
+    background-color: #86c79dc5;
 }
 .motorbike-header-container-right {
     display: flex;
@@ -92,6 +92,7 @@
     align-items: center;
     margin-bottom: 0.2rem;
     min-height: 3rem;
+    padding-left: 1rem;
     //background-color: rgba(0, 255, 255, 0.157);
 }
 .motorbike-block-middle-form{
@@ -116,21 +117,29 @@
     width: 100%;
     min-height: 400px;
     max-height: 400px;
-    padding : 1rem;
-    padding-right: 0rem;
-    padding-left: 2rem;
-    padding-top: 2.1rem;
-    //background-color: rgb(58, 113, 216);
+    //background-color: rgba(109, 168, 1, 0.88);
+    padding-top: 1.5rem;
 }
 .motorbike-left-block-results{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 50%;
+    padding-left: 1rem;
+}
+.motorbike-center-block-results{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-right: 2px solid rgba(255, 255, 255, 0.388);
+
 }
 .motorbike-right-block-inputs{
     display: flex;
     flex-direction: column;
     width: 50%;
+    padding-right: 1rem;
+    border-right: 2px solid rgba(255, 255, 255, 0.388);
 }
 
 .motorbike-calculator-icon{

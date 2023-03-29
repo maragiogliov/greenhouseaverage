@@ -49,7 +49,7 @@ const IconsNavigation = ({location}) => {
             </Link>
             <Link to="/car" className={location.pathname === '/car' ? 'active' : ''}>
               <Car
-                className={location.pathname === '/car-motorbike' ? 'iconClass active' : 'iconClass'}
+                className={location.pathname === '/car' ? 'iconClass active' : 'iconClass'}
                 size='32px'
               />
             </Link>

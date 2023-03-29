@@ -1,7 +1,5 @@
 import React from 'react';
 import './_car-page.scss';
-import './_motorbike-page.scss';
-
 
 import { Button } from '@carbon/react';
 import { Link } from 'react-router-dom';

@@ -15,6 +15,9 @@ const HouseNumberOfPeople = () => {
            <div className='motorbike-header-container-right' >
            Motorbike Results
            </div>
+           <div className='house-header-container-right' >
+            Motorbike Data Visualization
+           </div>
           </section>
       
   </>;
