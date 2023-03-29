@@ -11,7 +11,7 @@ const SecondaryFoodDrinks = () => {
             legendText=""
             name="radio-button-group"
             defaultSelected="radio-1"
-            className="secondary-block-middle-form"
+            className="flight-block-middle-form-options"
             disabled={true}
             >
             <RadioButton

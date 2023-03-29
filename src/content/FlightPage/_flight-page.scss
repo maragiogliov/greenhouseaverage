@@ -74,6 +74,28 @@
     margin-bottom: 0.2rem;
     margin-left: 0.2rem;
 }
+
+.flight-left-block-results{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 1rem;
+}
+.flight-datavisual-big-container{
+    width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+ 
+    //background-color: rgba(1, 168, 115, 0.88);
+}
+.flight-block-middle-form-options{
+   
+    min-width: 33%;
+    font-size: 16px;
+    margin-left: 0.2rem;
+    margin-bottom: 0.2rem;
+    //background-color: aqua;
+}
 .flight-radio-button-container-2{
     margin-bottom: 1rem;
     width: 100%;
@@ -136,7 +158,7 @@ align-items: center;
 justify-content: center;
 width: 100%;
 min-height: 48px;
-//background-color: #5a1942c5;
+background-color: #5a1942c5;
 }
 .flight-header-container-left {
 display: flex;
@@ -207,24 +229,31 @@ max-height: 400px;
 //background-color: lightgreen;
 }
 .flight-results-big-container{
-width: 100%;
-min-height: 400px;
-max-height: 400px;
-padding : 1rem;
-padding-right: 0rem;
-padding-left: 2rem;
-padding-top: 2.1rem;
-//background-color: rgb(58, 113, 216);
+    width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+    //background-color: rgba(109, 168, 1, 0.88);
+    padding-top: 1.5rem;
 }
 .flight-left-block-results{
 display: flex;
 flex-direction: column;
 width: 50%;
 }
+
+.flight-center-block-results{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-right: 2px solid rgba(255, 255, 255, 0.388);
+
+}
 .flight-right-block-inputs{
 display: flex;
 flex-direction: column;
 width: 50%;
+padding-right: 1rem;
+border-right: 2px solid rgba(255, 255, 255, 0.388);
 }
 
 .flight-calculator-icon{

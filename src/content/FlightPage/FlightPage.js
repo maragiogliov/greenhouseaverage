@@ -18,6 +18,9 @@ import FlightTotalResults from './Flight_TotalResults'
 
 import FlightFootprintsButton from './Flight_FootprintsButton'
 import FlightIndividualResults from './Flight_IndividualResults';
+
+import FlightDataVisualization from './Flight_DataVisualization'
+import FlightOffsetButton from './Flight_OffsetButton'
 import Waves from '../Waves'
 
 const FlightsPage = () => {
@@ -32,6 +35,7 @@ const FlightsPage = () => {
       {/* ------------------------------------------------------------------- */}
         <FlightHeader/>
         <section className='flight-inputs-results-container'>
+
           <div className='flight-right-block-inputs'>
               <div className='flight-inputs-container'>
                 <FlightOptions />
@@ -46,12 +50,21 @@ const FlightsPage = () => {
                 <FlightFootprintsButton />
               </div>
           </div>
-          <div className='flight-left-block-results'>
+
+          <div className='flight-center-block-results'>
             <div className='flight-results-big-container'>
             <FlightIndividualResults />
             </div>
             <FlightTotalResults />
           </div>
+
+          <div className='flight-left-block-results'>
+            <div className='flight-datavisual-big-container'>
+            <FlightDataVisualization />
+            </div>
+          <FlightOffsetButton />
+          </div>
+
         </section>
       {/* ------------------------------------------------------------------- */}
     </section>
