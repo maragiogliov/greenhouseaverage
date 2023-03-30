@@ -25,17 +25,13 @@ import {
 
 } from "../../redux/house";
 
-import countryFactors from '../../countryFactors'
-
 import { Button } from '@carbon/react';
 import { TrashCan } from '@carbon/react/icons';
 
 const HouseElectricity = () => {
   const {
-    selectedCountry,
 
     electricity,
-    userElectricityFactor,
     electricityFootprint,
     showElectricityResult,
     
@@ -43,11 +39,6 @@ const HouseElectricity = () => {
     unitNaturalGas,
     naturalGasFootprint,
     showNaturalGasResult,
-
-    heatingOil,
-    unitHeatingOil,
-    heatingOilFootprint,
-    showHeatingOilResult,
 
     coal,
     unitCoal,
@@ -109,9 +100,7 @@ const HouseElectricity = () => {
         <section className='house-result-section'>
           <h5 
             className='house-results-container'>
-            {electricityFootprint} Kg:	{electricity} kWh of Electricity at {userElectricityFactor !== null 
-            ? userElectricityFactor 
-            : countryFactors[selectedCountry].electricity_factor || "" } kgCO2e/kWh	
+            {electricityFootprint} Kg:	{electricity} kWh of Electricity 
           </h5>
           <Button
             kind='ghost'

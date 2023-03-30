@@ -7,6 +7,11 @@ import { NextOutline, PreviousOutline } from '@carbon/react/icons';
 
 import IconsNavigation from '../IconsNavigation/IconsNavigation';
 import HouseHeader from './House_Header';
+import HouseHeaderResults from './House_HeaderResults';
+import HouseHeaderVisualization from './House_HeaderVisualization';
+
+
+
 import HouseElectricity from './House_Electricity';
 import HouseNaturalGas from './House_NaturalGas';
 // import HouseHeatingOil from './House_HeatingOil'
@@ -36,10 +41,10 @@ const HousePage = () => {
               <h4>House Electricity</h4>
           </div>
       {/* ------------------------------------------------------------------- */}
-        <HouseHeader/>
-        <section className='house-inputs-results-container'>
+        <section className='house-main-container'>
 
-          <div className='house-right-block-inputs'>
+          <div className='house-inputs-block'>
+              <HouseHeader/>
               <div className='house-inputs-container'>
                 <HouseElectricity />
                 <HouseNaturalGas />
@@ -49,20 +54,23 @@ const HousePage = () => {
                 <HousePropane />
                 <HouseWoodenPellets />
               </div>
-              <div className='house-calculate-button-container'>
+              <div className='house-button-container'>
                 <HouseFootprintsButton />
               </div>
           </div>
 
-          <div className='house-center-block-results'>
-            <div className='house-results-big-container'>
-            <HouseIndividualResults />
+          <div className='house-results-block'>
+            <HouseHeaderResults/>
+            <div className='house-results-container'>
+              <HouseIndividualResults />
             </div>
-          <HouseTotalResults />
+            <HouseTotalResults />
           </div>
 
-          <div className='house-left-block-results'>
-            <div className='house-datavisual-big-container'>
+          <div className='house-visualization-block'>
+          <HouseHeaderVisualization/>
+
+            <div className='house-datavisual-container'>
               <HouseDataVisualization />
             </div>
             <HouseOffsetButton />

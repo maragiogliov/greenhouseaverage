@@ -17,15 +17,8 @@ const HouseNumberOfPeople = () => {
   return <>
        
         <div className='house-header-container' >
-        <p>How many people are in your household? </p>
-          <TextInput
-            id="people-select"
-            labelText=""
-            value={numPeople}
-            onChange={handleNumPeopleChange}
-            className='house-number-people'
-            size='lg'
-          />
+        <p>House Energy Results</p>
+      
         </div>
       
   </>;

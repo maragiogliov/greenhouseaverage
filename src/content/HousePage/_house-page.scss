@@ -1,3 +1,43 @@
+
+////////////////////////////MAIN CONTAINER//////////////////////////////
+.house-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+}
+////////////////////////////BLOCK 1 INPUTS /////////////////////////////
+.house-header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+
+    min-height: 48px;
+    background-color: #1d2e24c5;
+}
+.house-number-people{
+    max-width: 5rem;
+    font-size: 16px;
+    //background-color: #f2f2ee;
+}
+.house-inputs-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+    background-color: rgb(216, 42, 132);
+}
+.house-inputs-container{
+    width: 100%;
+    //background-color: lightgreen;
+}
+.house-button-container{
+    width: 100%;
+    background-color: darkblue;
+}
+/////////////////////////BLOCK 1 INPUTS COMPONENTS//////////////////////
 .house-electricity-container  {
     display: flex;
     flex-direction: row;
@@ -7,18 +47,13 @@
     margin-bottom: 0.7rem;
     //background-color: #b397d7;
 }
-.house-number-people{
-    max-width: 5rem;
+.house-block-middle-form{
+    max-width: 33%;
+    min-width: 33%;
     font-size: 16px;
-    //background-color: #f2f2ee;
-}
-.house-calculate-button-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5rem;
-    align-items: center;
-    //background-color: darkblue;
+    margin-left: 0.2rem;
+    margin-bottom: 0.2rem;
+    //background-color: aqua;
 }
 .house-calculate-footprint-button{
     padding:0;
@@ -26,6 +61,32 @@
     display: flex;
     flex-direction: row;
     justify-content: center ;
+}
+.house-calculator-icon{
+    margin-left: 0.7rem;
+}
+///////////////////////////////BLOCK 2 RESULTS/////////////////////////
+.house-results-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+    background-color: lawngreen;
+}
+.house-results-container{
+    width: 100%;
+    //background-color: rgba(109, 168, 1, 0.88);
+}
+.house-result-section{
+    width: 100%;
+    max-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2rem;
+    padding-left: 1rem;
+    //background-color: rgba(31, 56, 56, 0.747);
 }
 .house-result-trashcan-icon-container{
     display: flex;
@@ -39,52 +100,15 @@
     max-width: 2.5rem;
     //background-color: crimson;
 }
-.house-header-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-    background-color: #5a1942c5;
-}
-.house-header-container-left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: right;
-    width: 100%;
-    min-height: 48px;
-    padding-right: 2rem;
-    background-color: #86c79dc5;
-}
-.house-header-container-center {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-    //background-color: #1e62b0c5;
-}
-.house-header-container-right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-    background-color: #41e2a7c5;
-}
 .house-results{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 48px;
+    min-height: 48px;
     border-bottom: 2px solid rgba(169, 169, 169, 0.147);
-    //background-color: rgb(77, 52, 77);
+    background-color: rgb(77, 52, 77);
 }
 .house-results-container{
     display: flex;
@@ -93,75 +117,48 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.448);
     width: 100%;
     //background-color: rgb(48, 82, 82);
-    min-height: 3rem;
-    max-height: 3rem;
-    white-space: nowrap;
 }
-.house-result-section{
-    width: 100%;
-    max-height: 3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.2rem;
-    padding-left: 1rem;
-    //background-color: rgba(31, 56, 56, 0.747);
-}
-.house-block-middle-form{
-    max-width: 33%;
-    min-width: 33%;
-    font-size: 16px;
-    margin-left: 0.2rem;
-    margin-bottom: 0.2rem;
-    //background-color: aqua;
-}
-.house-inputs-results-container{
-    display: flex;
-    flex-direction: row;
-    //background-color: bisque;
-    width: 100%;
-}
-.house-inputs-container{
-    width: 100%;
-    min-height: 400px;
-    max-height: 400px;
-    //background-color: lightgreen;
-}
-.house-results-big-container{
-    width: 100%;
-    min-height: 400px;
-    max-height: 400px;
-    //background-color: rgba(109, 168, 1, 0.88);
-    padding-top: 1.5rem;
-}
-.house-datavisual-big-container{
-    width: 100%;
-    min-height: 400px;
-    max-height: 400px;
-    //background-color: rgba(1, 168, 115, 0.88);
-}
-.house-left-block-results{
+///////////////////////////BLOCK 3 VISUALIZATION///////////////////////
+.house-visualization-block{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding-left: 1rem;
+    justify-content: space-between;
+    width: 33%;
+    background-color: rgb(52, 190, 202);
 }
-.house-center-block-results{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    border-right: 2px solid rgba(255, 255, 255, 0.388);
-
-}
-.house-right-block-inputs{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-right: 1rem;
-    border-right: 2px solid rgba(255, 255, 255, 0.388);
+.house-datavisual-container{
+    width: 100%;
+    background-color: rgba(227, 209, 6, 0.891);
 }
 
-.house-calculator-icon{
-    margin-left: 0.7rem;
-}
+///////////////////////////RESPONSIVE///////////////////////
+@media (max-width: 768px) {
+    .house-main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(221, 221, 221);
+        width: 100%;
+    }
+    .house-inputs-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        background-color: rgb(216, 42, 132);
+    }
+    .house-results-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        background-color: lawngreen;
+    }
+    .house-visualization-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        background-color: rgb(52, 190, 202);
+    }
+  }
