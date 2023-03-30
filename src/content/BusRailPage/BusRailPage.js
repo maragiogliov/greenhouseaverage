@@ -19,6 +19,8 @@ import BusRailTotalResult from './BusRail_TotalResult';
 
 import BusRailFootprintsButton from './BusRail_FootprintsButton'
 import BusRailIndividualResults from './BusRail_IndividualResults'
+import BusRailDataVisualization from './BusRail_DataVisualization'
+import BusRailOffsetButton from './BusRail_OffsetButton'
 import Waves from '../Waves'
 
 const BusRailPage = () => {
@@ -53,6 +55,12 @@ const BusRailPage = () => {
               <BusRailIndividualResults />
             </div>
               <BusRailTotalResult/>
+          </div>
+          <div className='bus-rail-left-block-results'>
+            <div className='bus-rail-datavisual-big-container'>
+            <BusRailDataVisualization />
+            </div>
+            <BusRailOffsetButton />
           </div>
         </section>
       {/* ------------------------------------------------------------------- */}

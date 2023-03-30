@@ -31,8 +31,11 @@ const HouseNumberOfPeople = () => {
                 size='lg'
               />
            </div>
-           <div className='secondary-header-container-right' >
+           <div className='secondary-header-container-center' >
             Secondary Results
+           </div>
+           <div className='secondary-header-container-right' >
+            Secondary Data Visualization
            </div>
           </section>
       

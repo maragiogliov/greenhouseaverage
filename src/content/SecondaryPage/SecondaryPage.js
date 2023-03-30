@@ -19,6 +19,10 @@ import SecondaryTotalResults from './Secondary_TotalResults'
 
 import SecondaryFootprintsButton from './Secondary_FootprintsButton'
 import SecondaryIndividualResults from './Secondary_IndividualResults';
+
+import SecondaryDataVisualization from './Secondary_DataVisualization'
+import SecondaryOffsetButton from './Secondary_OffsetButton'
+
 import Waves from '../Waves'
 
 
@@ -56,6 +60,12 @@ const SecondaryPage = () => {
             <SecondaryIndividualResults />
             </div>
             <SecondaryTotalResults />
+          </div>
+          <div className='secondary-left-block-results'>
+            <div className='secondary-datavisual-big-container'>
+            <SecondaryDataVisualization />
+            </div>
+            <SecondaryOffsetButton />
           </div>
         </section>
       {/* ------------------------------------------------------------------- */}

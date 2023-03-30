@@ -8,7 +8,7 @@ const HouseNumberOfPeople = () => {
           <p>You can enter details for up to 1 flight itinerary</p>
         
           </div>
-          <div className='flight-header-container-right' >
+          <div className='flight-header-container-center' >
             Flights Results
           </div>
           <div className='house-header-container-right' >

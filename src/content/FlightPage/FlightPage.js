@@ -62,7 +62,7 @@ const FlightsPage = () => {
             <div className='flight-datavisual-big-container'>
             <FlightDataVisualization />
             </div>
-          <FlightOffsetButton />
+            <FlightOffsetButton />
           </div>
 
         </section>

@@ -235,6 +235,15 @@ max-height: 400px;
     //background-color: rgba(109, 168, 1, 0.88);
     padding-top: 1.5rem;
 }
+.flight-header-container-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+    //background-color: #1e62b0c5;
+}
 .flight-left-block-results{
 display: flex;
 flex-direction: column;

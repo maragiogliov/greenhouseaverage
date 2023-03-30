@@ -56,7 +56,16 @@
     justify-content: center;
     width: 100%;
     min-height: 48px;
-    //background-color: #86c79dc5;
+    background-color: #86c79dc5;
+}
+.bus-rail-header-container-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+    background-color: #1e62b0c5;
 }
 .bus-rail-header-container-right {
     display: flex;
@@ -65,7 +74,7 @@
     justify-content: center;
     width: 100%;
     min-height: 48px;
-    //background-color: #1e62b0c5;
+    background-color: #6e9bcec5;
 }
 .bus-rail-results{
     display: flex;
