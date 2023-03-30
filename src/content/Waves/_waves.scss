@@ -1,10 +1,10 @@
 
   
   .waves-container{
-    position: fixed;
-    bottom: -1.5rem;
+    //position: fixed;
+    //bottom: -1.5rem;
     width: 100%;
-    height: 150px;
+    //height: 150px;
   }
   .flex { /*Flexbox for containers*/
     display: flex;
@@ -20,6 +20,7 @@
     margin-bottom:-7px; /*Fix for safari gap*/
     min-height:100px;
     max-height:150px;
+    margin-bottom: -3rem;
   }
   
 

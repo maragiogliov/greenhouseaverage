@@ -1,10 +1,9 @@
-
 ////////////////////////////MAIN CONTAINER//////////////////////////////
 .house-main-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(221, 221, 221);
+    //background-color: rgb(221, 221, 221);
     width: 100%;
 }
 ////////////////////////////BLOCK 1 INPUTS /////////////////////////////
@@ -13,29 +12,29 @@
     flex-direction: row;
     align-items: center;
     justify-content:space-between;
-
+    margin-bottom: 3rem;
     min-height: 48px;
     background-color: #1d2e24c5;
 }
 .house-number-people{
     max-width: 5rem;
     font-size: 16px;
-    //background-color: #f2f2ee;
+    ////background-color: #f2f2ee;
 }
 .house-inputs-block{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 33%;
-    background-color: rgb(216, 42, 132);
+    //background-color: rgb(216, 42, 132);
 }
 .house-inputs-container{
     width: 100%;
-    //background-color: lightgreen;
+    ////background-color: lightgreen;
 }
 .house-button-container{
     width: 100%;
-    background-color: darkblue;
+    //background-color: darkblue;
 }
 /////////////////////////BLOCK 1 INPUTS COMPONENTS//////////////////////
 .house-electricity-container  {
@@ -71,11 +70,11 @@
     flex-direction: column;
     justify-content: space-between;
     width: 33%;
-    background-color: lawngreen;
+    //background-color: lawngreen;
 }
 .house-results-container{
     width: 100%;
-    //background-color: rgba(109, 168, 1, 0.88);
+    ////background-color: rgba(109, 168, 1, 0.88);
 }
 .house-result-section{
     width: 100%;
@@ -86,7 +85,7 @@
     align-items: center;
     margin-bottom: 0.2rem;
     padding-left: 1rem;
-    //background-color: rgba(31, 56, 56, 0.747);
+    ////background-color: rgba(31, 56, 56, 0.747);
 }
 .house-result-trashcan-icon-container{
     display: flex;
@@ -98,7 +97,7 @@
     padding: 1;
     max-height: 2.5rem;
     max-width: 2.5rem;
-    //background-color: crimson;
+    ////background-color: crimson;
 }
 .house-results{
     display: flex;
@@ -107,8 +106,9 @@
     justify-content: center;
     width: 100%;
     min-height: 48px;
-    border-bottom: 2px solid rgba(169, 169, 169, 0.147);
-    background-color: rgb(77, 52, 77);
+    border: 2px solid rgb(169, 169, 169);
+    font-size: 20px;
+    //background-color: rgb(77, 52, 77);
 }
 .house-results-container{
     display: flex;
@@ -116,7 +116,7 @@
     justify-content: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.448);
     width: 100%;
-    //background-color: rgb(48, 82, 82);
+    ////background-color: rgb(48, 82, 82);
 }
 ///////////////////////////BLOCK 3 VISUALIZATION///////////////////////
 .house-visualization-block{
@@ -124,20 +124,20 @@
     flex-direction: column;
     justify-content: space-between;
     width: 33%;
-    background-color: rgb(52, 190, 202);
+    //background-color: rgb(52, 190, 202);
 }
 .house-datavisual-container{
     width: 100%;
-    background-color: rgba(227, 209, 6, 0.891);
+    //background-color: rgba(227, 209, 6, 0.891);
 }
 
 ///////////////////////////RESPONSIVE///////////////////////
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .house-main-container{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: rgb(221, 221, 221);
+        ////background-color: rgb(221, 221, 221);
         width: 100%;
     }
     .house-inputs-block{
@@ -145,20 +145,23 @@
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        background-color: rgb(216, 42, 132);
+        ////background-color: rgb(216, 42, 132);
     }
     .house-results-block{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        background-color: lawngreen;
+        ////background-color: lawngreen;
     }
     .house-visualization-block{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        background-color: rgb(52, 190, 202);
+        ////background-color: rgb(52, 190, 202);
+    }
+    .house-results{
+        font-size: 16px;
     }
   }
