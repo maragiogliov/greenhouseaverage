@@ -5,7 +5,7 @@ import { Select, SelectItem } from '@carbon/react';
 const SecondaryPaper = () => {
   return (
     <>
-        <section className="global-inputs-containers1">
+        <section className="flight-inputs-containers1">
           <h5 className="global-input-description">Class:</h5>
 
           <Select

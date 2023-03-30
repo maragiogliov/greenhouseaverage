@@ -33,7 +33,7 @@ const HouseElectricity = () => {
       "precision": 2,
       "alignment": "center"
     },
-    "height": "390px",
+    "height": "360px",
   }
 
   return (

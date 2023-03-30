@@ -15,7 +15,7 @@ const SecondaryHotels = () => {
 
   return (
     <>
-        <section className="global-inputs-containers1">
+        <section className="flight-inputs-containers1">
           <h5 className="global-input-description">Luggage</h5>
         
           <Select

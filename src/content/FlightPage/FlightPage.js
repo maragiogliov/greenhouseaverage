@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 import IconsNavigation from '../IconsNavigation/IconsNavigation';
 import { NextOutline, PreviousOutline } from '@carbon/react/icons';
 import FlightHeader from './Flight_Header';
+import FlightHeaderResults from './Flight_HeaderResults';
+import FlightHeaderVisualization from './Flight_HeaderVisualization';
+
 
 
 import FlightOptions from './Flight_Options';
@@ -28,15 +31,15 @@ const FlightsPage = () => {
   return <>
       <IconsNavigation />
       <section className='global-frame-calculator'>
-      {/* ------------------------------------------------------------------- */}
+
           <div className='global-block-top'>
               <h4>Flights</h4>
           </div>
-      {/* ------------------------------------------------------------------- */}
-        <FlightHeader/>
-        <section className='flight-inputs-results-container'>
 
-          <div className='flight-right-block-inputs'>
+        <section className='flight-main-container'>
+
+          <div className='flight-inputs-block'>
+          <FlightHeader/>
               <div className='flight-inputs-container'>
                 <FlightOptions />
                 <FlightFrom />
@@ -46,20 +49,23 @@ const FlightsPage = () => {
                 <FlightTrips />
                 <FlightRadiative />
               </div>
-              <div className='flight-calculate-button-container'>
+              <div className='flight-button-container'>
                 <FlightFootprintsButton />
               </div>
           </div>
 
-          <div className='flight-center-block-results'>
-            <div className='flight-results-big-container'>
+          <div className='flight-results-block'>
+            <FlightHeaderResults/>
+            <div className='flight-results-container'>
             <FlightIndividualResults />
             </div>
             <FlightTotalResults />
           </div>
 
-          <div className='flight-left-block-results'>
-            <div className='flight-datavisual-big-container'>
+          <div className='flight-visualization-block'>
+          <FlightHeaderVisualization/>
+
+            <div className='flight-datavisual-container'>
             <FlightDataVisualization />
             </div>
             <FlightOffsetButton />

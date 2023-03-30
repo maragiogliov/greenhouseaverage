@@ -16,7 +16,7 @@ dispatch(setRangeElectronicsFactor(e.target.value));
 
 return (
 <>
-<section className="global-inputs-containers1">
+<section className="flight-inputs-containers1">
 <h5 className="global-input-description">Trips:</h5>
 
 <Select

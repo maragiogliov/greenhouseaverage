@@ -8,7 +8,7 @@ const FlightTotalResult = () => {
   const totalFlightFootprint = (parseFloat(flightFootprint) ||  0);
 
   return <>
-          <div className='secondary-results'>Calculated Flight Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalFlightFootprint.toFixed(2))}</span> kilograms of CO2e</div>
+          <div className='flight-results'>Flights Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalFlightFootprint.toFixed(2))}</span> kilograms of CO2e</div>
   </>;
 };
 

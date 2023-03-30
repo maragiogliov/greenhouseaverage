@@ -61,7 +61,7 @@ const FlightFootprint = () => {
   return (
     <Button
       onClick={calculateFlightsFootprint}
-      className='house-calculate-footprint-button'
+      className='flight-calculate-footprint-button'
     >
       Calculate Flights Footprint
       <Calculator className='secondary-calculator-icon' />

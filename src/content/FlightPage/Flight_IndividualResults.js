@@ -29,15 +29,15 @@ const FlightResults = () => {
   return <>  
 
     {showFlightResult && distanceBetweenAirports > 0 &&  (
-        <section className='house-result-section'>
+        <section className='flight-result-section'>
           <h5 
-            className='house-results-container'>
+            className='flight-results-container'>
             {flightFootprint} kg of CO2e in {distanceBetweenAirports} km
           </h5>
           <Button
             kind='ghost'
             size='lg'
-            className='house-result-trashcan-icon-container'
+            className='flight-result-trashcan-icon-container'
             onClick={resetFootprintFlight} >
             <TrashCan />
           </Button>

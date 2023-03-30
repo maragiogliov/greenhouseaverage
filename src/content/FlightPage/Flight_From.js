@@ -28,7 +28,7 @@ const handleInputChangeFrom = (inputValue) => {
 };
 
     return (
-        <section className="global-inputs-containers1">
+        <section className="flight-inputs-containers1">
             <h5 className="global-input-description">From:</h5>
             <ComboBox
                 id="flight-from-select"

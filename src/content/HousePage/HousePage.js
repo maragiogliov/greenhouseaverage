@@ -33,14 +33,13 @@ import Waves from '../Waves'
 const HousePage = () => {
 
   return <>
-              <IconsNavigation />
-        
+    <IconsNavigation />
     <section className='global-frame-calculator'>
-      {/* ------------------------------------------------------------------- */}
+
           <div className='global-block-top'>
               <h4>House Electricity</h4>
           </div>
-      {/* ------------------------------------------------------------------- */}
+
         <section className='house-main-container'>
 
           <div className='house-inputs-block'>
