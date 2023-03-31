@@ -4,8 +4,7 @@ import { setHouseFootprint } from "../../redux/house";
 
 import { Button } from '@carbon/react';
 
-
-const HouseTotalResult = () => {
+const MotorbikeTotalResult = () => {
   const dispatch = useDispatch();
 
   const { electricityFootprint, naturalGasFootprint,heatingOilFootprint, coalFootprint,LPGFootprint, propaneFootprint, woodenPelletsFootprint } = useSelector(
@@ -17,16 +16,15 @@ const HouseTotalResult = () => {
     dispatch(setHouseFootprint(totalHouseFootprint));
   }, [totalHouseFootprint]);
 
-
   return <>
 
       <Button 
           kind='secondary'
-          className='house-calculate-footprint-button'
+          className='motorbike-calculate-footprint-button'
           > OFFSET NOW!
       </Button>
   
   </>;
 };
 
-export default HouseTotalResult;
+export default MotorbikeTotalResult;

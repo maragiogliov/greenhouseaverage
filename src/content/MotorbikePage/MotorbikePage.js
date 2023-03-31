@@ -7,6 +7,9 @@ import { NextOutline, PreviousOutline } from '@carbon/react/icons';
 
 import IconsNavigation from '../IconsNavigation/IconsNavigation';
 import MotorbikeHeader from './Motorbike_Header';
+import MotorbikeHeaderResults from './Motorbike_HeaderResults';
+import MotorbikeHeaderVisualization from './Motorbike_HeaderVisualization';
+
 
 import MotorbikeMileage from './Motorbike_Mileage';
 import MotorbikeMotorSize from './Motorbike_MotorSize';
@@ -24,33 +27,34 @@ const MotorbikePage = () => {
   <IconsNavigation />
 
  <section className='global-frame-calculator'>
-          {/* ------------------------------------------------------------------- */}
               <div className='global-block-top'>
                   <h4>Motorbike</h4>
               </div>
-          {/* ------------------------------------------------------------------- */}
-            <MotorbikeHeader/>
-            <section className='motorbike-inputs-results-container'>
+            <section className='motorbike-main-container'>
 
-              <div className='motorbike-right-block-inputs'>
-                  <div className='motorbike-inputs-container'>
+              <div className='motorbike-inputs-block'>
+              <MotorbikeHeader/>
+                  <div className=''>
                     <MotorbikeMileage/>
                     <MotorbikeMotorSize/>
                   </div>
-                  <div className='motorbike-calculate-button-container'>
+                  <div className='motorbike-button-container'>
                     <MotorbikeFootprintsButton />
                   </div>
               </div>
               
-              <div className='motorbike-center-block-results'>
-                <div className='motorbike-results-big-container'>
+              <div className='motorbike-results-block'>
+              <MotorbikeHeaderResults/>
+                <div className='motorbike-results-container'>
                 <MotorbikeIndividualResults />
                 </div>
                 <MotorbikeTotalResults />
               </div>
 
-              <div className='motorbike-left-block-results'>
-                  <div className='motorbike-datavisual-big-container'>
+              <div className='motorbike-visualization-block'>
+              <MotorbikeHeaderVisualization/>
+
+                  <div className='motorbike-datavisual-container'>
                   <MotorbikeDataVisualization />
                   </div>
                   <MotorbikeOffsetButton />

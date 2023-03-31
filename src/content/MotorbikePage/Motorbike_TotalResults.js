@@ -8,7 +8,7 @@ const MotorbikeTotalResult = () => {
   const totalMotorbikeFootprint = (parseFloat(motorbikeFootprint)  ||  0);
 
   return <>
-          <div className='motorbike-results'>Calculated Motorbike Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalMotorbikeFootprint.toFixed(2))}</span> Kg of CO2e</div>
+          <div className='motorbike-results'> Motorbike Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalMotorbikeFootprint.toFixed(2))}</span> Kg of CO2e</div>
   </>;
 };
 

@@ -22,7 +22,7 @@ const MotorbikeMileage = () => {
 
   return (
     <>
-        <section className="motorbike-electricity-container">
+        <section className="motorbike-mileage-container">
           <h5 className="global-input-description">Mileage:</h5>
           <TextInput
             id="motorbike-mileage"
