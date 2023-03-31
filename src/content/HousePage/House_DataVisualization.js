@@ -2,10 +2,6 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { DonutChart } from '@carbon/charts-react';
 
-const formatNumber = (number) => {
-  return number.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-}
-
 const HouseElectricity = () => {
   const {
     electricityFootprint,

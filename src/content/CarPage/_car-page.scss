@@ -1,43 +1,62 @@
-.car-electricity-container  {
+////////////////////////////MAIN CONTAINER//////////////////////////////
+.car-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(221, 221, 221);
+    height: 490px;
+
+    width: 100%;
+
+}
+////////////////////////////BLOCK 1 INPUTS /////////////////////////////
+.car-header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 3rem;
+    min-height: 48px;
+    background-color: #1d2e24c5;
+}
+.car-inputs-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+    //background-color: rgb(216, 42, 132);
+}
+.car-button-container{
+    width: 100%;
+    //background-color: darkblue;
+}
+/////////////////////////BLOCK 1 INPUTS COMPONENTS//////////////////////
+.car-mileage-container  {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
     width: 100%;
     margin-bottom: 0.7rem;
-    margin-top: 16px;
     //background-color: #b397d7;
 }
-.car-number-people{
-    max-width: 5rem;
+.car-inputs-containers1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 0.7rem;
+    //background-color: rgb(34, 93, 171);
+}
+.car-block-middle-form{ 
+    margin-bottom: 0.2rem;
+}
+.car-block-middle-form-efficiency{
     font-size: 16px;
-    //background-color: #f2f2ee;
-}
-.car-calculate-button-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5rem;
-    align-items: center;
-    //background-color: darkblue;
-}
-.car-header-container-center {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-    background-color: #1e62b0c5;
-}
-.car-header-container-right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-    background-color: #41e2a7c5;
+    margin-left: 0.2rem;
+    margin-bottom: 0.2rem;
 }
 .car-calculate-footprint-button{
     padding:0;
@@ -45,6 +64,28 @@
     display: flex;
     flex-direction: row;
     justify-content: center ;
+}
+.car-calculator-icon{
+    margin-left: 0.7rem;
+}
+///////////////////////////////BLOCK 2 RESULTS/////////////////////////
+.car-results-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+    //background-color: lawngreen;
+}
+.car-result-section{
+    width: 100%;
+    max-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2rem;
+    padding-left: 1rem;
+    ////background-color: rgba(31, 56, 56, 0.747);
 }
 .car-result-trashcan-icon-container{
     display: flex;
@@ -56,34 +97,15 @@
     padding: 1;
     max-height: 2.5rem;
     max-width: 2.5rem;
-    //background-color: crimson;
+    ////background-color: crimson;
 }
-.car-header-container {
+.car-results-container{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.448);
     width: 100%;
-    min-height: 48px;
-    //background-color: #5a1942c5;
-}
-.car-header-container-left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-    background-color: #86c79dc5;
-}
-.car-header-container-right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-    //background-color: #1e62b0c5;
+    ////background-color: rgb(48, 82, 82);
 }
 .car-results{
     display: flex;
@@ -91,113 +113,120 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 48px;
-    border-bottom: 2px solid rgba(169, 169, 169, 0.147);
-    //background-color: rgb(194, 97, 194);
+    min-height: 48px;
+    border: 2px solid rgb(169, 169, 169);
+    font-size: 20px;
+    //background-color: rgb(77, 52, 77);
 }
-.car-results-container{
+///////////////////////////BLOCK 3 VISUALIZATION///////////////////////
+.car-visualization-block{
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.448);
+    justify-content: space-between;
+    width: 33%;
+    //background-color: rgb(52, 190, 202);
+}
+.car-datavisual-container{
     width: 100%;
-    //background-color: aqua;
+    //background-color: rgba(227, 209, 6, 0.891);
 }
-.car-left-block-results{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-left: 1rem;
-}
-.car-datavisual-big-container{
-    width: 100%;
-    min-height: 400px;
-    max-height: 400px;
-    //background-color: rgba(1, 168, 115, 0.88);
-}
-.car-result-section{
-    width: 100%;
-    max-height: 3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.2rem;
-    padding-left: 1rem;
-    //background-color: rgba(31, 56, 56, 0.747);
-}
-.car-block-middle-form{
-   
-    margin-bottom: 0.2rem;
+
+///////////////////////////RESPONSIVE///////////////////////
+@media (max-width: 1100px) {
+    .car-main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        ////background-color: rgb(221, 221, 221);
+        width: 100%;
     }
-.car-block-middle-form-efficiency{
+    .car-inputs-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        ////background-color: rgb(216, 42, 132);
+    }
+    .car-results-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        ////background-color: lawngreen;
+    }
+    .car-visualization-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        ////background-color: rgb(52, 190, 202);
+    }
+    .car-results{
+        font-size: 16px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.car-number-people{
+    max-width: 5rem;
     font-size: 16px;
-    margin-left: 0.2rem;
-    margin-bottom: 0.2rem;
-    }
+    //background-color: #f2f2ee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .car-block-middle-form-efficiency-1{
     font-size: 16px;
     margin-left: 0;
     margin-bottom: 0.2rem;
 }
-.car-inputs-results-container{
-    display: flex;
-    flex-direction: row;
-    //background-color: aqua;
-}
-.car-inputs-container{
-    width: 100%;
-    min-height: 400px;
-    max-height: 400px;
-    //background-color: lightgreen;
-}
-.car-results-big-container{
-    width: 100%;
-    min-height: 400px;
-    max-height: 400px;
-    //background-color: rgba(109, 168, 1, 0.88);
-    padding-top: 1.5rem;
-}
-.car-left-block-results{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-.car-center-block-results{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    border-right: 2px solid rgba(255, 255, 255, 0.388);
 
-}
-.car-right-block-inputs{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-right: 1rem;
-    border-right: 2px solid rgba(255, 255, 255, 0.388);
-}
 
-.car-calculator-icon{
-    margin-left: 0.7rem;
-}
 
-.car-inputs-containers{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    width: 100%;
-    height: 2.5rem;
-    margin-bottom: 0.7rem;
-    //background-color: lightsteelblue;
-}
 
-.global-inputs-containers1{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    width: 100%;
-    height: 2.5rem;
-    margin-bottom: 0.7rem;
-    //background-color: rgb(34, 93, 171);
-}
+
+
+
+
+

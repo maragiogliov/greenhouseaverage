@@ -19,7 +19,7 @@ const CarSize= () => {
 
   return (
     <>
-        <section className="global-inputs-containers1">
+        <section className="car-inputs-containers1">
           <h5 className="global-input-description"> Car Size:</h5>
       
           <Select

@@ -1,25 +1,11 @@
 import React from 'react';
 
-
-const HouseNumberOfPeople = () => {
+const CarHeaderInputs = () => {
   return <>
-        <section >
-       
-          </section>
-
-          <section className='car-header-container'>
-           <div className='car-header-container-left' >
-           <p>You can enter details for up to 1 car </p>
-           </div>
-           <div className='car-header-container-center' >
-            Car & Motorbike Results
-           </div>
-           <div className='car-header-container-right' >
-            Car Data Visualization
-           </div>
-          </section>
-      
+          <div className='car-header-container' >
+            <p>You can enter details for up to 1 car </p>
+          </div>
   </>;
 };
 
-export default HouseNumberOfPeople;
+export default CarHeaderInputs;

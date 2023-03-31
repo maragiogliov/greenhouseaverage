@@ -23,7 +23,7 @@ const CarMileage = () => {
 
   return (
     <>
-        <section className="car-electricity-container">
+        <section className="car-mileage-container">
           <h5 className="global-input-description">Car Mileage:</h5>
           <TextInput
             id="car-mileage"

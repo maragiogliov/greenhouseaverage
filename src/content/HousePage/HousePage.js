@@ -44,7 +44,7 @@ const HousePage = () => {
 
           <div className='house-inputs-block'>
               <HouseHeader/>
-              <div className='house-inputs-container'>
+              <div className=''>
                 <HouseElectricity />
                 <HouseNaturalGas />
                 {/* <HouseHeatingOil /> */}

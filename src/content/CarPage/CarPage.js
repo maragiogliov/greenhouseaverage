@@ -7,6 +7,9 @@ import { NextOutline, PreviousOutline } from '@carbon/react/icons';
 
 import IconsNavigation from '../IconsNavigation/IconsNavigation';
 import CarHeader from './Car_Header';
+import CarHeaderResults from './Car_HeaderResults';
+import CarHeaderVisualization from './Car_HeaderVisualization';
+
 
 import CarMileage from './Car_Mileage';
 import CarType from './Car_Type';
@@ -20,40 +23,41 @@ import CarOffsetButton from './Car_OffsetButton';
 
 import Waves from '../Waves';
 
-const CarMotorbikePage = () => {
+const CarPage = () => {
   
   return <>
-<IconsNavigation />
-        
+    <IconsNavigation />
         <section className='global-frame-calculator'>
-          {/* ------------------------------------------------------------------- */}
               <div className='global-block-top'>
-                  <h4>Car & Motorbike</h4>
+                  <h4>Car</h4>
               </div>
-          {/* ------------------------------------------------------------------- */}
-            <CarHeader/>
-            <section className='car-inputs-results-container'>
+            <section className='car-main-container'>
 
-              <div className='car-right-block-inputs'>
-                  <div className='car-inputs-container'>
+              <div className='car-inputs-block'>
+                  <CarHeader/>
+                  <div className=''>
                     <CarMileage />
                     <CarType />
                     <CarSize />
                   </div>
-                  <div className='car-calculate-button-container'>
+                  <div className='car-button-container'>
                     <CarFootprintsButton />
                   </div>
               </div>
 
-              <div className='car-center-block-results'>
-                <div className='car-results-big-container'>
+              <div className='car-results-block'>
+              <CarHeaderResults/>
+
+                <div className='car-results-container'>
                 <CarIndividualResults />
                 </div>
                 <CarTotalResults />
               </div>
 
-              <div className='car-left-block-results'>
-                <div className='car-datavisual-big-container'>
+              <div className='car-visualization-block'>
+              <CarHeaderVisualization/>
+
+                <div className='car-datavisual-container'>
                   <CarDataVisualization />
                 </div>
                   <CarOffsetButton />
@@ -85,4 +89,4 @@ const CarMotorbikePage = () => {
 
 };
 
-export default CarMotorbikePage;
+export default CarPage;

@@ -22,7 +22,7 @@ const SecondaryPharmaceuticals = () => {
 
   return (
     <>
-        <section className="global-inputs-containers1">
+        <section className="car-inputs-containers1">
           <h5 className="global-input-description">Car Type:</h5>
        
           <Select

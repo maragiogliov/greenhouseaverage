@@ -56,7 +56,7 @@ const CarFootprint = () => {
     <Button 
         onClick={calculateCarAndMotorbikeFootprint} 
         className='car-calculate-footprint-button'
-        > Calculate Car & Motorbike Footprint
+        > Calculate Car Footprint
        
         <Calculator className='car-calculator-icon' />
     </Button>
