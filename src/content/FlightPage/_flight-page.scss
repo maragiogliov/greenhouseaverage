@@ -141,3 +141,37 @@
     width: 100%;
     //background-color: rgba(1, 168, 115, 0.88);
 }
+///////////////////////////RESPONSIVE///////////////////////
+@media (max-width: 1100px) {
+    .flight-main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        ////background-color: rgb(221, 221, 221);
+        width: 100%;
+    }
+    .flight-inputs-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        ////background-color: rgb(216, 42, 132);
+    }
+    .flight-results-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        ////background-color: lawngreen;
+    }
+    .flight-visualization-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        ////background-color: rgb(52, 190, 202);
+    }
+    .flight-results{
+        font-size: 16px;
+    }
+  }

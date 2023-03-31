@@ -17,7 +17,7 @@ const SecondaryFurniture = () => {
   return (
     <>
         <section className="flight-inputs-containers1">
-          <h5 className="global-input-description"> include radiative forcing ?</h5>
+          <h5 className="global-input-description"> Radiative forcing ?</h5>
          
           <Select
             id="range-furniture-select"
