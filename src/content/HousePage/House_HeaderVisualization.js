@@ -5,7 +5,7 @@ const HouseHeaderVisualization = () => {
   return <>
        
       <div className='house-header-container' >
-        <p>House Energy Visualization</p>
+        <p>Household Energy Visualization</p>
       </div>
       
   </>;

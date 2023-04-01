@@ -11,13 +11,13 @@ const initialState = {
   showElectricityResult:false,
 
   naturalGas: 0,
-  unitNaturalGas: "therms",
+  unitNaturalGas: "kWh",
   naturalGasFootprint: 0,
   resetNaturalGasFootprint:0,
   showNaturalGasResult:false,
 
   heatingOil: 0,
-  unitHeatingOil: "litres",
+  unitHeatingOil: "kWh",
   heatingOilFootprint: 0,
   resetHeatingOilFootprint:0,
   showHeatingOilResult:false,
@@ -29,19 +29,19 @@ const initialState = {
   showCoalResult:false,
 
   LPG: 0,
-  unitLPG: "litres",
+  unitLPG: "kWh",
   LPGFootprint: 0,
   resetLPGFootprint:0,
   showLPGResult:false,
 
   propane: 0,
-  unitPropane: "litres",
+  unitPropane: "kWh",
   propaneFootprint: 0,
   resetPropaneFootprint:0,
   showPropaneResult:false,
 
   woodenPellets: 0,
-  unitWoodenPellets: "Metric Tons",
+  unitWoodenPellets: "kWh",
   woodenPelletsFootprint: 0,
   resetWoodenPelletsFootprint:0,
   showWoodenPelletsResult:false,

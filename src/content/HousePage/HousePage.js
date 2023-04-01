@@ -37,7 +37,7 @@ const HousePage = () => {
     <section className='global-frame-calculator'>
 
           <div className='global-block-top'>
-              <h4>House Electricity</h4>
+              <h4>Household Energy</h4>
           </div>
 
         <section className='house-main-container'>

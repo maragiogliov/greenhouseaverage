@@ -72,7 +72,7 @@ const ResultsPage = () => {
   
 const data = [
   {
-    group: "House",
+    group: "Household Energy",
     value: checkboxState.house ? totalHouseFootprint : 0,
   },
   {

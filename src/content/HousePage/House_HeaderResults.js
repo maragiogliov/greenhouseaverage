@@ -4,7 +4,7 @@ const HouseHeaderResults = () => {
 
   return <>
       <div className='house-header-container' >
-        <p>House Energy Results</p>
+        <p>Household Energy Results</p>
       </div>
   </>;
 };

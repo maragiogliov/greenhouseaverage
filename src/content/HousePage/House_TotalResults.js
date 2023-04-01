@@ -18,7 +18,7 @@ const HouseTotalResult = () => {
 
   return <>
   
-           <div className='house-results'>Total House Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalHouseFootprint.toFixed(2))}</span> Kg of CO2e</div>
+           <div className='house-results'>Household Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalHouseFootprint.toFixed(2))}</span> Kg of CO2e</div>
   </>;
 };
 

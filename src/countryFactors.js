@@ -1,37 +1,24 @@
 const countryFactors = {
     Denmark: {
       flag_icon:'🇩🇰',
-      electricity_factor: 0.1908,
+      electricity_factor: 0.155,
       naturalGasUnits: {
-        therms: {naturalGas_factor: 1},
-        kWh: {naturalGas_factor: 0.18},
+        kWh: {naturalGas_factor: 0.2},
       },
       heatingOilUnits: {
         kWh: {heatingOil_factor: 1},
-        litres: {heatingOil_factor: 2.35},
-        metricTons: {heatingOil_factor: 1000},
-        USGallons: {heatingOil_factor: 42}
       },
       coalUnits: {
-        kWh: {coal_factor: 113},
-        metricTons: {coal_factor: 132.35},
-        x10kgBags: {coal_factor: 19900},
-        x20kgBags: {coal_factor: 142},
-        x25kgBags: {coal_factor: 124},
-        x50kgBags: {coal_factor: 1242}
+        kWh: {coal_factor: 0.34},
       },
       LPGUnits: {
-        kWh: {LPG_factor: 1},
-        litres: {LPG_factor: 2.35},
-        therms: {LPG_factor: 1000},
-        USGallons: {LPG_factor: 42}
+        kWh: {LPG_factor: 0.23},
       },
       propaneUnits: {
-        litres: {propane_factor: 2.35},
-        gallons: {propane_factor: 1},
+        kWh: {propane_factor: 0.23},
       },
       woodenPelletsUnits: {
-        metricTons: {woodenPellets_factor: 0.10},
+        kWh: {woodenPellets_factor: 0.10},
       },
       foodDrinksRange: {
         year: {foodDrinks_factor: 10},

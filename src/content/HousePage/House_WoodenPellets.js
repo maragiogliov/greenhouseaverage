@@ -31,6 +31,8 @@ const HouseWoodenPellets = () => {
             labelText=""
             className="house-block-middle-form"
             size='lg'
+            disabled={true}
+
           />
           <Select
             id="unit-gas-select"
@@ -39,6 +41,8 @@ const HouseWoodenPellets = () => {
             labelText=""
             className="house-block-middle-form"
             size='lg'
+            disabled={true}
+
           >
             {unitOptions.map((unit) => (
               <SelectItem key={unit} value={unit} text={unit} />
