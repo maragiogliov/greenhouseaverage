@@ -29,9 +29,7 @@ const MotorbikeFootprint = () => {
       let total = 
       parseFloat(motorbikeMileage) * 
       countryFactors[selectedCountryMotorbike].motorbikeMileageUnits[unitMotorbike].motorbikeMileage_factor *  
-      countryFactors[selectedCountryMotorbike].motorbikeMotorSize[motorbikeSize].motorbikeSize_factor *
-
-      0.001;
+      countryFactors[selectedCountryMotorbike].motorbikeMotorSize[motorbikeSize].motorbikeSize_factor * 1;
 
       dispatch (setMotorbikeFootprint(total.toFixed(2)));
       dispatch(setShowMotorbikeResult(true));

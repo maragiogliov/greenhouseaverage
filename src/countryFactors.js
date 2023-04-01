@@ -56,59 +56,45 @@ const countryFactors = {
         week: {hotels_factor: 30}
       },
       busUnits: {
-        km: {bus_factor: 103},
-        miles: {bus_factor: 230},
+        km: {bus_factor: 0.02481},
       },
       coachUnits: {
-        km: {coach_factor: 140},
-        miles: {coach_factor: 240},
+        km: {coach_factor: 0.026},
       },
       localTrainUnits: {
-        km: {localTrain_factor: 106},
-        miles: {localTrain_factor: 260},
+        km: {localTrain_factor: 0.00413},
       },
       longTrainUnits: {
-        km: {longTrain_factor: 180},
-        miles: {longTrain_factor: 280},
+        km: {longTrain_factor: 0.041},
       },
       tramUnits: {
-        km: {tram_factor: 10},
-        miles: {tram_factor: 20},
+        km: {tram_factor: 0.00413},
       },
       subwayUnits: {
-        km: {subway_factor: 10},
-        miles: {subway_factor: 20},
+        km: {subway_factor: 0.00413},
       },
       taxiUnits: {
-        km: {taxi_factor: 10},
-        miles: {taxi_factor: 20},
+        km: {taxi_factor: 0.23},
       },
       motorbikeMileageUnits: {
-        km: {motorbikeMileage_factor: 90},
-        miles: {motorbikeMileage_factor: 88.89},
+        km: {motorbikeMileage_factor: 1},
       },
       motorbikeMotorSize: {
         small: {
-          motorbikeSize_factor: 10,
+          motorbikeSize_factor: 0.08306,
           description: " motorbike/moped/scooter up to 125cc"
         },
         medium: {
-          motorbikeSize_factor: 20,
+          motorbikeSize_factor: 0.1009,
           description: " motorbike over 125cc and up to 500cc"
         },
         large: {
-          motorbikeSize_factor: 30,
+          motorbikeSize_factor: 0.13245,
           description: " motorbike over 500cc"
         },
       },
-      motorbikeEfficiencyUnits: {
-        gkm: {motorbikeEfficiency_factor: 10},
-        L100km: {motorbikeEfficiency_factor: 20},
-        mpguk: {motorbikeEfficiency_factor: 30},
-        mpgus: {motorbikeEfficiency_factor: 40},
-      },
       carMileageUnits: {
-        km: {car_mileage_factor: 10},
+        km: {car_mileage_factor: 1},
       },
       carType: {
         electric: {
@@ -288,7 +274,7 @@ const countryFactors = {
         large: {car_size_factor: 20},
       },
     },
-    Iceland: {
+    UK: {
       flag_icon:'🇮🇸',
       electricity_factor: 0.1708,
       naturalGasUnits: {

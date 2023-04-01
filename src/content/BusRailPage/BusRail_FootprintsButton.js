@@ -179,7 +179,7 @@ const BusRailFootprint = () => {
     ) {
       dispatch(setTaxiFootprint("Please enter a valid number."));
     } else {
-      let total = (parseFloat(taxi) / parseFloat(numPeople)) * (countryFactors[selectedCountryBusRail].taxiUnits[unitTaxi].taxi_factor) * (0.001);
+      let total = (parseFloat(taxi) / parseFloat(numPeople)) * (countryFactors[selectedCountryBusRail].taxiUnits[unitTaxi].taxi_factor) * (1);
       dispatch(setTaxiFootprint(total.toFixed(2)));
     }
     showFootprintResultsTaxi()
