@@ -32,7 +32,6 @@ const CarPage = () => {
                   <h4>Car</h4>
               </div>
             <section className='car-main-container'>
-
               <div className='car-inputs-block'>
                   <CarHeader/>
                   <div className=''>
@@ -46,8 +45,7 @@ const CarPage = () => {
               </div>
 
               <div className='car-results-block'>
-              <CarHeaderResults/>
-
+                <CarHeaderResults/>
                 <div className='car-results-container'>
                 <CarIndividualResults />
                 </div>
@@ -55,14 +53,12 @@ const CarPage = () => {
               </div>
 
               <div className='car-visualization-block'>
-              <CarHeaderVisualization/>
-
+                <CarHeaderVisualization/>
                 <div className='car-datavisual-container'>
                   <CarDataVisualization />
                 </div>
                   <CarOffsetButton />
               </div>
-
             </section>
         </section>
           <Waves />

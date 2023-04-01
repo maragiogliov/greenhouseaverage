@@ -7,6 +7,9 @@ import { NextOutline, PreviousOutline } from '@carbon/react/icons';
 
 import IconsNavigation from '../IconsNavigation/IconsNavigation';
 import BusRailHeaders from './BusRail_Headers';
+import BusRailHeaderResults from './BusRail_HeaderResults';
+import BusRailHeaderVisualization from './BusRail_HeaderVisualization';
+
 
 import BusRailBus from './BusRail_Bus';
 import BusRailCoach from './BusRail_Coach';
@@ -33,9 +36,9 @@ const BusRailPage = () => {
               <h4>Public Transport</h4>
           </div>
       {/* ------------------------------------------------------------------- */}
-        <BusRailHeaders/>
         <section className='bus-rail-inputs-results-container'>
           <div className='bus-rail-right-block-inputs'>
+            <BusRailHeaders/>
               <div className='bus-rail-inputs-container'>
                 <BusRailBus />
                 <BusRailCoach />
@@ -51,20 +54,34 @@ const BusRailPage = () => {
           </div>
 
           <div className='bus-rail-left-block-results'>
+          <BusRailHeaderResults/>
+
             <div className='bus-rail-results-big-container'>
               <BusRailIndividualResults />
             </div>
               <BusRailTotalResult/>
           </div>
           <div className='bus-rail-left-block-results'>
+          <BusRailHeaderVisualization/>
             <div className='bus-rail-datavisual-big-container'>
             <BusRailDataVisualization />
             </div>
             <BusRailOffsetButton />
           </div>
         </section>
-      {/* ------------------------------------------------------------------- */}
+
+      
     </section>
+      {/* -------------------test height------------------------------------------------ */}
+
+    <div className='bus-rail-left-block-results'>
+            <div className='bus-rail-datavisual-big-container'>
+            <BusRailDataVisualization />
+            </div>
+            <BusRailOffsetButton />
+          </div>
+      {/* ------------------------------------------------------------------- */}
+
     <Waves />
       <div className='global-block-bottom'>
         <Link className='global-buttons-link-back-and-forth' to="/motorbike">

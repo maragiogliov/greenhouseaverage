@@ -1,14 +1,14 @@
 import React from 'react';
 
-const CarHeaderVisualization = () => {
+const BusRailHeaderResult = () => {
 
   return <>
        
       <div className='car-header-container' >
-        <p>Car Visualization</p>
+        <p>Bus Rail Results</p>
       </div>
       
   </>;
 };
 
-export default CarHeaderVisualization;
+export default BusRailHeaderResult;

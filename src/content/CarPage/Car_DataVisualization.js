@@ -38,8 +38,10 @@ const Car = () => {
 
   return (
     <>
-      <h1></h1>
+  
+      <div>
       <DonutChart data={data} options={options} />
+      </div>
      
     </>
   );
