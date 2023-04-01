@@ -109,30 +109,33 @@ const countryFactors = {
       },
       carMileageUnits: {
         km: {car_mileage_factor: 10},
-        miles: {car_mileage_factor: 20},
       },
       carType: {
         electric: {
-          carType_factor: 10,
+          carType_factor: 0.06,
           description: "average battery"
         },
-        hybrid: {
-          carType_factor: 20,
-          description: "(full hybrid), average battery"
+        hybrid_: {
+          carType_factor: 0.19,
+          description: "( full ) average battery"
         },
-        petrol: {
-          carType_factor: 30,
+        hybrid: {
+          carType_factor: 0.171,
+          description: "( plug-in ) average battery"
+        },
+        gasoline: {
+          carType_factor: 0.241,
           description: ""
         },
         diesel: {
-          carType_factor: 40,
-          description: " average battery"
+          carType_factor: 0.231,
+          description: ""
         },
       },
       carSize: {
-        small: {car_size_factor: 5},
-        medium: {car_size_factor: 4},
-        large: {car_size_factor: 9},
+        small: {car_size_factor: 0.13989},
+        medium: {car_size_factor: 0.168},
+        large: {car_size_factor: 0.20953},
       },
     },
     Finland: {
