@@ -30,7 +30,7 @@ id="electronics-amount"
 value={electronics || ""}
 onChange={handleElectronicsChange}
 labelText=""
-className="house-block-middle-form"
+className="secondary-block-middle-form"
 size='lg'
 />
 <Select
@@ -38,7 +38,7 @@ id="range-Electronics-select"
 defaultValue={rangeElectronics}
 onChange={handleRangeChange}
 labelText=""
-className="house-block-middle-form"
+className="secondary-block-middle-form"
 size='lg'
 > 
 {rangeOptions.map((range) => (

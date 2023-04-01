@@ -103,15 +103,15 @@ const SecondaryResults = () => {
   return <>  
 
     {showFoodDrinksResult && foodDrinks > 0 &&  (
-        <section className='house-result-section'>
+        <section className='secondary-result-section'>
           <h5 
-            className='house-results-container'>
+            className='secondary-results-container'>
             {foodDrinksFootprint} Kg:	{foodDrinks}  {rangeFoodDrinks} of Food & Drinks
           </h5>
           <Button
             kind='ghost'
             size='lg'
-            className='house-result-trashcan-icon-container'
+            className='secondary-result-trashcan-icon-container'
             onClick={resetFootprintFoodDrinks} >
             <TrashCan />
           </Button>
@@ -119,15 +119,15 @@ const SecondaryResults = () => {
       )
     }
     {showPharmaceuticalsResult && pharmaceuticals > 0 &&  (
-        <section className='house-result-section'>
+        <section className='secondary-result-section'>
           <h5 
-            className='house-results-container'>
+            className='secondary-results-container'>
             {pharmaceuticalsFootprint} Kg:	{pharmaceuticals}   {rangePharmaceuticals} of Pharmaceuticals
           </h5>
           <Button
             kind='ghost'
             size='md'
-            className='house-result-trashcan-icon-container'
+            className='secondary-result-trashcan-icon-container'
             onClick={resetFootprintPharmaceuticals} >
             <TrashCan />
           </Button>
@@ -135,15 +135,15 @@ const SecondaryResults = () => {
       )
     }
     {showTextilesResult && textiles > 0 &&  (
-        <section className='house-result-section'>
+        <section className='secondary-result-section'>
           <h5 
-            className='house-results-container'>
+            className='secondary-results-container'>
             {textilesFootprint} Kg:	{textiles}   {rangeTextiles} of Textiles
           </h5>
           <Button
             kind='ghost'
             size='md'
-            className='house-result-trashcan-icon-container'
+            className='secondary-result-trashcan-icon-container'
             onClick={resetFootprintTextiles} >
             <TrashCan />
           </Button>
@@ -151,15 +151,15 @@ const SecondaryResults = () => {
       )
     }
     {showPaperResult && paper > 0 &&  (
-        <section className='house-result-section'>
+        <section className='secondary-result-section'>
           <h5 
-            className='house-results-container'>
+            className='secondary-results-container'>
             {paperFootprint} Kg:	{paper}   {rangePaper} of Paper products
           </h5>
           <Button
             kind='ghost'
             size='md'
-            className='house-result-trashcan-icon-container'
+            className='secondary-result-trashcan-icon-container'
             onClick={resetFootprintPaper} >
             <TrashCan />
           </Button>
@@ -167,15 +167,15 @@ const SecondaryResults = () => {
       )
     }
     {showElectronicsResult && electronics > 0 &&  (
-        <section className='house-result-section'>
+        <section className='secondary-result-section'>
           <h5 
-            className='house-results-container'>
+            className='secondary-results-container'>
             {electronicsFootprint} Kg:	{electronics}   {rangeElectronics} of Electronics
           </h5>
           <Button
             kind='ghost'
             size='md'
-            className='house-result-trashcan-icon-container'
+            className='secondary-result-trashcan-icon-container'
             onClick={resetFootprintElectronics} >
             <TrashCan />
           </Button>
@@ -183,15 +183,15 @@ const SecondaryResults = () => {
       )
     }
     {showFurnitureResult && furniture > 0 &&  (
-        <section className='house-result-section'>
+        <section className='secondary-result-section'>
           <h5 
-            className='house-results-container'>
+            className='secondary-results-container'>
             {furnitureFootprint} Kg:	{furniture}   {rangeFurniture} of Furniture
           </h5>
           <Button
             kind='ghost'
             size='md'
-            className='house-result-trashcan-icon-container'
+            className='secondary-result-trashcan-icon-container'
             onClick={resetFootprintFurniture} >
             <TrashCan />
           </Button>
@@ -199,15 +199,15 @@ const SecondaryResults = () => {
       )
     }
     {showHotelsResult && hotels > 0 &&  (
-        <section className='house-result-section'>
+        <section className='secondary-result-section'>
           <h5 
-            className='house-results-container'>
+            className='secondary-results-container'>
             {hotelsFootprint} Kg:	{hotels}   {rangeHotels} of Hotels
           </h5>
           <Button
             kind='ghost'
             size='md'
-            className='house-result-trashcan-icon-container'
+            className='secondary-result-trashcan-icon-container'
             onClick={resetFootprintHotels} >
             <TrashCan />
           </Button>

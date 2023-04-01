@@ -7,6 +7,8 @@ import { NextOutline, PreviousOutline } from '@carbon/react/icons';
 
 import IconsNavigation from '../IconsNavigation/IconsNavigation';
 import SecondaryHeader from './Secondary_Header';
+import SecondaryHeaderResults from './Secondary_HeaderResults';
+import SecondaryHeaderVisualization from './Secondary_HeaderVisualization';
 
 import SecondaryFoodDrinks from './Secondary_FoodDrinks';
 import SecondaryPharmaceuticals from './Secondary_Pharmaceuticals';
@@ -34,15 +36,13 @@ const SecondaryPage = () => {
               <IconsNavigation />
         
     <section className='global-frame-calculator'>
-      {/* ------------------------------------------------------------------- */}
           <div className='global-block-top'>
               <h4>Secondary</h4>
           </div>
-      {/* ------------------------------------------------------------------- */}
-        <SecondaryHeader/>
-        <section className='secondary-inputs-results-container'>
-          <div className='secondary-right-block-inputs'>
-              <div className='secondary-inputs-container'>
+        <section className='secondary-main-container'>
+          <div className='secondary-inputs-block'>
+            <SecondaryHeader/>
+              <div className=''>
                 <SecondaryFoodDrinks />
                 <SecondaryPharmaceuticals />
                 <SecondaryTextiles />
@@ -51,18 +51,20 @@ const SecondaryPage = () => {
                 <SecondaryFurniture />
                 <SecondaryHotels />
               </div>
-              <div className='secondary-calculate-button-container'>
+              <div className='secondary-button-container'>
                 <SecondaryFootprintsButton />
               </div>
           </div>
-          <div className='secondary-left-block-results'>
-            <div className='secondary-results-big-container'>
+          <div className='secondary-results-block'>
+          <SecondaryHeaderResults/>
+            <div className='secondary-results-container'>
             <SecondaryIndividualResults />
             </div>
             <SecondaryTotalResults />
           </div>
-          <div className='secondary-left-block-results'>
-            <div className='secondary-datavisual-big-container'>
+          <div className='secondary-visualization-block'>
+          <SecondaryHeaderVisualization/>
+            <div className='secondary-datavisual-container'>
             <SecondaryDataVisualization />
             </div>
             <SecondaryOffsetButton />

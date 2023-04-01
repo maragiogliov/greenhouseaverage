@@ -29,7 +29,7 @@ const SecondaryHotels = () => {
             value={hotels || ""}
             onChange={handleHotelsChange}
             labelText=""
-            className="house-block-middle-form"
+            className="secondary-block-middle-form"
             size='lg'
           />
           <Select
@@ -37,7 +37,7 @@ const SecondaryHotels = () => {
             defaultValue={rangeHotels}
             onChange={handleRangeChange}
             labelText=""
-            className="house-block-middle-form"
+            className="secondary-block-middle-form"
             size='lg'
           >
             {rangeOptions.map((range) => (

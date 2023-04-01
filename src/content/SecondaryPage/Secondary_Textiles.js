@@ -30,7 +30,7 @@ const SecondaryTextiles= () => {
             value={textiles || ""}
             onChange={handleTextilesChange}
             labelText=""
-            className="house-block-middle-form"
+            className="secondary-block-middle-form"
             size='lg'
           />
           <Select
@@ -38,7 +38,7 @@ const SecondaryTextiles= () => {
             defaultValue={rangeTextiles}
             onChange={handleRangeChange}
             labelText=""
-            className="house-block-middle-form"
+            className="secondary-block-middle-form"
             size='lg'
           >
             {rangeOptions.map((range) => (

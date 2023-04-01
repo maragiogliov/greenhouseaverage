@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setNumPeople } from '../../redux/house';
 import { TextInput} from '@carbon/react';
 
-const HouseNumberOfPeople = () => {
+const SecondaryNumberOfPeople = () => {
   // Access the userElectricityFactor state from the store using useSelector
   const numPeople = useSelector(state => state.house.numPeople);
 
@@ -19,27 +19,19 @@ const HouseNumberOfPeople = () => {
        
           </section>
 
-          <section className='secondary-header-container'>
-           <div className='secondary-header-container-left' >
+           <div className='secondary-header-container' >
            <p>Choose Your Currency </p>
             <TextInput
                 id="people-select"
                 labelText=""
                 value={numPeople}
                 onChange={handleNumPeopleChange}
-                className='house-number-people'
+                className='secondary-number-people'
                 size='lg'
               />
            </div>
-           <div className='secondary-header-container-center' >
-            Secondary Results
-           </div>
-           <div className='secondary-header-container-right' >
-            Secondary Data Visualization
-           </div>
-          </section>
       
   </>;
 };
 
-export default HouseNumberOfPeople;
+export default SecondaryNumberOfPeople;

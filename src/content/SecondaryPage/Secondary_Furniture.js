@@ -23,13 +23,13 @@ const SecondaryFurniture = () => {
   return (
     <>
         <section className="global-inputs-containers">
-          <h5 className="global-input-description">Furniture, manufactured goods:</h5>
+          <h5 className="global-input-description">Furniture:</h5>
           <TextInput
             id="furniture-amount"
             value={furniture || ""}
             onChange={handleFurnitureChange}
             labelText=""
-            className="house-block-middle-form"
+            className="secondary-block-middle-form"
             size='lg'
           />
           <Select
@@ -37,7 +37,7 @@ const SecondaryFurniture = () => {
             defaultValue={rangeFurniture}
             onChange={handleRangeChange}
             labelText=""
-            className="house-block-middle-form"
+            className="secondary-block-middle-form"
             size='lg'
           >
             {rangeOptions.map((range) => (

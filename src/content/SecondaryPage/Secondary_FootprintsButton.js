@@ -195,7 +195,7 @@ const SecondaryFootprint = () => {
   return <>  
     <Button 
         onClick={calculateAllHouseFootprint} 
-        className='house-calculate-footprint-button'
+        className='secondary-calculate-footprint-button'
         > Estimate Secondary Footprint
        
         <Calculator className='secondary-calculator-icon' />

@@ -30,7 +30,7 @@ const SecondaryPaper = () => {
             value={paper || ""}
             onChange={handlePaperChange}
             labelText=""
-            className="house-block-middle-form"
+            className="secondary-block-middle-form"
             size='lg'
           />
           <Select
@@ -38,7 +38,7 @@ const SecondaryPaper = () => {
             defaultValue={rangePaper}
             onChange={handleRangeChange}
             labelText=""
-            className="house-block-middle-form"
+            className="secondary-block-middle-form"
             size='lg'
           >
             {rangeOptions.map((range) => (
