@@ -1,47 +1,49 @@
-.results-fieldset-container{
+////////////////////////////MAIN CONTAINER//////////////////////////////
+.results-main-container{
     display: flex;
-    flex-direction: column;
-    width: 80%;
-    background-color: rgba(250, 235, 215, 0.039);
+    flex-direction: row;
+    justify-content: space-between;
+    //background-color: rgb(221, 221, 221);
+    min-height: 490px;
+    width: 100%;
 }
-.results-header-container {
+////////////////////////////BLOCK 1 CHECKMARK //////////////////////////
+.results-header-checkmark {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
     min-height: 48px;
-    //background-color: #5a1942c5;
+    //background-color: #2033dec5;
 }
-.results-header-container-left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    width: 100%;
-    min-height: 48px;
-    background-color: #e7e7e70c;
-
-}
-.results-header-container-right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-   // background-color: #d4d4d4c5;
-}
-.results-results-big-container{
-    width: 100%;
-    min-height: 400px;
-    max-height: 400px;
-
-    //background-color: rgb(58, 113, 216);
-}
-.results-left-block-results{
+.results-checkmark-block{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    //background-color: rgb(216, 42, 132);
+}
+.results-checkmark-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 3rem;
+    //background-color: rgba(250, 142, 1, 0.875);
+}
+.results-button-container{
+    width: 100%;
+    //background-color: firebrick;
+}
+.cbx {
+    transform: scale(1.2);
+    margin-left: 4rem;
+}
+////////////////////////////BLOCK 1 VISUALIZATION //////////////////////
+.results-visualization-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 50%;
     //background-color: aqua;
 }
@@ -52,22 +54,52 @@
     display: flex;
     flex-direction: row;
     justify-content: center ;
-    margin-top: 3.2rem;
 }
-  .cds--chart-holder{
-    margin-top: -3.2rem;
- }
-
- .results-inputs-container{
+.results-header-visualization {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    min-height: 400px;
-    max-height: 400px;
-    //background-color: lightgreen;
-    padding-top: 1rem;
+    min-height: 48px;
+    //background-color: #12eaa6ef;
 }
-
-.cbx {
-    transform: scale(1.2);
-    margin-left: 4rem;
-
+///////////////////////////RESPONSIVE///////////////////////
+@media (max-width: 1100px) {
+    .results-main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .results-checkmark-block{
+        width: 100%;
+    }
+    .results-visualization-block{
+        width: 100%;
+    }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
