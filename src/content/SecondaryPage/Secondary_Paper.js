@@ -24,7 +24,7 @@ const SecondaryPaper = () => {
   return (
     <>
         <section className="global-inputs-containers">
-          <h5 className="global-input-description">Paper based products:</h5>
+          <h5 className="global-input-description"></h5>
           <TextInput
             id="paper-amount"
             value={paper || ""}
@@ -32,6 +32,7 @@ const SecondaryPaper = () => {
             labelText=""
             className="secondary-block-middle-form"
             size='lg'
+            disabled={true}
           />
           <Select
             id="range-paper-select"
@@ -40,6 +41,7 @@ const SecondaryPaper = () => {
             labelText=""
             className="secondary-block-middle-form"
             size='lg'
+            disabled={true}
           >
             {rangeOptions.map((range) => (
               <SelectItem key={range} value={range} text={range} />

@@ -24,7 +24,7 @@ dispatch(setRangeElectronicsFactor(e.target.value));
 return (
 <>
 <section className="global-inputs-containers">
-<h5 className="global-input-description">Computers and IT equipment:</h5>
+<h5 className="global-input-description"></h5>
 <TextInput
 id="electronics-amount"
 value={electronics || ""}
@@ -32,6 +32,7 @@ onChange={handleElectronicsChange}
 labelText=""
 className="secondary-block-middle-form"
 size='lg'
+disabled={true}
 />
 <Select
 id="range-Electronics-select"
@@ -40,6 +41,7 @@ onChange={handleRangeChange}
 labelText=""
 className="secondary-block-middle-form"
 size='lg'
+disabled={true}
 > 
 {rangeOptions.map((range) => (
     

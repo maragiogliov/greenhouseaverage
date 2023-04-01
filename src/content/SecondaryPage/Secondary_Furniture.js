@@ -23,7 +23,7 @@ const SecondaryFurniture = () => {
   return (
     <>
         <section className="global-inputs-containers">
-          <h5 className="global-input-description">Furniture:</h5>
+          <h5 className="global-input-description"></h5>
           <TextInput
             id="furniture-amount"
             value={furniture || ""}
@@ -31,6 +31,7 @@ const SecondaryFurniture = () => {
             labelText=""
             className="secondary-block-middle-form"
             size='lg'
+            disabled={true}
           />
           <Select
             id="range-furniture-select"
@@ -39,6 +40,7 @@ const SecondaryFurniture = () => {
             labelText=""
             className="secondary-block-middle-form"
             size='lg'
+            disabled={true}
           >
             {rangeOptions.map((range) => (
               <SelectItem key={range} value={range} text={range} />

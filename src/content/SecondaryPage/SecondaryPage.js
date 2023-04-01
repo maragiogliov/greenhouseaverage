@@ -37,7 +37,7 @@ const SecondaryPage = () => {
         
     <section className='global-frame-calculator'>
           <div className='global-block-top'>
-              <h4>Secondary</h4>
+              <h4>Household Consumption</h4>
           </div>
         <section className='secondary-main-container'>
           <div className='secondary-inputs-block'>
@@ -46,10 +46,13 @@ const SecondaryPage = () => {
                 <SecondaryFoodDrinks />
                 <SecondaryPharmaceuticals />
                 <SecondaryTextiles />
+               
+                
                 <SecondaryPaper /> 
                 <SecondaryElectronics />
                 <SecondaryFurniture />
                 <SecondaryHotels />
+                
               </div>
               <div className='secondary-button-container'>
                 <SecondaryFootprintsButton />

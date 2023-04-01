@@ -233,7 +233,7 @@ const options = {
       className="global-re-styled-button-back-and-forth"
       renderIcon={PreviousOutline}
       kind='tertiary'
-      >Secondary
+      >Household
     </Button>
   </Link>
   <Link className='global-buttons-link-back-and-forth' to="/welcome">

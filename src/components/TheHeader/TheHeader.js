@@ -39,7 +39,7 @@ const TheHeader = () => {
             isActive={isSideNavExpanded}
           />
           <HeaderName element={Link} to="/" prefix="">
-            {flagIcon} Greenhouse Calculator by Nordic Waves
+            {flagIcon} Greenhouse Calculator (beta)
           </HeaderName>
 
           <SideNav
@@ -72,7 +72,6 @@ const TheHeader = () => {
               tooltipAlignment="end"
               className="login-icon"
             >
-              <Login size="24" />
             </HeaderGlobalAction>
 
           )}

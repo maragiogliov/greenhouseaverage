@@ -5,7 +5,7 @@ const BusRailHeaderResult = () => {
   return <>
        
       <div className='secondary-header-container' >
-        <p>Secondary Results</p>
+        <p>Household Consumption Results</p>
       </div>
       
   </>;

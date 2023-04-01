@@ -24,7 +24,7 @@ const SecondaryFoodDrinks = () => {
   return (
     <>
         <section className="secondary-electricity-container">
-          <h5 className="global-input-description">Food & Drinks:</h5>
+          <h5 className="global-input-description">Food & Diet:</h5>
           <TextInput
             id="foodDrinks-amount"
             value={foodDrinks || ''}

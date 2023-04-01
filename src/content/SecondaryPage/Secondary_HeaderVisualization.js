@@ -5,7 +5,7 @@ const SecondaryHeaderVisualization = () => {
   return <>
        
       <div className='secondary-header-container' >
-        <p>Secondary Visualization</p>
+        <p>Household Consumption Visualization</p>
       </div>
       
   </>;

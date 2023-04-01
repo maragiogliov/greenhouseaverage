@@ -50,8 +50,8 @@ const WelcomePage = () => {
                   <h4>Welcome to the Nordic Waves Carbon Footprint Calculator</h4>
               </div>
           {/* ------------------------------------------------------------------- */}
-            <WelcomeHeader/>
             <section className='secondary-inputs-results-container'>
+            <WelcomeHeader/>
               <div className='secondary-right-block-inputs'>
                   <div className='secondary-inputs-container'>
                     <WelcomeCountrySelection />

@@ -85,7 +85,7 @@ const BusRailPage = () => {
            className="global-re-styled-button-back-and-forth"
            renderIcon={NextOutline}
            kind='tertiary'
-          >Secondary
+          >Household
           </Button>
         </Link>
       </div>

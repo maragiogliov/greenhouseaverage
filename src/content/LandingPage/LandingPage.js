@@ -14,7 +14,7 @@ const LandingPage = () => {
       <Tabs>
       <header className='landing-header'>
         <a href="/" className='landing-little-title'>Getting Started</a>
-        <h1 className='landing-title'>Design & Build with Carbon</h1>
+        <h1 className='landing-title'>B2C Carbon Footprint Calculator</h1>
       </header>
         <TabList className={'landing-tablist'} aria-label="List of tabs">
           <Tab className={'landing-tab'}>About</Tab>
@@ -33,19 +33,19 @@ const LandingPage = () => {
               <h6>The Principles</h6>
       </Tile>
       <Tile light={false} id="tile-1" className={'landing-tile'}>
-              <h4>Carbon is Open </h4>
+              <h4>GC is Awareness: </h4>
               <br />
-              <p>It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute.</p>
+              <p> Calculating your carbon footprint can increase your awareness of the impact your lifestyle choices have on the environment. This awareness can motivate you to make more sustainable choices in your day-to-day life.</p>
       </Tile>
       <Tile light={false} id="tile-1" className={'landing-tile'}>
-              <h4>Carbon is Modular </h4>
+              <h4>GC is Personal Responsibility: </h4>
               <br />
-              <p>Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichever combination suits the needs of the user.</p>
+              <p> Calculating your carbon footprint can help you take personal responsibility for your carbon emissions. It can be easy to overlook the impact of our daily actions, but by quantifying our carbon footprint, we can take action to reduce it.</p>
       </Tile>
       <Tile light={false} id="tile-1" className={'landing-tile'}>
-              <h4>Carbon is Consistent </h4>
+              <h4>GC is Environmental Impact: </h4>
               <br />
-              <p>Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences.</p>
+              <p>Knowing your carbon footprint can help you understand how your actions contribute to climate change. By reducing your carbon footprint, you can make a positive impact on the environment and help mitigate the effects of climate change.</p>
       </Tile>
       </section>
         

@@ -106,7 +106,7 @@ const SecondaryResults = () => {
         <section className='secondary-result-section'>
           <h5 
             className='secondary-results-container'>
-            {foodDrinksFootprint} Kg:	{foodDrinks}  {rangeFoodDrinks} of Food & Drinks
+            {foodDrinksFootprint} Kg:	{foodDrinks}  {rangeFoodDrinks} of Food & Diet
           </h5>
           <Button
             kind='ghost'
@@ -122,7 +122,7 @@ const SecondaryResults = () => {
         <section className='secondary-result-section'>
           <h5 
             className='secondary-results-container'>
-            {pharmaceuticalsFootprint} Kg:	{pharmaceuticals}   {rangePharmaceuticals} of Pharmaceuticals
+            {pharmaceuticalsFootprint} Kg:	{pharmaceuticals}   {rangePharmaceuticals} of Water
           </h5>
           <Button
             kind='ghost'
@@ -138,7 +138,7 @@ const SecondaryResults = () => {
         <section className='secondary-result-section'>
           <h5 
             className='secondary-results-container'>
-            {textilesFootprint} Kg:	{textiles}   {rangeTextiles} of Textiles
+            {textilesFootprint} Kg:	{textiles}   {rangeTextiles} of Waste
           </h5>
           <Button
             kind='ghost'

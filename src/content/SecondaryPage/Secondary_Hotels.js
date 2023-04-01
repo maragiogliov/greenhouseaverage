@@ -23,7 +23,7 @@ const SecondaryHotels = () => {
   return (
     <>
         <section className="global-inputs-containers">
-          <h5 className="global-input-description">Hotels, restaurants, and pubs</h5>
+          <h5 className="global-input-description"></h5>
           <TextInput
             id="hotels-amount"
             value={hotels || ""}
@@ -31,6 +31,7 @@ const SecondaryHotels = () => {
             labelText=""
             className="secondary-block-middle-form"
             size='lg'
+            disabled={true}
           />
           <Select
             id="hotels-select"
@@ -39,6 +40,7 @@ const SecondaryHotels = () => {
             labelText=""
             className="secondary-block-middle-form"
             size='lg'
+            disabled={true}
           >
             {rangeOptions.map((range) => (
               <SelectItem key={range} value={range} text={range} />

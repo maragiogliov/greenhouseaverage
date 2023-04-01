@@ -24,7 +24,7 @@ const SecondaryPharmaceuticals = () => {
   return (
     <>
         <section className="global-inputs-containers">
-          <h5 className="global-input-description">Pharmaceuticals:</h5>
+          <h5 className="global-input-description">Water:</h5>
           <TextInput
             id="pharmaceuticals-amount"
             value={pharmaceuticals || ''}

@@ -24,7 +24,7 @@ const SecondaryTextiles= () => {
   return (
     <>
         <section className="global-inputs-containers">
-          <h5 className="global-input-description">Clothes, textiles and shoes:</h5>
+          <h5 className="global-input-description">Waste:</h5>
           <TextInput
             id="heating-amount"
             value={textiles || ""}

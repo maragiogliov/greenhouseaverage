@@ -14,7 +14,7 @@ const Secondary = () => {
   // Define the data for the donut chart
   const data = [
     {
-      group: 'Secondary',
+      group: 'Household Consumption',
       value: totalSecondaryFootprint,
     },
   ];
