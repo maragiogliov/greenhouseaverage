@@ -92,7 +92,7 @@ const data = [
     value: checkboxState.busrail ? totalBusRailFootprint : 0,
   },
   {
-    group: "Secondary",
+    group: "Household Consumption",
     value: checkboxState.secondary ? totalSecondaryFootprint : 0,
   },
 ];
@@ -194,7 +194,7 @@ const options = {
                     }
                   />
                   <Checkbox
-                    labelText={`Secondary (${totalSecondaryFootprint.toFixed(
+                    labelText={`Household Consumption (${totalSecondaryFootprint.toFixed(
                       2
                     )} Kg of CO2e)`}
                     id="checkbox-label-6"

@@ -14,6 +14,7 @@ const LandingPage = () => {
       <Tabs>
       <header className='landing-header'>
         <a href="/" className='landing-little-title'>Getting Started</a>
+        
         <h1 className='landing-title'>B2C Carbon Footprint Calculator</h1>
       </header>
         <TabList className={'landing-tablist'} aria-label="List of tabs">
@@ -21,6 +22,14 @@ const LandingPage = () => {
           <Tab className={'landing-tab'}>Design</Tab>
           <Tab className={'landing-tab'}>Develop</Tab>
         </TabList>
+        <Link className='global-buttons-link-back-and-forth' to="/welcome">
+              <Button 
+              className="global-re-styled-button-back-and-forth"
+              renderIcon={NextOutline}
+              kind='tertiary'
+              >Get Started
+              </Button>
+            </Link>
         <TabPanels>
           <TabPanel className={'landing-tabpanel'}>Tab Panel 1</TabPanel>
           <TabPanel className={'landing-tabpanel'}>Tab Panel 2</TabPanel>
@@ -52,16 +61,7 @@ const LandingPage = () => {
        <Waves />
    
 
-      <div className='global-block-bottom'>
-            <Link className='global-buttons-link-back-and-forth' to="/welcome">
-              <Button 
-              className="global-re-styled-button-back-and-forth"
-              renderIcon={NextOutline}
-              kind='tertiary'
-              >Get Started
-              </Button>
-            </Link>
-      </div>
+   
     </section>
           </>
 };
