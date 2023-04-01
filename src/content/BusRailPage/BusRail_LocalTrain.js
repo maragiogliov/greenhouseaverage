@@ -30,7 +30,7 @@ const BusRailLocalTrain = () => {
             value={localTrain || ""}
             onChange={handleLocalTrainChange}
             labelText=""
-            className="house-block-middle-form"
+            className="bus-rail-block-middle-form"
             size='lg'
           />
           <Select
@@ -38,7 +38,7 @@ const BusRailLocalTrain = () => {
             defaultValue={unitLocalTrain}
             onChange={handleUnitChange}
             labelText=""
-            className="house-block-middle-form"
+            className="bus-rail-block-middle-form"
             size='lg'
           >
             {unitOptions.map((unit) => (

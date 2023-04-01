@@ -25,7 +25,7 @@ const BusRailTotalResult = () => {
     }, [totalBusRailFootprint]);
 
   return <>
-        <div className='bus-rail-results'>Total Bus & Rail Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalBusRailFootprint.toFixed(2))}</span> Kg of CO2e</div>
+        <div className='bus-rail-results'> Public Transport Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalBusRailFootprint.toFixed(2))}</span> Kg of CO2e</div>
   </>;
 };
 

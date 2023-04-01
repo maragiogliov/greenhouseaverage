@@ -31,15 +31,14 @@ const BusRailPage = () => {
               <IconsNavigation />
         
     <section className='global-frame-calculator'>
-      {/* ------------------------------------------------------------------- */}
           <div className='global-block-top'>
               <h4>Public Transport</h4>
           </div>
-      {/* ------------------------------------------------------------------- */}
-        <section className='bus-rail-inputs-results-container'>
-          <div className='bus-rail-right-block-inputs'>
+        <section className='bus-rail-main-container'>
+
+          <div className='bus-rail-inputs-block'>
             <BusRailHeaders/>
-              <div className='bus-rail-inputs-container'>
+              <div className=''>
                 <BusRailBus />
                 <BusRailCoach />
                 <BusRailLocalTrain />
@@ -48,40 +47,29 @@ const BusRailPage = () => {
                 <BusRailSubway />
                 <BusRailTaxi />
               </div>
-              <div className='bus-rail-calculate-button-container'>
+              <div className='bus-rail-button-container'>
                 <BusRailFootprintsButton />
               </div>
           </div>
 
-          <div className='bus-rail-left-block-results'>
+          <div className='bus-rail-results-block'>
           <BusRailHeaderResults/>
 
-            <div className='bus-rail-results-big-container'>
+            <div className='bus-rail-results-container'>
               <BusRailIndividualResults />
             </div>
               <BusRailTotalResult/>
           </div>
-          <div className='bus-rail-left-block-results'>
+          <div className='bus-rail-visualization-block'>
           <BusRailHeaderVisualization/>
-            <div className='bus-rail-datavisual-big-container'>
+            <div className='busrail-datavisual-containerr'>
             <BusRailDataVisualization />
             </div>
             <BusRailOffsetButton />
           </div>
         </section>
-
-      
     </section>
-      {/* -------------------test height------------------------------------------------ */}
-
-    <div className='bus-rail-left-block-results'>
-            <div className='bus-rail-datavisual-big-container'>
-            <BusRailDataVisualization />
-            </div>
-            <BusRailOffsetButton />
-          </div>
-      {/* ------------------------------------------------------------------- */}
-
+  
     <Waves />
       <div className='global-block-bottom'>
         <Link className='global-buttons-link-back-and-forth' to="/motorbike">

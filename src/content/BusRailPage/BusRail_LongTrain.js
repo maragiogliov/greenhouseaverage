@@ -30,7 +30,7 @@ const HouseCoal = () => {
             value={longTrain || ""}
             onChange={handleLongTrainChange}
             labelText=""
-            className="house-block-middle-form"
+            className="bus-rail-block-middle-form"
             size='lg'
           />
           <Select
@@ -38,7 +38,7 @@ const HouseCoal = () => {
             defaultValue={unitLongTrain}
             onChange={handleUnitChange}
             labelText=""
-            className="house-block-middle-form"
+            className="bus-rail-block-middle-form"
             size='lg'
           >
             {unitOptions.map((unit) => (

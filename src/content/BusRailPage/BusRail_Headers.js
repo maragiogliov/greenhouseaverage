@@ -3,11 +3,9 @@ import React from 'react';
 const BusRailInputsAndResultsHeaders = () => {
 
   return <>
-        <section className='bus-rail-header-container'>
-           <div className='bus-rail-header-container-left' >
+           <div className='bus-rail-header-container' >
             Bus & Rail Inputs
            </div>
-          </section>
       
   </>;
 };

@@ -1,25 +1,39 @@
 ////////////////////////////MAIN CONTAINER//////////////////////////////
-.bus-rail-electricity-container  {
+.bus-rail-main-container{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
+    justify-content: space-between;
+    //background-color: rgb(221, 221, 221);
+    min-height: 490px;
     width: 100%;
-    margin-bottom: 0.7rem;
-    margin-top: 24px;
-    //background-color: #6112c9;
 }
-.bus-rail-number-people{
-    max-width: 5rem;
-    font-size: 16px;
-    //background-color: #f2f2ee;
+////////////////////////////BLOCK 1 INPUTS /////////////////////////////
+.bus-rail-header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 1rem;
+    min-height: 48px;
+    background-color: #1d2e24c5;
 }
-.bus-rail-calculate-button-container{
-    width: 100%;
+.bus-rail-inputs-block{
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.5rem;
-    align-items: center;
+    justify-content: space-between;
+    width: 33%;
+    //background-color: rgb(216, 42, 132);
+}
+.bus-rail-block-middle-form{
+    max-width: 33%;
+    min-width: 33%;
+    font-size: 16px;
+    margin-left: 0.2rem;
+    margin-bottom: 0.2rem;
+    //background-color: aqua;
+}
+.bus-rail-button-container{
+    width: 100%;
     //background-color: darkblue;
 }
 .bus-rail-calculate-footprint-button{
@@ -28,6 +42,36 @@
     display: flex;
     flex-direction: row;
     justify-content: center ;
+}
+.bus-rail-calculator-icon{
+    margin-left: 0.7rem;
+}
+///////////////////////////////BLOCK 2 RESULTS/////////////////////////
+.bus-rail-results-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+    //background-color: lawngreen;
+}
+.bus-rail-results-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.448);
+    width: 100%;
+    ////background-color: rgb(48, 82, 82);
+}
+.bus-rail-result-section{
+    width: 100%;
+    max-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2rem;
+    padding-left: 1rem;
+    ////background-color: rgba(31, 56, 56, 0.747);
 }
 .bus-rail-result-trashcan-icon-container{
     display: flex;
@@ -39,43 +83,7 @@
     padding: 1;
     max-height: 2.5rem;
     max-width: 2.5rem;
-    //background-color: crimson;
-}
-.bus-rail-header-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-    //background-color: #5a1942c5;
-}
-.bus-rail-header-container-left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-    background-color: #86c79dc5;
-}
-.bus-rail-header-container-center {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-    background-color: #1e62b0c5;
-}
-.bus-rail-header-container-right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-    background-color: #6e9bcec5;
+    ////background-color: crimson;
 }
 .bus-rail-results{
     display: flex;
@@ -83,67 +91,84 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 48px;
-    border-bottom: 2px solid rgba(169, 169, 169, 0.147);
+    min-height: 48px;
+    border: 2px solid rgb(169, 169, 169);
+    font-size: 16px;
     //background-color: rgb(77, 52, 77);
 }
-.bus-rail-results-container{
+///////////////////////////BLOCK 3 VISUALIZATION///////////////////////
+.bus-rail-visualization-block{
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.448);
+    justify-content: space-between;
+    width: 33%;
+    //background-color: rgb(52, 190, 202);
+}
+.busrail-datavisual-container{
     width: 100%;
-    //background-color: aqua;
+    //background-color: rgba(227, 209, 6, 0.891);
 }
-.bus-rail-result-section{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.2rem;
-    min-height: 3rem;
-    //background-color: rgba(0, 255, 255, 0.157);
-}
-.bus-rail-block-middle-form{
-    max-width: 33%;
-    min-width: 33%;
-    font-size: 16px;
-    margin-left: 0.2rem;
-    margin-bottom: 0.2rem;
-    //background-color: aqua;
-}
-.bus-rail-inputs-results-container{
-    display: flex;
-    flex-direction: row;
-    //background-color: aqua;
-}
-.bus-rail-inputs-container{
-    width: 100%;
-    min-height: 400px;
-    max-height: 400px;
-    //background-color: lightgreen;
-}
-.bus-rail-results-big-container{
-    width: 100%;
-    min-height: 400px;
-    max-height: 400px;
-    padding : 1rem;
-    padding-right: 0rem;
-    padding-left: 2rem;
-    padding-top: 2.1rem;
-    //background-color: rgb(11, 46, 11);
-}
-.bus-rail-left-block-results{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-.bus-rail-right-block-inputs{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
+///////////////////////////RESPONSIVE///////////////////////
+@media (max-width: 1100px) {
+    .bus-rail-main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        ////background-color: rgb(221, 221, 221);
+        width: 100%;
+    }
+    .bus-rail-inputs-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        ////background-color: rgb(216, 42, 132);
+    }
+    .bus-rail-results-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        ////background-color: lawngreen;
+    }
+    .bus-rail-visualization-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        ////background-color: rgb(52, 190, 202);
+    }
+    .bus-rail-results{
+        font-size: 16px;
+    }
+  }
 
-.bus-rail-calculator-icon{
-    margin-left: 0.7rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

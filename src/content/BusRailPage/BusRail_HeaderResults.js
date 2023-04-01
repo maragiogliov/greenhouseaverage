@@ -4,7 +4,7 @@ const BusRailHeaderResult = () => {
 
   return <>
        
-      <div className='car-header-container' >
+      <div className='bus-rail-header-container' >
         <p>Bus Rail Results</p>
       </div>
       

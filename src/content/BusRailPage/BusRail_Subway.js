@@ -29,7 +29,7 @@ const BusRailSubway = () => {
             value={subway || ""}
             onChange={handleSubwayChange}
             labelText=""
-            className="house-block-middle-form"
+            className="bus-rail-block-middle-form"
             size='lg'
           />
           <Select
@@ -37,7 +37,7 @@ const BusRailSubway = () => {
             defaultValue={unitSubway}
             onChange={handleUnitChange}
             labelText=""
-            className="house-block-middle-form"
+            className="bus-rail-block-middle-form"
             size='lg'
           >
             {unitOptions.map((unit) => (

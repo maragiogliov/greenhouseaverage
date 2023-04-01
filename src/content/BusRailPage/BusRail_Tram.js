@@ -30,7 +30,7 @@ id="tram-amount"
 value={tram || ""}
 onChange={handleTramChange}
 labelText=""
-className="house-block-middle-form"
+className="bus-rail-block-middle-form"
 size='lg'
 />
 <Select
@@ -38,7 +38,7 @@ id="unit-tram-select"
 defaultValue={unitTram}
 onChange={handleUnitChange}
 labelText=""
-className="house-block-middle-form"
+className="bus-rail-block-middle-form"
 size='lg'
 >
 {unitOptions.map((unit) => (

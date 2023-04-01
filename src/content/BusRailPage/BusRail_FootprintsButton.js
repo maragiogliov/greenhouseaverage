@@ -196,10 +196,10 @@ const BusRailFootprint = () => {
   return <>  
     <Button 
         onClick={calculateAllBusRailFootprint} 
-        className='house-calculate-footprint-button'
-        > Calculate Bus & Rail Footprint
-       
-        <Calculator className='secondary-calculator-icon' />
+        className='bus-rail-calculate-footprint-button'
+        >  
+        Public Transport Footprint
+        <Calculator className='bus-rail-calculator-icon' />
     </Button>
   </>
 };

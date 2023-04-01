@@ -4,7 +4,7 @@ const BusRailHeaderVisualization = () => {
 
   return <>
        
-      <div className='house-header-container' >
+      <div className='bus-rail-header-container' >
         <p>Bus & Rail Visualization</p>
       </div>
       

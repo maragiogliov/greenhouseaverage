@@ -22,7 +22,7 @@ const HouseTotalResult = () => {
 
       <Button 
           kind='secondary'
-          className='house-calculate-footprint-button'
+          className='bus-rail-calculate-footprint-button'
           > OFFSET NOW!
       </Button>
   

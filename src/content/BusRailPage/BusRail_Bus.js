@@ -25,14 +25,14 @@ const BusFootprint = () => {
   };
  
   return <>  
-        <section className='bus-rail-electricity-container'>
+        <section className='global-inputs-containers'>
           <h5 className='global-input-description'>Bus:</h5>
           <TextInput
               id="bus-input"
               value={bus || ""}
               onChange={handleBusChange}    
               labelText=""
-              className='house-block-middle-form'
+              className='bus-rail-block-middle-form'
               size='lg'
           />
       
@@ -41,7 +41,7 @@ const BusFootprint = () => {
             defaultValue={unitBus}
             onChange={handleUnitChange}
             labelText=""
-            className="house-block-middle-form"
+            className="bus-rail-block-middle-form"
             size='lg'
           >
             {unitOptions.map((unit) => (
