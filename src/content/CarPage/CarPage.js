@@ -64,7 +64,6 @@ const CarPage = () => {
               </div>
 
             </section>
-          {/* ------------------------------------------------------------------- */}
         </section>
           <Waves />
     <div className='global-block-bottom'>
