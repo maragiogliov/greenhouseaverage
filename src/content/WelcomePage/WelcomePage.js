@@ -47,7 +47,7 @@ const WelcomePage = () => {
         <section className='global-frame-calculator'>
           {/* ------------------------------------------------------------------- */}
               <div className='global-block-top'>
-                  <h4>Welcome to the Nordic Waves Carbon Footprint Calculator</h4>
+                  <h4>Welcome to the Nordic Waves Carbon Footprint Calculator!</h4>
               </div>
           {/* ------------------------------------------------------------------- */}
             <section className='secondary-inputs-results-container'>
