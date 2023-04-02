@@ -92,15 +92,15 @@ const LandingPage = () => {
       </Tabs>   
     <section className='landing-footer-tiles'>
 
-      <Tile light={false} id="tile-1" className={'landing-tile'}>
+      <Tile light={false} id="tile-1" className={'landing-tile1'}>
               <h6 className="landing-tite-title" >The Principles</h6>
       </Tile>
-      <Tile light={false} id="tile-1" className={'landing-tile'}>
+      <Tile light={false} id="tile-1" className={'landing-tile1'}>
               <h4 className='landing-tiles-questions'>Greenhouse is Awareness: </h4>
               <br />
               <p> Calculating your carbon footprint can increase your awareness of the impact your lifestyle choices have on the environment. This awareness can motivate you to make more sustainable choices in your day-to-day life.</p>
       </Tile>
-      <Tile light={false} id="tile-1" className={'landing-tile'}>
+      <Tile light={false} id="tile-1" className={'landing-tile1'}>
               <h4 className='landing-tiles-questions'>Greenhouse is Personal Responsibility: </h4>
               <br />
               <p> Calculating your carbon footprint can help you take personal responsibility for your carbon emissions. It can be easy to overlook the impact of our daily actions, but by quantifying our carbon footprint, we can take action to reduce it.</p>
