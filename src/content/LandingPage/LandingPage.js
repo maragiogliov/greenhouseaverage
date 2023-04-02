@@ -58,7 +58,7 @@ const LandingPage = () => {
         <TabList className={'landing-tablist'} aria-label="List of tabs">
           <Tab className={'landing-tab'}>About</Tab>
           <Tab className={'landing-tab'}>Design</Tab>
-          <Tab className={'landing-tab'}>Develop</Tab>
+          <Tab className={'landing-tab'}>Tools</Tab>
         </TabList>
       
         <TabPanels>
@@ -86,8 +86,8 @@ const LandingPage = () => {
             </section>
             
           </TabPanel>
-          <TabPanel>Tab Panel 2</TabPanel>
-          <TabPanel>Tab Panel 3</TabPanel>
+          <TabPanel></TabPanel>
+          <TabPanel></TabPanel>
         </TabPanels>
       </Tabs>   
     <section className='landing-footer-tiles'>
