@@ -105,7 +105,7 @@ const LandingPage = () => {
               <br />
               <p> Calculating your carbon footprint can help you take personal responsibility for your carbon emissions. It can be easy to overlook the impact of our daily actions, but by quantifying our carbon footprint, we can take action to reduce it.</p>
       </Tile>
-      <Tile light={false} id="tile-1" className={'landing-tile'}>
+      <Tile light={false} id="tile-1" className={'landing-tile1'}>
               <h4 className='landing-tiles-questions'>Greenhouse is Environmental Impact: </h4>
               <br />
               <p>Knowing your carbon footprint can help you understand how your actions contribute to climate change. By reducing your carbon footprint, you can make a positive impact on the environment and help mitigate the effects of climate change.</p>
