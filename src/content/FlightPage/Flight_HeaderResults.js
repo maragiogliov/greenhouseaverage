@@ -16,7 +16,7 @@ const FlightResults = () => {
   }
   return <>
        
-        <div className='house-header-container' >
+        <div className='flight-header-container' >
         <p>Flight Results</p>
       
         </div>
