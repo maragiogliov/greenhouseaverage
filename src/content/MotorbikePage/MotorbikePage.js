@@ -62,7 +62,6 @@ const MotorbikePage = () => {
             </section>
           {/* ------------------------------------------------------------------- */}
         </section>
-    <Waves />
     <div className='global-block-bottom'>
         <Link className='global-buttons-link-back-and-forth' to="/car">
           <Button 
@@ -81,6 +80,8 @@ const MotorbikePage = () => {
           </Button>
         </Link>
       </div>
+      <Waves />
+
 
  
   </>;

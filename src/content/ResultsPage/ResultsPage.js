@@ -226,7 +226,6 @@ const options = {
             </div>
         </div>
   </section>
-<Waves />
 <div className='global-block-bottom'>
   <Link className='global-buttons-link-back-and-forth' to="/secondary">
     <Button 
@@ -245,6 +244,8 @@ const options = {
     </Button>
   </Link>
 </div>
+<Waves />
+
     </>
   );
 };

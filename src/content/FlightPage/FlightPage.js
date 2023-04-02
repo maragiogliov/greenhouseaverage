@@ -75,7 +75,6 @@ const FlightsPage = () => {
       {/* ------------------------------------------------------------------- */}
     </section>
 
-    <Waves />
       <div className='global-block-bottom'>
         <Link className='global-buttons-link-back-and-forth' to="/house">
           <Button 
@@ -94,6 +93,8 @@ const FlightsPage = () => {
           </Button>
         </Link>
       </div>
+      <Waves />
+
 
     </>;
 };

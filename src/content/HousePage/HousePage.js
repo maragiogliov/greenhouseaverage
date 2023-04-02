@@ -78,7 +78,6 @@ const HousePage = () => {
         </section>
       {/* ------------------------------------------------------------------- */}
     </section>
-      <Waves />
       <div className='global-block-bottom'>
         <Link className='global-buttons-link-back-and-forth' to="/welcome">
           <Button 
@@ -97,6 +96,8 @@ const HousePage = () => {
           </Button>
         </Link>
       </div>
+      <Waves />
+
   </>;
 };
 

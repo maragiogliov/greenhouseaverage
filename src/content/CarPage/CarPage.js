@@ -61,7 +61,6 @@ const CarPage = () => {
               </div>
             </section>
         </section>
-          <Waves />
     <div className='global-block-bottom'>
         <Link className='global-buttons-link-back-and-forth' to="/flight">
           <Button 
@@ -80,6 +79,8 @@ const CarPage = () => {
           </Button>
         </Link>
       </div>
+      <Waves />
+  
   </>;
 
 };

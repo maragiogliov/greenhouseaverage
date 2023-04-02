@@ -75,7 +75,6 @@ const SecondaryPage = () => {
         </section>
       {/* ------------------------------------------------------------------- */}
     </section>
-      <Waves />
       <div className='global-block-bottom'>
         <Link className='global-buttons-link-back-and-forth' to="/bus-rail">
           <Button 
@@ -94,6 +93,8 @@ const SecondaryPage = () => {
           </Button>
         </Link>
       </div>
+      <Waves />
+
   </>;
 };
 

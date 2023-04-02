@@ -126,7 +126,7 @@ const countryFactors = {
     },
     Norway: {
       flag_icon:'🇳🇴',
-      electricity_factor: 0.155,
+      electricity_factor: 0.03,
       naturalGasUnits: {
         kWh: {naturalGas_factor: 0.2},
       },
