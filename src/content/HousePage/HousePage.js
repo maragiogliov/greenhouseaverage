@@ -35,7 +35,6 @@ const HousePage = () => {
   return <>
     <IconsNavigation />
     <section className='global-frame-calculator'>
-
           <div className='global-block-top'>
               <h4>Household Energy</h4>
           </div>

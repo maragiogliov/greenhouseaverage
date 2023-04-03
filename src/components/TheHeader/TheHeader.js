@@ -31,7 +31,8 @@ const TheHeader = () => {
   return (
     <HeaderContainer
       render={({ isSideNavExpanded, onClickSideNavExpand }) => (
-        <Header aria-label="Carbon Calculator">
+        <Header aria-label="Carbon Calculator"
+        className='header-main-container'>
           <SkipToContent />
           <HeaderMenuButton
             aria-label="Open menu"

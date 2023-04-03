@@ -20,11 +20,9 @@ const WelcomePage = () => {
   return <>
         <IconsNavigation />
         <section className='global-frame-calculator'>
-          {/* ------------------------------------------------------------------- */}
               <div className='global-block-top'>
-                  <h4>Welcome to the Nordic Waves Carbon Footprint Calculator</h4>
+                  <h4>Welcome to the Greenhouse Calculator</h4>
               </div>
-          {/* ------------------------------------------------------------------- */}
             <section className='welcome-inputs-results-container'>
             <WelcomeHeader/>
               <div className='secondary-right-block-inputs'>
