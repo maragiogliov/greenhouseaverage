@@ -3,10 +3,10 @@ import { useDispatch } from 'react-redux';
 import { setSelectedAirportTo, setAirportToLocation } from '../../redux/flights';
 
 import { ComboBox } from 'carbon-components-react';
-import airportsDenmark from '../../airportsDenmark';
+import airportsIATA from '../../airportsIATA';
 
 const FlightTo = () => {
-    const [filteredAirportsTo, setFilteredAirportsTo] = useState(airportsDenmark);
+    const [filteredAirportsTo, setFilteredAirportsTo] = useState(airportsIATA);
     const dispatch = useDispatch();
   
     const handleAirportSelectionTo = (selectedItem) => {
@@ -20,7 +20,7 @@ const FlightTo = () => {
     };
 
     const handleInputChangeTo = (inputValue) => {
-      const filtered = airportsDenmark.filter((airport) => {
+      const filtered = airportsIATA.filter((airport) => {
         const airportString = `${airport?.name ?? ''} ${airport?.city ?? ''} ${airport?.country ?? ''}${airport?.code ?? ''}`;
         return airportString.toLowerCase().includes(inputValue.toLowerCase());
       });
