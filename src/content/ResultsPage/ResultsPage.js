@@ -14,8 +14,8 @@ import { Button } from '@carbon/react';
 import { Link } from 'react-router-dom';
 import { NextOutline, PreviousOutline } from '@carbon/react/icons';
 import { DonutChart } from "@carbon/charts-react";
-import { Checkbox } from '@carbon/react';
 import { setTotalSelectedFootprint } from "../../redux/totalfootprint";
+import ResultsCheckboxes from './Results_Checkboxes';
 
 import Waves from '../Waves'
 
@@ -47,7 +47,6 @@ const ResultsPage = () => {
   const totalBusRailFootprint = (parseFloat(busrailFootprint) || 0);
   const totalSecondaryFootprint = (parseFloat(secondaryFootprint) || 0);
 
-  
   const [checkboxState, setCheckboxState] = React.useState({
     house: true,
     flights: true,
@@ -56,7 +55,6 @@ const ResultsPage = () => {
     busrail: true,
     secondary: true,
   });
-
   const totalSelectedFootprint = (
     (checkboxState.house ? totalHouseFootprint : 0) +
     (checkboxState.flights ? totalFlightFootprint : 0) +
@@ -117,135 +115,51 @@ const options = {
       <div className='global-block-top'>
           <h4>Results Total Footprint</h4>
       </div>
-   
-          <div className='results-main-container'>
-
-            <div className='results-checkmark-block'>
-              <ResultsHeader/>
-              <fieldset className='results-checkmark-container'>
-                  <Checkbox
-                    labelText={`Household Energy (${totalHouseFootprint.toFixed(
-                      2
-                    )} Kg of CO2e)`}
-                    id="checkbox-label-1"
-                    className="cbx"
-                    checked={totalHouseFootprint > 0 && checkboxState.house}
-                    onChange={() =>
-                      setCheckboxState({
-                        ...checkboxState,
-                        house: !checkboxState.house,
-                      })
-                    }
-                  />
-                  <Checkbox
-                    labelText={`Flights (${totalFlightFootprint.toFixed(
-                      2
-                    )} Kg of CO2e)`}
-                    id="checkbox-label-2"
-                    className="cbx"
-                    checked={totalFlightFootprint > 0 && checkboxState.house}
-                    onChange={() =>
-                      setCheckboxState({
-                        ...checkboxState,
-                        flights: !checkboxState.flights,
-                      })
-                    }
-                  />
-                  <Checkbox
-                      labelText={`Car (${totalCarFootprint.toFixed(
-                        2
-                      )} Kg of CO2e)`}
-                    id="checkbox-label-3"
-                    className="cbx"
-                    checked={totalCarFootprint > 0 && checkboxState.car}
-                    onChange={() =>
-                      setCheckboxState({
-                        ...checkboxState,
-                        car: !checkboxState.car,
-                      })
-                    }
-                  />
-                  <Checkbox
-                    labelText={`Motorbike (${totalMotorbikeFootprint.toFixed(
-                      2
-                    )} Kg of CO2e)`}
-                    id="checkbox-label-4"
-                    className="cbx"
-                    checked={totalMotorbikeFootprint > 0 && checkboxState.motorbike}
-                    onChange={() =>
-                      setCheckboxState({
-                        ...checkboxState,
-                        motorbike: !checkboxState.motorbike,
-                      })
-                    }
-                  />
-                  <Checkbox
-                    labelText={`Bus & Rail (${totalBusRailFootprint.toFixed(
-                      2
-                    )} Kg of CO2e)`}
-                    id="checkbox-label-5"
-                    className="cbx"
-                    checked={totalBusRailFootprint > 0 && checkboxState.busrail}
-                    onChange={() =>
-                      setCheckboxState({
-                        ...checkboxState,
-                        busrail: !checkboxState.busrail,
-                      })
-                    }
-                  />
-                  <Checkbox
-                    labelText={`Household Consumption (${totalSecondaryFootprint.toFixed(
-                      2
-                    )} Kg of CO2e)`}
-                    id="checkbox-label-6"
-                    className="cbx"
-                    checked={totalSecondaryFootprint > 0 && checkboxState.secondary}
-                    onChange={() =>
-                      setCheckboxState({
-                        ...checkboxState,
-                        secondary: !checkboxState.secondary,
-                      })
-                    }
-                />
-              </fieldset>
-              <div className='results-button-container'>
-                <ResultTotalResults />
-              </div>
+      <div className='results-main-container'>
+          <div className='results-checkmark-block'>
+            <ResultsHeader/>
+            <fieldset className='results-checkmark-container'>
+              <ResultsCheckboxes
+                checkboxState={checkboxState}
+                setCheckboxState={setCheckboxState}
+              /> 
+            </fieldset>
+            <div className='results-button-container'>
+              <ResultTotalResults />
             </div>
-
-            <div className='results-visualization-block'>
-              <ResultsHeaderVisualization/>
-              <DonutChart
-                data={data}
-                options={options}
-                className='donut-chart'
-              />
-              <div >
-                <ResultsFootprintsButton />
-              </div>
+          </div>
+          <div className='results-visualization-block'>
+            <ResultsHeaderVisualization/>
+            <DonutChart
+              data={data}
+              options={options}
+              className='donut-chart'
+            />
+            <div >
+              <ResultsFootprintsButton />
             </div>
-        </div>
-  </section>
-<div className='global-block-bottom'>
-  <Link className='global-buttons-link-back-and-forth' to="/secondary">
-    <Button 
-      className="global-re-styled-button-back-and-forth"
-      renderIcon={PreviousOutline}
-      kind='tertiary'
-      >Household
-    </Button>
-  </Link>
-  <Link className='global-buttons-link-back-and-forth' to="/welcome">
-    <Button 
-      renderIcon={NextOutline}
-      className="global-re-styled-button-back-and-forth"
-      kind='tertiary'
-      >Start Again
-    </Button>
-  </Link>
-</div>
-<Waves />
-
+          </div>
+      </div>
+    </section>
+    <div className='global-block-bottom'>
+      <Link className='global-buttons-link-back-and-forth' to="/secondary">
+        <Button 
+          className="global-re-styled-button-back-and-forth"
+          renderIcon={PreviousOutline}
+          kind='tertiary'
+          >Household
+        </Button>
+      </Link>
+      <Link className='global-buttons-link-back-and-forth' to="/welcome">
+        <Button 
+          renderIcon={NextOutline}
+          className="global-re-styled-button-back-and-forth"
+          kind='tertiary'
+          >Start Again
+        </Button>
+      </Link>
+    </div>
+    <Waves />
     </>
   );
 };
