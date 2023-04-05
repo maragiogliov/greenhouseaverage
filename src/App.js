@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <>
       <BrowserRouter>
-      <Theme theme="g100">
+      <Theme theme="g10">
        <TheHeader />
         <Content>
           <Switch>
