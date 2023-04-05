@@ -3,11 +3,14 @@
 *{
     margin: 0;
     padding: 0;
+
+
 }
 #root{
     margin: 0;
     padding:0;
     background-color: #161616;
+
     //overflow: hidden;  
 }
 .cds--content{
@@ -34,6 +37,9 @@
     padding-left: 2rem;
     padding-right: 2rem;
     margin: 0;
+    overflow-x:hidden;
+
+
     //background-color: rgba(129, 196, 230, 0.463);
 }
 ///////////////////////////////////

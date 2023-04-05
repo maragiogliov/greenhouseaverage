@@ -13,7 +13,7 @@ import IconsNavigation from '../IconsNavigation/IconsNavigation';
 import { Button } from '@carbon/react';
 import { Link } from 'react-router-dom';
 import { NextOutline, PreviousOutline } from '@carbon/react/icons';
-import { DonutChart } from "@carbon/charts-react";
+import { SimpleBarChart } from "@carbon/charts-react";
 import { setTotalSelectedFootprint } from "../../redux/totalfootprint";
 import ResultsCheckboxes from './Results_Checkboxes';
 
@@ -95,20 +95,25 @@ const data = [
   },
 ];
 const options = {
-  "title": "",
-  "resizable": true,
-  "legend": {
-    "alignment": "center"
-  },
-  "donut": {
-    "center": {
-      "label": "Kg of CO2e"
+  "title": "Total Footprint per Category",
+  "axes": {
+    "left": {
+      "mapsTo": "value",
+      "title": "Kg of CO2e",
+      "scaleType": "linear"
     },
-    "precision": 2,
-    "alignment": "center"
+    "bottom": {
+      "mapsTo": "group",
+      "title": "Category",
+      "scaleType": "labels",
+      "visible": false
+    },
+    "legend": {
+      "alignment": "center"
+    }
   },
-  "height": "390px",
-}
+  "height": "400px"
+};
   return ( <>
   <IconsNavigation />
     <section className='global-frame-calculator'>
@@ -130,11 +135,13 @@ const options = {
           </div>
           <div className='results-visualization-block'>
             <ResultsHeaderVisualization/>
-            <DonutChart
-              data={data}
-              options={options}
-              className='donut-chart'
-            />
+            <div style={{ backgroundColor: 'white' }}>
+              <SimpleBarChart
+                data={data}
+                options={options}
+                className='simplebar-chart'
+              />
+            </div>
             <div >
               <ResultsFootprintsButton />
             </div>

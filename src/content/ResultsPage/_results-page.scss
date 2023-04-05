@@ -64,6 +64,7 @@
     min-height: 48px;
     //background-color: #12eaa6ef;
 }
+
 ///////////////////////////RESPONSIVE///////////////////////
 @media (max-width: 1100px) {
     .results-main-container{
@@ -76,6 +77,13 @@
     }
     .results-visualization-block{
         width: 100%;
+    }
+    .results-checkmark-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0rem;
+        //background-color: rgba(250, 142, 1, 0.875);
     }
   }
 
