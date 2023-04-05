@@ -70,7 +70,7 @@ const ResultsPage = () => {
   
 const data = [
   {
-    group: "Household Energy",
+    group: "Household",
     value: checkboxState.house ? totalHouseFootprint : 0,
   },
   {
@@ -90,7 +90,7 @@ const data = [
     value: checkboxState.busrail ? totalBusRailFootprint : 0,
   },
   {
-    group: "Household Consumption",
+    group: "Consumption",
     value: checkboxState.secondary ? totalSecondaryFootprint : 0,
   },
 ];
@@ -134,14 +134,13 @@ const options = {
             </div>
           </div>
           <div className='results-visualization-block'>
-            <ResultsHeaderVisualization/>
-            <div style={{ backgroundColor: 'white' }}>
-              <SimpleBarChart
-                data={data}
-                options={options}
-                className='simplebar-chart'
-              />
-            </div>
+          <div style={{ backgroundColor: 'white', padding: '0.6rem' }}>
+            <SimpleBarChart
+              data={data}
+              options={options}
+              className='simplebar-chart'
+            />
+          </div>
             <div >
               <ResultsFootprintsButton />
             </div>
