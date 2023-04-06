@@ -6,16 +6,12 @@ import countryFactors from '../../countryFactors'
 import { TextInput, Select, SelectItem } from '@carbon/react';
 
 const SecondaryFoodDrinks = () => {
-  const { foodDrinks, rangeFoodDrinks, selectedCountrySecondary } = useSelector(
+  const { rangeFoodDrinks, selectedCountrySecondary } = useSelector(
     (state) => state.secondary
   );
   const dispatch = useDispatch();
 
-  const rangeOptions = Object.keys(countryFactors[selectedCountrySecondary].foodDrinksRange);
-
-  const handleFoodDrinksChange = (e) => {
-    dispatch(setFoodDrinks(parseFloat(e.target.value)));
-  };
+  const rangeOptions = Object.keys(countryFactors[selectedCountrySecondary].foodDietRange);
 
   const handleRangeChange = (e) => {
     dispatch(setRangeFoodDrinksFactor(e.target.value));
@@ -23,17 +19,9 @@ const SecondaryFoodDrinks = () => {
 
   return (
     <>
-        <section className="secondary-electricity-container">
-          <h5 className="global-input-description">Food & Diet:</h5>
-          <TextInput
-            id="foodDrinks-amount"
-            value={foodDrinks || ''}
-            onChange={handleFoodDrinksChange}
-            labelText=""
-            className="secondary-block-middle-form"
-            size='lg'
-          />
-
+        <section className="global-inputs-containers">
+          <h5 className="secondary-input-description">Food & Diet:</h5>
+       
           <Select
             id="range-foodDrinks-select"
             defaultValue={rangeFoodDrinks}

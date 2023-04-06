@@ -20,40 +20,20 @@ const countryFactors = {
       woodenPelletsUnits: {
         kWh: {woodenPellets_factor: 0.10},
       },
-      foodDrinksRange: {
-        year: {foodDrinks_factor: 10},
-        month: {foodDrinks_factor: 20},
+      foodDietRange: {
+        year: {foodDiet_factor: 10},
+        month: {foodDiet_factor: 20},
         week: {foodDrinks_factor: 30}
       },
-      pharmaceuticalsRange: {
-        year: {pharmaceuticals_factor: 1},
-        month: {pharmaceuticals_factor: 2},
-        week: {pharmaceuticals_factor: 3}
+      waterRange: {
+        year: {water_factor: 1},
+        month: {water_factor: 2},
+        week: {water_factor: 3}
       },
-      textilesRange: {
-        year: {textiles_factor: 1},
-        month: {textiles_factor: 2},
-        week: {textiles_factor: 3}
-      },
-      paperRange: {
-        year: {paper_factor: 1},
-        month: {paper_factor: 2},
-        week: {paper_factor: 3}
-      },
-      electronicsRange: {
-        year: {electronics_factor: 1},
-        month: {electronics_factor: 2},
-        week: {electronics_factor: 3}
-      },
-      furnitureRange: {
-        year: {furniture_factor: 10},
-        month: {furniture_factor: 20},
-        week: {furniture_factor: 30}
-      },
-      hotelsRange: {
-        year: {hotels_factor: 10},
-        month: {hotels_factor: 20},
-        week: {hotels_factor: 30}
+      wasteRange: {
+        year: {waste_factor: 1},
+        month: {waste_factor: 2},
+        week: {waste_factor: 3}
       },
       busUnits: {
         km: {bus_factor: 0.02481},

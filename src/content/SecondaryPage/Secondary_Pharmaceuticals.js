@@ -1,21 +1,17 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { setPharmaceuticals, setRangePharmaceuticalsFactor } from "../../redux/secondary";
+import {  setRangePharmaceuticalsFactor } from "../../redux/secondary";
 import countryFactors from '../../countryFactors'
 
-import { TextInput, Select, SelectItem } from '@carbon/react';
+import { Select, SelectItem } from '@carbon/react';
 
 const SecondaryPharmaceuticals = () => {
-  const { pharmaceuticals, rangePharmaceuticals, selectedCountrySecondary } = useSelector(
+  const { rangePharmaceuticals, selectedCountrySecondary } = useSelector(
     (state) => state.secondary
   );
   const dispatch = useDispatch();
 
-  const rangeOptions = Object.keys(countryFactors[selectedCountrySecondary].pharmaceuticalsRange);
-
-  const handlePharmaceuticalsChange = (e) => {
-    dispatch(setPharmaceuticals(parseFloat(e.target.value)));
-  };
+  const rangeOptions = Object.keys(countryFactors[selectedCountrySecondary].waterRange);
 
   const handleRangeChange = (e) => {
     dispatch(setRangePharmaceuticalsFactor(e.target.value));
@@ -24,22 +20,13 @@ const SecondaryPharmaceuticals = () => {
   return (
     <>
         <section className="global-inputs-containers">
-          <h5 className="global-input-description">Water:</h5>
-          <TextInput
-            id="pharmaceuticals-amount"
-            value={pharmaceuticals || ''}
-            onChange={handlePharmaceuticalsChange}
-            labelText=""
-            className="house-block-middle-form"
-            size='lg'
-          />
-
+          <h5 className="secondary-input-description">Water:</h5>
           <Select
             id="pharmaceuticals-select"
             defaultValue={rangePharmaceuticals}
             onChange={handleRangeChange}
             labelText=""
-            className="house-block-middle-form"
+            className="secondary-block-middle-form"
             size='lg'
           >
             {rangeOptions.map((range) => (

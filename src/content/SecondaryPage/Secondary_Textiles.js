@@ -1,21 +1,17 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { setTextiles, setRangeTextilesFactor } from "../../redux/secondary";
+import {  setRangeTextilesFactor } from "../../redux/secondary";
 import countryFactors from '../../countryFactors'
 
-import { TextInput, Select, SelectItem } from '@carbon/react';
+import {  Select, SelectItem } from '@carbon/react';
 
 const SecondaryTextiles= () => {
-  const {textiles, rangeTextiles, selectedCountrySecondary } = useSelector(
+  const { rangeTextiles, selectedCountrySecondary } = useSelector(
     (state) => state.secondary
   );
   const dispatch = useDispatch();
 
-  const rangeOptions = Object.keys(countryFactors[selectedCountrySecondary].textilesRange);
-
-  const handleTextilesChange = (e) => {
-    dispatch(setTextiles(parseFloat(e.target.value)));
-  };
+  const rangeOptions = Object.keys(countryFactors[selectedCountrySecondary].wasteRange);
 
   const handleRangeChange = (e) => {
     dispatch(setRangeTextilesFactor(e.target.value));
@@ -24,15 +20,8 @@ const SecondaryTextiles= () => {
   return (
     <>
         <section className="global-inputs-containers">
-          <h5 className="global-input-description">Waste:</h5>
-          <TextInput
-            id="heating-amount"
-            value={textiles || ""}
-            onChange={handleTextilesChange}
-            labelText=""
-            className="secondary-block-middle-form"
-            size='lg'
-          />
+          <h5 className="secondary-input-description">Waste:</h5>
+       
           <Select
             id="unit-heating-oil-select"
             defaultValue={rangeTextiles}
