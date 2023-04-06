@@ -28,7 +28,6 @@ import {
 import countryFactors from '../../countryFactors'
 
 import { Button } from '@carbon/react';
-import { Calculator } from '@carbon/react/icons';
 
 const SecondaryFootprint = () => {
   const { 

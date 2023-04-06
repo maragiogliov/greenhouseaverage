@@ -12,10 +12,10 @@ const SecondaryTotalResult = () => {
 
   useEffect(() => {
     dispatch(setSecondaryFootprint(totalSecondaryFootprint));
-  }, [totalSecondaryFootprint]);
+  }, [totalSecondaryFootprint,  dispatch]);
 
   return <>
-          <div className='secondary-results'>Household Consumption Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalSecondaryFootprint.toFixed(2))}</span> Kg of CO2e</div>
+          <div className='secondary-results'> Consumption Footprint = <span style={{ marginLeft: '5px', marginRight: '5px' }}>{(totalSecondaryFootprint.toFixed(2))}</span> Kg of CO2e</div>
   </>;
 };
 

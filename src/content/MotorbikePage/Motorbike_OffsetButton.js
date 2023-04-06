@@ -14,7 +14,7 @@ const MotorbikeTotalResult = () => {
 
   useEffect(() => {
     dispatch(setHouseFootprint(totalHouseFootprint));
-  }, [totalHouseFootprint]);
+  }, [totalHouseFootprint, dispatch]);
 
   return <>
 

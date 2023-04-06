@@ -3,7 +3,6 @@ import {  useSelector, useDispatch } from "react-redux";
 import { setHouseFootprint } from "../../redux/house";
 
 import { Button } from '@carbon/react';
-import { Calculator } from '@carbon/react/icons';
 
 
 const HouseTotalResult = () => {
@@ -16,7 +15,7 @@ const HouseTotalResult = () => {
 
   useEffect(() => {
     dispatch(setHouseFootprint(totalHouseFootprint));
-  }, [totalHouseFootprint]);
+  }, [totalHouseFootprint, dispatch]);
 
 
   return <>

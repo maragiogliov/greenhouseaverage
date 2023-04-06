@@ -4,7 +4,6 @@ import './_results-page.scss';
 import "@carbon/charts/styles.css";
 
 import ResultsHeader from './Results_Header';
-import ResultsHeaderVisualization from './Results_HeaderVisualization';
 
 import ResultsFootprintsButton from './Results_FootprintsButton'
 import ResultTotalResults from './Results_TotalResults'
@@ -66,7 +65,7 @@ const ResultsPage = () => {
   
   useEffect(() => {
     dispatch(setTotalSelectedFootprint(totalSelectedFootprint));
-  }, [totalSelectedFootprint]);
+  }, [totalSelectedFootprint, dispatch]);
   
 const data = [
   {

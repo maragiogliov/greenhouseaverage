@@ -73,8 +73,10 @@ const TheHeader = () => {
               tooltipAlignment="end"
               className="login-icon"
             >
+              <Login
+              size="24"
+              />
             </HeaderGlobalAction>
-
           )}
             </HeaderGlobalBar>
 

@@ -8,9 +8,6 @@ import {
     setShowNaturalGasResult,
     resetNaturalGasFootprint,
 
-    setShowHeatingOilResult,
-    resetHeatingOilFootprint,
-
     setShowCoalResult,
     resetCoalFootprint,
 
@@ -73,10 +70,7 @@ const HouseElectricity = () => {
     dispatch(resetNaturalGasFootprint());
     dispatch(setShowNaturalGasResult(false))
   };
-  const resetFootprintHeatingOil = () => {
-    dispatch(resetHeatingOilFootprint());
-    dispatch(setShowHeatingOilResult(false))
-  };
+
   const resetFootprintCoal = () => {
     dispatch(resetCoalFootprint());
     dispatch(setShowCoalResult(false))

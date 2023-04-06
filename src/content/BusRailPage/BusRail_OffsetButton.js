@@ -15,7 +15,7 @@ const HouseTotalResult = () => {
 
   useEffect(() => {
     dispatch(setHouseFootprint(totalHouseFootprint));
-  }, [totalHouseFootprint]);
+  }, [totalHouseFootprint, dispatch]);
 
 
   return <>

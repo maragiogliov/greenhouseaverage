@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectCountry } from "../../redux/house";
 import { selectCountrySecondaryCategory } from "../../redux/secondary";
 import { selectCountryBusRail } from "../../redux/busrail";
-import { selectCountryMotorbike, selectedContryMotorbike } from "../../redux/motorbike";
+import { selectCountryMotorbike } from "../../redux/motorbike";
 import { Select, SelectItem } from '@carbon/react';
 import countryFactors from "../../countryFactors";
 
@@ -12,16 +12,7 @@ const SecondaryFoodDrinks = () => {
   const { selectedCountry } = useSelector(
     (state) => state.house
     );
-  const { selectedCountrySecondary } = useSelector(
-    (state) => state.secondary
-    );
-  const { selectedCountryBusRail } = useSelector(
-    (state) => state.busrail
-    );
-  const { selectedCountryMotorbike } = useSelector(
-    (state) => state.motorbike
-    );
-  
+
   const countryOptions = Object.keys(countryFactors);
 
   const dispatch = useDispatch();

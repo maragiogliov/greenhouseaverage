@@ -43,7 +43,15 @@ const LanguageChanger = () => {
     return () => clearInterval(interval);
   }, [currentLanguageIndex]);
 
-  return <h3 ref={helloHeadingRef}></h3>;
+  return <div ref={helloHeadingRef} style={{ fontSize: '26px' }}>
+
+</div>
+
+
+
+
+
+;
 };
 const LandingPage = () => {
   

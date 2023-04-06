@@ -6,7 +6,6 @@ const FlightOptions = () => {
   return (
     <>
         <section className="flight-options-container">
-          <h5 className="flight-input-description3"></h5>
           <RadioButtonGroup
             legendText=""
             name="radio-button-group"

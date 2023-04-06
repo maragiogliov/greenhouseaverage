@@ -68,7 +68,6 @@ const HouseElectricity = () => {
 
   return (
     <>
-      <h1></h1>
       <DonutChart data={data} options={options} />
      
     </>
