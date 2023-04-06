@@ -11,7 +11,10 @@ const SecondaryFoodDrinks = () => {
   );
   const dispatch = useDispatch();
 
-  const rangeOptions = Object.keys(countryFactors[selectedCountrySecondary].foodDietRange);
+  const rangeOptions = ["-select type-",
+   ,...Object.keys(countryFactors[selectedCountrySecondary]?.foodDietRange || {})
+  ]
+
 
   const handleRangeChange = (e) => {
     dispatch(setRangeFoodDrinksFactor(e.target.value));
@@ -31,7 +34,16 @@ const SecondaryFoodDrinks = () => {
             size='lg'
           >
             {rangeOptions.map((unit) => (
-              <SelectItem key={unit} value={unit} text={unit} />
+              <SelectItem 
+              key={unit} 
+              value={unit} 
+              text={
+                unit === "-select type-"
+                  ? unit
+                  : `${unit.charAt(0).toUpperCase() + unit.slice(1)}  ${countryFactors[selectedCountrySecondary]?.foodDietRange[unit]?.description || ""}`
+              }
+              
+              />
             ))}
           </Select>
         </section>
