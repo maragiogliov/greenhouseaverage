@@ -10,9 +10,9 @@ import SecondaryHeader from './Secondary_Header';
 import SecondaryHeaderResults from './Secondary_HeaderResults';
 import SecondaryHeaderVisualization from './Secondary_HeaderVisualization';
 
-import SecondaryFoodDrinks from './Secondary_FoodDrinks';
-import SecondaryPharmaceuticals from './Secondary_Pharmaceuticals';
-import SecondaryTextiles from './Secondary_Textiles'
+import SecondaryFoodDiet from './Secondary_FoodDiet';
+import SecondaryWater from './Secondary_Water';
+import SecondaryWaste from './Secondary_Waste'
 import SecondaryTotalResults from './Secondary_TotalResults'
 
 import SecondaryFootprintsButton from './Secondary_FootprintsButton'
@@ -39,9 +39,9 @@ const SecondaryPage = () => {
           <div className='secondary-inputs-block'>
             <SecondaryHeader/>
               <div className=''>
-                <SecondaryFoodDrinks />
-                <SecondaryPharmaceuticals />
-                <SecondaryTextiles /> 
+                <SecondaryFoodDiet />
+                <SecondaryWater />
+                <SecondaryWaste /> 
               </div>
               <div className='secondary-button-container'>
                 <SecondaryFootprintsButton />

@@ -21,9 +21,26 @@ const countryFactors = {
         kWh: {woodenPellets_factor: 0.10},
       },
       foodDietRange: {
-        year: {foodDiet_factor: 10},
-        month: {foodDiet_factor: 20},
-        week: {foodDrinks_factor: 30}
+        vegan: {
+          foodDrinks_factor: 2.94,
+          description: "Vegan"
+        },        
+        vegetarian: {
+          foodDrinks_factor: 3.85,
+          description: "Vegetarian"
+        },
+        meatRarely: {
+          foodDrinks_factor: 4.67,
+          description: "Meat rarely"
+        },
+        meatSeveralTimesWeek: {
+          foodDrinks_factor: 5.66,
+          description: "Meat several times a week"
+        },
+        meatAlways: {
+          foodDrinks_factor: 7.26,
+          description: "Meat with every meal"
+        },
       },
       waterRange: {
         year: {water_factor: 1},
