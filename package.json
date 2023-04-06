@@ -12,7 +12,7 @@
     "carbon-components-react": "^8.19.0",
     "d3": "^7.8.2",
     "downshift": "^7.2.0",
-    "mongodb": "^4.13.0",
+    "nodemailer": "^6.9.1",
     "nodemon": "^2.0.20",
     "react": "^17.0.2",
     "react-country-region-selector": "^3.6.1",
