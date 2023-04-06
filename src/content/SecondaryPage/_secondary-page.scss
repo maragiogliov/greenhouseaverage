@@ -22,7 +22,7 @@
 .secondary-inputs-block{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between !important;
     width: 33%;
     //background-color: rgb(216, 42, 132);
 }

@@ -13,10 +13,6 @@ import SecondaryHeaderVisualization from './Secondary_HeaderVisualization';
 import SecondaryFoodDrinks from './Secondary_FoodDrinks';
 import SecondaryPharmaceuticals from './Secondary_Pharmaceuticals';
 import SecondaryTextiles from './Secondary_Textiles'
-import SecondaryPaper from './Secondary_Paper'
-import SecondaryElectronics from './Secondary_Electronics'
-import SecondaryFurniture from './Secondary_Furniture'
-import SecondaryHotels from './Secondary_Hotels';
 import SecondaryTotalResults from './Secondary_TotalResults'
 
 import SecondaryFootprintsButton from './Secondary_FootprintsButton'
@@ -45,14 +41,7 @@ const SecondaryPage = () => {
               <div className=''>
                 <SecondaryFoodDrinks />
                 <SecondaryPharmaceuticals />
-                <SecondaryTextiles />
-               
-                
-                <SecondaryPaper /> 
-                <SecondaryElectronics />
-                <SecondaryFurniture />
-                <SecondaryHotels />
-                
+                <SecondaryTextiles /> 
               </div>
               <div className='secondary-button-container'>
                 <SecondaryFootprintsButton />
