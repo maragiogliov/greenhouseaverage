@@ -37,11 +37,10 @@ const SecondaryFoodDrinks = () => {
               <SelectItem 
               key={unit} 
               value={unit} 
-              text={
-                unit === "-select type-"
-                  ? unit
-                  : `${unit.charAt(0).toUpperCase() + unit.slice(1)}  ${countryFactors[selectedCountrySecondary]?.foodDietRange[unit]?.description || ""}`
-              }
+              text={countryFactors[selectedCountrySecondary]?.foodDietRange[unit]?.description || unit.charAt(0).toUpperCase() + unit.slice(1)}
+
+        
+
               
               />
             ))}
