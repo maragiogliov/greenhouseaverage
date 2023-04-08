@@ -69,6 +69,10 @@ const ResultsPage = () => {
   
 const data = [
   {
+    group: "World Average",
+    value: 4690,
+  },
+  {
     group: "Household",
     value: checkboxState.house ? totalHouseFootprint : 0,
   },
