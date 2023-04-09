@@ -24,7 +24,7 @@ const HouseCoal = () => {
   return (
     <>
         <section className="global-inputs-containers">
-          <h5 className="global-input-description">Long Distance Train:</h5>
+          <h5 className="global-input-description">Long Train:</h5>
           <TextInput
             id="long-train-amount"
             value={longTrain || ""}

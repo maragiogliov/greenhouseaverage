@@ -24,7 +24,7 @@ const BusRailLocalTrain = () => {
   return (
     <>
         <section className="global-inputs-containers">
-          <h5 className="global-input-description">Local or Commuter Train:</h5>
+          <h5 className="global-input-description">Local Train:</h5>
           <TextInput
             id="local-train-amount"
             value={localTrain || ""}
