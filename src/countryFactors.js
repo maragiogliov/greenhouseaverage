@@ -43,9 +43,8 @@ const countryFactors = {
         },        
       },
       waterRange: {
-        year: {water_factor: 1},
-        month: {water_factor: 2},
-        week: {water_factor: 3}
+        year: {water_factor: 38},
+       
       },
       wasteRange: {
         year: {waste_factor: 1},
@@ -165,9 +164,7 @@ const countryFactors = {
         },        
       },
       waterRange: {
-        year: {water_factor: 1},
-        month: {water_factor: 2},
-        week: {water_factor: 3}
+        year: {water_factor: 34},
       },
       wasteRange: {
         year: {waste_factor: 1},
@@ -287,9 +284,8 @@ const countryFactors = {
         },        
       },
       waterRange: {
-        year: {water_factor: 1},
-        month: {water_factor: 2},
-        week: {water_factor: 3}
+        year: {water_factor: 129},
+       
       },
       wasteRange: {
         year: {waste_factor: 1},
@@ -409,9 +405,7 @@ const countryFactors = {
         },        
       },
       waterRange: {
-        year: {water_factor: 1},
-        month: {water_factor: 2},
-        week: {water_factor: 3}
+        year: {water_factor: 91},
       },
       wasteRange: {
         year: {waste_factor: 1},
@@ -531,9 +525,7 @@ const countryFactors = {
         },        
       },
       waterRange: {
-        year: {water_factor: 1},
-        month: {water_factor: 2},
-        week: {water_factor: 3}
+        year: {water_factor: 23},
       },
       wasteRange: {
         year: {waste_factor: 1},
@@ -653,9 +645,7 @@ const countryFactors = {
         },        
       },
       waterRange: {
-        year: {water_factor: 1},
-        month: {water_factor: 2},
-        week: {water_factor: 3}
+        year: {water_factor: 84},
       },
       wasteRange: {
         year: {waste_factor: 1},
