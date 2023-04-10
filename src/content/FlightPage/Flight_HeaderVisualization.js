@@ -4,7 +4,7 @@ const FlightHeaderVisualization = () => {
 
   return <>
        
-      <div className='flight-header-container' >
+      <div className='global-header-container' >
         <p>Flight Visualization</p>
       </div>
       

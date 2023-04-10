@@ -4,7 +4,7 @@ const HouseHeaderVisualization = () => {
 
   return <>
        
-      <div className='house-header-container' >
+      <div className='global-header-container' >
         <p>Household Energy Visualization</p>
       </div>
       

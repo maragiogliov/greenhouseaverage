@@ -16,7 +16,7 @@ const HouseNumberOfPeople = () => {
   }
   return <>
        
-        <div className='house-header-container' >
+        <div className='global-header-container' >
           <p>How many people are in your household? </p>
             <TextInput
               id="people-select"

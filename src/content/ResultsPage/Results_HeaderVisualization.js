@@ -2,7 +2,7 @@ import React from 'react';
 
 const ResultsCheckmark = () => {
   return <>
-      <div className='results-header-visualization' >
+      <div className='global-header-visualization' >
         <p>Results visualization </p>
       </div>
   </>;

@@ -121,7 +121,7 @@ const options = {
   <IconsNavigation />
     <section className='global-frame-calculator'>
       <div className='global-block-top'>
-          <h4>Results Total Footprint</h4>
+          <h4>Per capita annual footprint</h4>
       </div>
       <div className='results-main-container'>
           <div className='results-checkmark-block'>

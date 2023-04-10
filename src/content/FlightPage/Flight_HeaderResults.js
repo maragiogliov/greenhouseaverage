@@ -7,7 +7,7 @@ const FlightResults = () => {
 
   return <>
        
-        <div className='flight-header-container' >
+        <div className='global-header-container' >
         <p>Flight Results</p>
       
         </div>

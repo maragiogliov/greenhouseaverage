@@ -4,7 +4,7 @@ const CarHeaderResult = () => {
 
   return <>
        
-      <div className='car-header-container' >
+      <div className='global-header-container' >
         <p>Car Results</p>
       </div>
       

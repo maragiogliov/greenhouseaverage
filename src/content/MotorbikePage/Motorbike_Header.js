@@ -3,8 +3,8 @@ import React from 'react';
 
 const MotorbikeHeader = () => {
   return <>
-        <div className='motorbike-header-container' >
-          <p>You can enter details for up to 2 motorbikes</p>
+        <div className='global-header-container' >
+          <p>You can enter details for up to 1 motorbike</p>
         </div>
   </>;
 };

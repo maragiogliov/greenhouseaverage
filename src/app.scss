@@ -47,7 +47,9 @@
     width: 100%;
     height: 47px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     //background-color: rgba(197, 197, 168, 0.385);
     margin-top:47px
 }
@@ -62,6 +64,16 @@
     height: 3rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.448);
     //background-color: rgba(0, 255, 110, 0.658);
+}
+.global-header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    min-height: 48px;
+    max-height: 48px;
+    //background-color: #1d2e24c5;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.361);
 }
 
 .global-inputs-containers{

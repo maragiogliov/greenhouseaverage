@@ -4,7 +4,7 @@ const CarHeaderVisualization = () => {
 
   return <>
        
-      <div className='car-header-container' >
+      <div className='global-header-container' >
         <p>Car Visualization</p>
       </div>
       

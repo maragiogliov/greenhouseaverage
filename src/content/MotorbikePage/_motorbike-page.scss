@@ -8,17 +8,7 @@
     width: 100%;
 }
 ////////////////////////////BLOCK 1 INPUTS /////////////////////////////
-.motorbike-header-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
-    margin-bottom: 3rem;
-    min-height: 48px;
-    //background-color: #1d2e24c5;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.361);
 
-}
 .motorbike-inputs-block{
     display: flex;
     flex-direction: column;
@@ -63,8 +53,17 @@
     justify-content: space-between;
     width: 33%;
     //background-color: lawngreen;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
 }
 .motorbike-results-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    ////background-color: rgb(48, 82, 82);
+}
+.motorbike-results-container-header{
     display: flex;
     flex-direction: column;
     justify-content: center;

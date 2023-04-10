@@ -33,7 +33,7 @@ const MotorbikeResults = () => {
     {showMotorbikeResult && motorbikeMileage > 0 &&  (
         <section className='motorbike-result-section'>
           <h5 
-            className='motorbike-results-container'>
+            className='motorbike-results-container-header'>
             {motorbikeFootprint} Kg:	{motorbikeMileage}  {unitMotorbike} 
           </h5>
           <Button

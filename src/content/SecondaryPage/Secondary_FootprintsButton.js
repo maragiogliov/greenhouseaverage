@@ -32,7 +32,7 @@ const calculateFoodDietFootprint = () => {
   ) {
     dispatch(setFoodDietFootprint("Please enter a valid number."));
   } else {
-    let total = countryFactors.foodDietRange[foodDiet].foodDiet_factor + 5;
+    let total = 5
 
     dispatch(setFoodDietFootprint(total));
   }

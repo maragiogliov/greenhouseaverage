@@ -4,7 +4,7 @@ const SecondaryHeaderVisualization = () => {
 
   return <>
        
-      <div className='secondary-header-container' >
+      <div className='global-header-container' >
         <p>Household Consumption Visualization</p>
       </div>
       

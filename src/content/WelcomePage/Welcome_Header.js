@@ -7,7 +7,7 @@ const HouseNumberOfPeople = () => {
        
           </section>
 
-          <section className='secondary-header-container'>
+          <section className='global-header-container'>
            <div className='secondary-header-container-left' >
            <p>First, please tell us where you live: </p>
            
