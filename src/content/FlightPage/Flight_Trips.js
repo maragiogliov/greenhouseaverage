@@ -1,18 +1,9 @@
 import React from 'react';
-import { useDispatch, useSelector } from "react-redux";
-import { setRangeElectronicsFactor } from "../../redux/secondary";
 
 import { Select, SelectItem } from '@carbon/react';
 
 const SecondaryElectronics = () => {
-const { rangeElectronics } = useSelector(
-(state) => state.secondary
-);
-const dispatch = useDispatch();
 
-const handleRangeChange = (e) => {
-dispatch(setRangeElectronicsFactor(e.target.value));
-};
 
 return (
 <>
@@ -21,8 +12,8 @@ return (
 
 <Select
 id="range-Electronics-select"
-defaultValue={rangeElectronics}
-onChange={handleRangeChange}
+defaultValue=''
+onChange=''
 labelText=""
 className="flight-block-middle-form"
 size='lg'

@@ -52,19 +52,12 @@
     //background-color: aqua;
 
 }
-.secondary-block-middle-form-water{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-color: #182327;
-    height: 3rem;
-    max-height: 3rem;
-    font-size: 16px;
-    margin-bottom: 0.2rem;
-    
-}
+
 .secondary-tab-water{
     max-width: 100% !important;
+    font-size: 16px !important;
+    margin-bottom: 0.2rem !important;
+    width: 50% !important;
 }
 .secondary-button-container{
     width: 100%;
@@ -184,6 +177,11 @@
     }
     .secondary-results{
         font-size: 16px;
+    }
+ 
+    .secondary-tab-water{
+        max-width: 100% !important;
+        font-size: 16px !important;
     }
   }
 

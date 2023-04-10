@@ -1,17 +1,9 @@
 import React from 'react';
-import { useDispatch, useSelector } from "react-redux";
-import {  setRangeHotelsFactor } from "../../redux/secondary";
+
 import { Select, SelectItem } from '@carbon/react';
 
 const SecondaryHotels = () => {
-  const {  rangeHotels } = useSelector(
-    (state) => state.secondary
-  );
-  const dispatch = useDispatch();
 
-  const handleRangeChange = (e) => {
-    dispatch(setRangeHotelsFactor(e.target.value));
-  };
 
   return (
     <>
@@ -20,8 +12,8 @@ const SecondaryHotels = () => {
         
           <Select
             id="hotels-select"
-            defaultValue={rangeHotels}
-            onChange={handleRangeChange}
+            defaultValue=''
+            onChange=''
             labelText=""
             className="flight-block-middle-form"
             size='lg'
