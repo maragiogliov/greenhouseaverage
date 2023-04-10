@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { selectCountry } from "../../redux/house";
-import { selectCountrySecondaryCategory } from "../../redux/secondary";
+import { selectCountrySecondary } from "../../redux/secondary";
 import { selectCountryBusRail } from "../../redux/busrail";
 import { selectCountryMotorbike } from "../../redux/motorbike";
 import { Select, SelectItem } from '@carbon/react';
@@ -19,7 +19,7 @@ const SecondaryFoodDrinks = () => {
 
   const handleCountryChange = (e) => {
     dispatch(selectCountry(e.target.value));
-    dispatch(selectCountrySecondaryCategory(e.target.value));
+    dispatch(selectCountrySecondary(e.target.value));
     dispatch(selectCountryBusRail(e.target.value));
     dispatch(selectCountryMotorbike(e.target.value));
 

@@ -2,8 +2,8 @@ import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
 
 import { 
-    setShowFoodDrinksResult, 
-    resetFoodDrinksFootprint
+    setShowFoodDietResult, 
+    resetFoodDietFootprint
 
 } from "../../redux/secondary";
 
@@ -13,10 +13,9 @@ import { TrashCan } from '@carbon/react/icons';
 const SecondaryResults = () => {
   const {
 
-    foodDrinks,
-    rangeFoodDrinks,
-    foodDrinksFootprint,
-    showFoodDrinksResult,
+    foodDiet,
+    foodDietFootprint,
+    showFoodDietResult,
   
 
     } = useSelector(
@@ -24,23 +23,23 @@ const SecondaryResults = () => {
   );
   const dispatch = useDispatch();
 
-  const resetFootprintFoodDrinks = () => {
-    dispatch(resetFoodDrinksFootprint());
-    dispatch(setShowFoodDrinksResult(false))
+  const resetFootprintFoodDiet = () => {
+    dispatch(resetFoodDietFootprint());
+    dispatch(setShowFoodDietResult(false))
   };
   return <>  
 
-    {showFoodDrinksResult && foodDrinks > 0 &&  (
+    {showFoodDietResult && foodDiet > 0 &&  (
         <section className='secondary-result-section'>
           <h5 
             className='secondary-results-container'>
-            {foodDrinksFootprint} Kg:	{foodDrinks}  {rangeFoodDrinks} of Food & Diet
+            {foodDietFootprint} Kg of CO2 
           </h5>
           <Button
             kind='ghost'
             size='lg'
             className='secondary-result-trashcan-icon-container'
-            onClick={resetFootprintFoodDrinks} >
+            onClick={resetFootprintFoodDiet} >
             <TrashCan />
           </Button>
         </section>

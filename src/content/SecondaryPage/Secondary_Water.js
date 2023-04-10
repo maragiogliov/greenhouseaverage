@@ -16,7 +16,7 @@ const SecondaryPharmaceuticals = () => {
       <section className="global-inputs-containers">
         <h5 className="secondary-input-description">Water:</h5>
         <Tabs >
-          <TabList  style={{width: '100%'}}>
+          <TabList aria-label="List of tabs"  style={{width: '100%'}}>
             <Tab  className='secondary-tab-water'>{waterFactor} kg of CO2/inh {flagIcon}</Tab>
           </TabList>
         </Tabs>

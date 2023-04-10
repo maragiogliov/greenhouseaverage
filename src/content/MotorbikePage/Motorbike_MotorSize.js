@@ -25,6 +25,7 @@ const MotorbikeSize = () => {
     <>
       <section className="motorbike-mileage-container">
         <h5 className="global-input-description">Motorbike Size</h5>
+        {console.log(motorbikeSize)}
 
         <Select
           id="motorbike-select"

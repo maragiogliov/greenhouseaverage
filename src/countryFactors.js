@@ -22,23 +22,23 @@ const countryFactors = {
       },
       foodDietRange: {
         meatAlways: {
-          foodDrinks_factor: 7.26,
+          foodDiet_factor: 7.26,
           description: "Meat with every meal"
         },
         meatSeveralTimesWeek: {
-          foodDrinks_factor: 5.66,
+          foodDiet_factor: 5.66,
           description: "Meat several times a week"
         },
         meatRarely: {
-          foodDrinks_factor: 4.67,
+          foodDiet_factor: 4.67,
           description: "Meat rarely"
         },
         vegetarian: {
-          foodDrinks_factor: 3.85,
+          foodDiet_factor: 3.85,
           description: "Vegetarian"
         },
         vegan: {
-          foodDrinks_factor: 2.94,
+          foodDiet_factor: 2.94,
           description: "Vegan"
         },        
       },
@@ -143,23 +143,23 @@ const countryFactors = {
       },
       foodDietRange: {
         meatAlways: {
-          foodDrinks_factor: 7.26,
+          foodDiet_factor: 7.26,
           description: "Meat with every meal"
         },
         meatSeveralTimesWeek: {
-          foodDrinks_factor: 5.66,
+          foodDiet_factor: 5.66,
           description: "Meat several times a week"
         },
         meatRarely: {
-          foodDrinks_factor: 4.67,
+          foodDiet_factor: 4.67,
           description: "Meat rarely"
         },
         vegetarian: {
-          foodDrinks_factor: 3.85,
+          foodDiet_factor: 3.85,
           description: "Vegetarian"
         },
         vegan: {
-          foodDrinks_factor: 2.94,
+          foodDiet_factor: 2.94,
           description: "Vegan"
         },        
       },
@@ -263,23 +263,23 @@ const countryFactors = {
       },
       foodDietRange: {
         meatAlways: {
-          foodDrinks_factor: 7.26,
+          foodDiet_factor: 7.26,
           description: "Meat with every meal"
         },
         meatSeveralTimesWeek: {
-          foodDrinks_factor: 5.66,
+          foodDiet_factor: 5.66,
           description: "Meat several times a week"
         },
         meatRarely: {
-          foodDrinks_factor: 4.67,
+          foodDiet_factor: 4.67,
           description: "Meat rarely"
         },
         vegetarian: {
-          foodDrinks_factor: 3.85,
+          foodDiet_factor: 3.85,
           description: "Vegetarian"
         },
         vegan: {
-          foodDrinks_factor: 2.94,
+          foodDiet_factor: 2.94,
           description: "Vegan"
         },        
       },
@@ -384,23 +384,23 @@ const countryFactors = {
       },
       foodDietRange: {
         meatAlways: {
-          foodDrinks_factor: 7.26,
+          foodDiet_factor: 7.26,
           description: "Meat with every meal"
         },
         meatSeveralTimesWeek: {
-          foodDrinks_factor: 5.66,
+          foodDiet_factor: 5.66,
           description: "Meat several times a week"
         },
         meatRarely: {
-          foodDrinks_factor: 4.67,
+          foodDiet_factor: 4.67,
           description: "Meat rarely"
         },
         vegetarian: {
-          foodDrinks_factor: 3.85,
+          foodDiet_factor: 3.85,
           description: "Vegetarian"
         },
         vegan: {
-          foodDrinks_factor: 2.94,
+          foodDiet_factor: 2.94,
           description: "Vegan"
         },        
       },
@@ -504,23 +504,23 @@ const countryFactors = {
       },
       foodDietRange: {
         meatAlways: {
-          foodDrinks_factor: 7.26,
+          foodDiet_factor: 7.26,
           description: "Meat with every meal"
         },
         meatSeveralTimesWeek: {
-          foodDrinks_factor: 5.66,
+          foodDiet_factor: 5.66,
           description: "Meat several times a week"
         },
         meatRarely: {
-          foodDrinks_factor: 4.67,
+          foodDiet_factor: 4.67,
           description: "Meat rarely"
         },
         vegetarian: {
-          foodDrinks_factor: 3.85,
+          foodDiet_factor: 3.85,
           description: "Vegetarian"
         },
         vegan: {
-          foodDrinks_factor: 2.94,
+          foodDiet_factor: 2.94,
           description: "Vegan"
         },        
       },
@@ -624,23 +624,23 @@ const countryFactors = {
       },
       foodDietRange: {
         meatAlways: {
-          foodDrinks_factor: 7.26,
+          foodDiet_factor: 7.26,
           description: "Meat with every meal"
         },
         meatSeveralTimesWeek: {
-          foodDrinks_factor: 5.66,
+          foodDiet_factor: 5.66,
           description: "Meat several times a week"
         },
         meatRarely: {
-          foodDrinks_factor: 4.67,
+          foodDiet_factor: 4.67,
           description: "Meat rarely"
         },
         vegetarian: {
-          foodDrinks_factor: 3.85,
+          foodDiet_factor: 3.85,
           description: "Vegetarian"
         },
         vegan: {
-          foodDrinks_factor: 2.94,
+          foodDiet_factor: 2.94,
           description: "Vegan"
         },        
       },

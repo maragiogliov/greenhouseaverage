@@ -2,14 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   selectedCountrySecondary: "Denmark",
-  numPeople: 1,
 
-  foodDrinks: 0,
-  rangeFoodDrinks: "year",
-  foodDrinksFootprint: 0,
-  resetFoodDrinksFootprint:0,
-  showFoodDrinksResult:false,
-
+  foodDiet: "Vegetarian",
+  foodDietFootprint: 0,
+  resetFoodDietFootprint:0,
+  showFoodDietResult:false,
 
   secondaryFootprint:0,
 };
@@ -18,27 +15,21 @@ export const secondarySlice = createSlice({
   name: "secondary",
   initialState,
   reducers: {
-    selectCountrySecondaryCategory: (state, action) => {
+    selectCountrySecondary: (state, action) => {
       state.selectedCountrySecondary = action.payload;
     },
-    setNumPeople: (state, action) => {
-      state.numPeople = action.payload;
-    },
     //Electricity Global State
-    setFoodDrinks: (state, action) => {
-      state.foodDrinks = action.payload;
+    setFoodDiet: (state, action) => {
+      state.foodDiet = action.payload;
     },
-    setRangeFoodDrinksFactor: (state, action) => {
-      state.rangeFoodDrinks = action.payload;
+    setFoodDietFootprint: (state, action) => {
+      state.foodDietFootprint = action.payload;
     },
-    setFoodDrinksFootprint: (state, action) => {
-      state.foodDrinksFootprint = action.payload;
+    resetFoodDietFootprint: state => {
+      state.foodDietFootprint = initialState.foodDietFootprint;
     },
-    resetFoodDrinksFootprint: state => {
-      state.foodDrinksFootprint = initialState.foodDrinksFootprint;
-    },
-    setShowFoodDrinksResult: (state, action) => {
-      state.showFoodDrinksResult = action.payload;
+    setShowFoodDietResult: (state, action) => {
+      state.showFoodDietResult = action.payload;
     },
     //Secondary Total Footprint
     setSecondaryFootprint: (state, action) => {
@@ -48,17 +39,14 @@ export const secondarySlice = createSlice({
 });
 
 export const { 
-               selectCountrySecondaryCategory, 
-               setNumPeople ,
 
-               setFoodDrinks, 
-               setRangeFoodDrinksFactor, 
-               setFoodDrinksFootprint,
-               resetFoodDrinksFootprint, 
-               setShowFoodDrinksResult,
-
+               selectCountrySecondary,
+               setFoodDiet, 
+               setRangeFoodDietFactor, 
+               setFoodDietFootprint,
+               resetFoodDietFootprint, 
+               setShowFoodDietResult,
                setSecondaryFootprint,
-
 
               } = secondarySlice.actions;
 
