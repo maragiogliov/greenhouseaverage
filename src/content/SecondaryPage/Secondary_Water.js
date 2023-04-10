@@ -13,20 +13,13 @@ const SecondaryPharmaceuticals = () => {
   return (
     <>
       <section className="global-inputs-containers">
-  <h5 className="secondary-input-description">Water:</h5>
-  <Tabs className="secondary-block-middle-form">
-    <TabList aria-label="List of tabs" className="secondary-block-middle-form-water">
-    <Tab  className='secondary-tab-water'>{waterFactor} kg of CO2/inh</Tab>
-    </TabList>
-  </Tabs>
-</section>
-
-
-
-
-
-
-
+        <h5 className="secondary-input-description">Water:</h5>
+        <Tabs className="secondary-block-middle-form">
+          <TabList aria-label="List of tabs" className="secondary-block-middle-form-water">
+            <Tab  className='secondary-tab-water'>{waterFactor} kg of CO2/inh</Tab>
+          </TabList>
+        </Tabs>
+      </section>
     </>
   );
 };

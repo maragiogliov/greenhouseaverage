@@ -12,7 +12,6 @@ import SecondaryHeaderVisualization from './Secondary_HeaderVisualization';
 
 import SecondaryFoodDiet from './Secondary_FoodDiet';
 import SecondaryWater from './Secondary_Water';
-import SecondaryWaste from './Secondary_Waste'
 import SecondaryTotalResults from './Secondary_TotalResults'
 
 import SecondaryFootprintsButton from './Secondary_FootprintsButton'
@@ -41,7 +40,6 @@ const SecondaryPage = () => {
               <div className=''>
                 <SecondaryFoodDiet />
                 <SecondaryWater />
-                <SecondaryWaste /> 
               </div>
               <div className='secondary-button-container'>
                 <SecondaryFootprintsButton />

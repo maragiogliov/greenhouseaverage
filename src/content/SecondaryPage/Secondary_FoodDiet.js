@@ -1,9 +1,9 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { setFoodDrinks, setRangeFoodDrinksFactor } from "../../redux/secondary";
+import { setRangeFoodDrinksFactor } from "../../redux/secondary";
 import countryFactors from '../../countryFactors'
 
-import { TextInput, Select, SelectItem } from '@carbon/react';
+import { Select, SelectItem } from '@carbon/react';
 
 const SecondaryFoodDrinks = () => {
   const { rangeFoodDrinks, selectedCountrySecondary } = useSelector(
@@ -14,7 +14,6 @@ const SecondaryFoodDrinks = () => {
   const rangeOptions = ["-select type-",
    ,...Object.keys(countryFactors[selectedCountrySecondary]?.foodDietRange || {})
   ]
-
 
   const handleRangeChange = (e) => {
     dispatch(setRangeFoodDrinksFactor(e.target.value));
@@ -39,9 +38,6 @@ const SecondaryFoodDrinks = () => {
               value={unit} 
               text={countryFactors[selectedCountrySecondary]?.foodDietRange[unit]?.description || unit.charAt(0).toUpperCase() + unit.slice(1)}
 
-        
-
-              
               />
             ))}
           </Select>
