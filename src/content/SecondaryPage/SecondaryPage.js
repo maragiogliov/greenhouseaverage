@@ -38,6 +38,7 @@ const SecondaryPage = () => {
           <div className='secondary-inputs-block'>
             <SecondaryHeader/>
               <div className=''>
+                <br />
                 <SecondaryFoodDiet />
                 <SecondaryWater />
               </div>

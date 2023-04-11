@@ -40,6 +40,7 @@ const FlightsPage = () => {
 
           <div className='flight-inputs-block'>
           <FlightHeader/>
+          <br />
               <div className='flight-inputs-container'>
                 <FlightOptions />
                 <FlightFrom />
