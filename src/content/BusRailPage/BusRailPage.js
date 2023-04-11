@@ -38,7 +38,7 @@ const BusRailPage = () => {
 
           <div className='bus-rail-inputs-block'>
             <BusRailHeaders/>
-              <div className=''>
+              <div style={{marginTop:'1rem'}}>
                 <BusRailBus />
                 <BusRailCoach />
                 <BusRailLocalTrain />
