@@ -8,6 +8,7 @@ const initialState = {
   resetFoodDietFootprint:0,
   showFoodDietResult:false,
 
+  water:0,
   waterFootprint:0,
   showWaterResult:false,
 
@@ -35,6 +36,9 @@ export const secondarySlice = createSlice({
       state.showFoodDietResult = action.payload;
     },
     //Water
+    setWater: (state, action) => {
+      state.water = action.payload;
+    },
     setWaterFootprint: (state, action) => {
       state.waterFootprint = action.payload;
     },
@@ -60,6 +64,7 @@ export const {
                resetFoodDietFootprint, 
                setShowFoodDietResult,
 
+               setWater,
                setWaterFootprint,
                resetWaterFootprint, 
                setShowWaterResult,

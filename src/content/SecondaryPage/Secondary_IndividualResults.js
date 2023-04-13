@@ -1,33 +1,36 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
+
 import { 
-  setShowFoodDietResult, 
-  resetFoodDietFootprint,
-  setShowWaterResult,
-  resetWaterFootprint
+    setShowFoodDietResult, 
+    setShowWaterResult,
+    resetFoodDietFootprint,
+    resetWaterFootprint
 } from "../../redux/secondary";
+
 import { Button } from '@carbon/react';
 import { TrashCan } from '@carbon/react/icons';
 
 const SecondaryResults = () => {
   const {
     foodDietFootprint,
-    showFoodDietResult,
     waterFootprint,
-    showWaterResult,
+    water,
+    showFoodDietResult,
+    showWaterResult
   } = useSelector(
     (state) => state.secondary
   );
   const dispatch = useDispatch();
 
-  const resetFootprintFoodDiet = () => {
-    dispatch(resetFoodDietFootprint());
-    dispatch(setShowFoodDietResult(false));
-  };
-
-  const resetFootprintWater = () => {
-    dispatch(resetWaterFootprint());
-    dispatch(setShowWaterResult(false));
+  const resetFootprint = (type) => {
+    if (type === 'food') {
+      dispatch(resetFoodDietFootprint());
+      dispatch(setShowFoodDietResult(false));
+    } else if (type === 'water') {
+      dispatch(resetWaterFootprint());
+      dispatch(setShowWaterResult(false));
+    }
   };
 
   return (
@@ -41,13 +44,14 @@ const SecondaryResults = () => {
             kind='ghost'
             size='lg'
             className='secondary-result-trashcan-icon-container'
-            onClick={resetFootprintFoodDiet} 
+            onClick={() => resetFootprint('food')}
           >
             <TrashCan />
           </Button>
         </section>
       )}
-      {showWaterResult && waterFootprint > 0 && (
+
+      {showWaterResult && water > 0 && (
         <section className='secondary-result-section'>
           <h5 className='secondary-results-container'>
             {waterFootprint} Kg of CO2 
@@ -56,7 +60,7 @@ const SecondaryResults = () => {
             kind='ghost'
             size='lg'
             className='secondary-result-trashcan-icon-container'
-            onClick={resetFootprintWater} 
+            onClick={() => resetFootprint('water')}
           >
             <TrashCan />
           </Button>
