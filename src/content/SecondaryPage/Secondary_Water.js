@@ -6,7 +6,7 @@ import {
 import countryFactors from '../../countryFactors'
 import { Tabs, Tab, TabList } from '@carbon/react';
 
-const SecondaryPharmaceuticals = () => {
+const SecondaryWater = () => {
   const { selectedCountrySecondary, waterFootprint } = useSelector(
     (state) => state.secondary
   );
@@ -32,4 +32,4 @@ const SecondaryPharmaceuticals = () => {
     </>
   );
 };
-export default SecondaryPharmaceuticals;
+export default SecondaryWater;
