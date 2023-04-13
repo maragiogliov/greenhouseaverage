@@ -1,7 +1,11 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { setMotorbikeFootprint, setShowMotorbikeResult } from "../../redux/motorbike";
+
+import { 
+  setMotorbikeFootprint, setShowMotorbikeResult 
+} from "../../redux/motorbike";
 import countryFactors from '../../countryFactors'
+
 import { Button } from '@carbon/react';
 import { Calculator } from '@carbon/react/icons';
 

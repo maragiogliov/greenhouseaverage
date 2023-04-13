@@ -22,8 +22,6 @@ import SecondaryOffsetButton from './Secondary_OffsetButton'
 
 import Waves from '../Waves'
 
-
-
 const SecondaryPage = () => {
 
 
@@ -82,8 +80,7 @@ const SecondaryPage = () => {
         </Link>
       </div>
       <Waves />
-
-  </>;
+  </>
 };
 
 export default SecondaryPage;

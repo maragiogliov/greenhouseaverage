@@ -1,14 +1,22 @@
-import React from 'react';
-import { useSelector } from "react-redux";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from "react-redux";
+import { 
+  setWaterFootprint, 
+ } from "../../redux/secondary";
 import countryFactors from '../../countryFactors'
 import { Tabs, Tab, TabList } from '@carbon/react';
 
 const SecondaryPharmaceuticals = () => {
-  const { selectedCountrySecondary } = useSelector(
+  const { selectedCountrySecondary, waterFootprint } = useSelector(
     (state) => state.secondary
   );
+  const dispatch = useDispatch();
 
-  const waterFactor = countryFactors[selectedCountrySecondary].waterRange.year.water_factor;
+  useEffect(() => {
+    const waterFactor = countryFactors[selectedCountrySecondary].waterRange.year.water_factor;
+    dispatch(setWaterFootprint(waterFactor));
+  }, [selectedCountrySecondary, dispatch]);
+
   const flagIcon = countryFactors[selectedCountrySecondary].flag_icon;
 
   return (
@@ -17,7 +25,7 @@ const SecondaryPharmaceuticals = () => {
         <h5 className="secondary-input-description">Water:</h5>
         <Tabs >
           <TabList aria-label="List of tabs"  style={{width: '100%'}}>
-            <Tab  className='secondary-tab-water'>{waterFactor} kg of CO2/inh {flagIcon}</Tab>
+            <Tab className='secondary-tab-water'>{waterFootprint} kg of CO2/inh {flagIcon}</Tab>
           </TabList>
         </Tabs>
       </section>

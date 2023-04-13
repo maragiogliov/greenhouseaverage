@@ -8,6 +8,8 @@ const initialState = {
   resetFoodDietFootprint:0,
   showFoodDietResult:false,
 
+  waterFootprint:0,
+
   secondaryFootprint:0,
 };
 
@@ -18,7 +20,7 @@ export const secondarySlice = createSlice({
     selectCountrySecondary: (state, action) => {
       state.selectedCountrySecondary = action.payload;
     },
-    //Electricity Global State
+    //Food Diet Global State
     setFoodDiet: (state, action) => {
       state.foodDiet = action.payload;
     },
@@ -30,6 +32,10 @@ export const secondarySlice = createSlice({
     },
     setShowFoodDietResult: (state, action) => {
       state.showFoodDietResult = action.payload;
+    },
+    //Water
+    setWaterFootprint: (state, action) => {
+      state.waterFootprint = action.payload;
     },
     //Secondary Total Footprint
     setSecondaryFootprint: (state, action) => {
@@ -46,6 +52,9 @@ export const {
                setFoodDietFootprint,
                resetFoodDietFootprint, 
                setShowFoodDietResult,
+
+               setWaterFootprint,
+
                setSecondaryFootprint,
 
               } = secondarySlice.actions;
