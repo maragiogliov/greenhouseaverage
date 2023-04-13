@@ -13,7 +13,8 @@ import { Calculator } from '@carbon/react/icons';
 const SecondaryFootprint = () => {
   const {  
     selectedCountrySecondary,
-    foodDiet
+    foodDiet,
+    waterFootprint
   } = useSelector(
     (state) => state.secondary
   );
@@ -21,13 +22,13 @@ const SecondaryFootprint = () => {
 
   const showFootprintResultsFoodDiet = () => {
     if (
-      isNaN(parseFloat(3)) 
+      isNaN(parseFloat(waterFootprint)) 
 
     ) {
       dispatch(setFoodDietFootprint("Error, check your input"));
     } else {
       let total = 
-      parseFloat(3) + 
+      parseFloat(waterFootprint) + 
       countryFactors[selectedCountrySecondary].foodDietRange[foodDiet].foodDiet_factor
 
       dispatch (setFoodDietFootprint(total.toFixed(2)));

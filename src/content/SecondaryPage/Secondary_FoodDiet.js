@@ -1,12 +1,12 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { setFoodDiet } from "../../redux/secondary";
+import { setFoodDiet, setFoodDietFootprint } from "../../redux/secondary";
 import countryFactors from '../../countryFactors'
 
 import { Select, SelectItem } from '@carbon/react';
 
 const SecondaryFoodDrinks = () => {
-  const { foodDiet, selectedCountrySecondary } = useSelector(
+  const { foodDiet,foodDietFootprint, selectedCountrySecondary } = useSelector(
     (state) => state.secondary
   );
   const dispatch = useDispatch();
@@ -16,14 +16,19 @@ const SecondaryFoodDrinks = () => {
   ]
 
   const handleDietChange = (e) => {
-    dispatch(setFoodDiet(e.target.value));
+    const selectedDiet = e.target.value;
+    const dietFootprint = countryFactors[selectedCountrySecondary].foodDietRange[selectedDiet].foodDiet_factor;
+    dispatch(setFoodDiet(selectedDiet));
+    dispatch(setFoodDietFootprint(dietFootprint));
   };
 
   return (
     <>
         <section className="global-inputs-containers">
           <h5 className="secondary-input-description">Food & Diet:</h5>
-          {console.log(foodDiet)}
+          {console.log('foodDieeeeet',foodDiet)}
+          {console.log('foodDieeeeetFootprint',foodDietFootprint)}
+
        
           <Select
             id="range-foodDrinks-select"
