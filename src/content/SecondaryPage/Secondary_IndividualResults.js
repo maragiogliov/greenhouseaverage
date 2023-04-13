@@ -12,13 +12,9 @@ import { TrashCan } from '@carbon/react/icons';
 
 const SecondaryResults = () => {
   const {
-
-    foodDiet,
     foodDietFootprint,
     showFoodDietResult,
-  
-
-    } = useSelector(
+  } = useSelector(
     (state) => state.secondary
   );
   const dispatch = useDispatch();
@@ -27,12 +23,12 @@ const SecondaryResults = () => {
     dispatch(resetFoodDietFootprint());
     dispatch(setShowFoodDietResult(false))
   };
-  return <>  
 
-    {showFoodDietResult && foodDiet > 0 &&  (
+  return (
+    <>  
+      {showFoodDietResult && foodDietFootprint > 0 &&  (
         <section className='secondary-result-section'>
-          <h5 
-            className='secondary-results-container'>
+          <h5 className='secondary-results-container'>
             {foodDietFootprint} Kg of CO2 
           </h5>
           <Button
@@ -43,10 +39,10 @@ const SecondaryResults = () => {
             <TrashCan />
           </Button>
         </section>
-      )
-    }
-
-  </>
+      )}
+    </>
+  );
 };
+
 
 export default SecondaryResults;
