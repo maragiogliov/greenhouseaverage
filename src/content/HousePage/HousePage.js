@@ -18,7 +18,6 @@ import HouseNaturalGas from './House_NaturalGas';
 import HouseCoal from './House_Coal'
 import HouseLPG from './House_LPG'
 import HousePropane from './House_Propane'
-import HouseWoodenPellets from './House_WoodenPellets';
 import HouseFootprintsButton from './House_FootprintsButton'
 import HouseIndividualResults from './House_IndividualResults';
 import HouseDataVisualization from './House_DataVisualization'
@@ -50,7 +49,7 @@ const HousePage = () => {
                 <HouseCoal /> 
                 <HouseLPG />
                 <HousePropane />
-                <HouseWoodenPellets />
+                {/*<HouseWoodenPellets />*/}
               </div>
               <div className='house-button-container'>
                 <HouseFootprintsButton />
