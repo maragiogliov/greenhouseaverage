@@ -1,11 +1,13 @@
 .welcome-inputs-results-container{
     display: flex;
     flex-direction: column;
-    //ackground-color: rgb(221, 221, 221);
+    //background-color: rgb(221, 221, 221);
     min-height: 504px;
     width: 50%;    
 }
-
+.welcome-header-container{
+    width: 100%;
+}
 .welcome-date-picker-container{
     display: flex;
     flex-direction: row;

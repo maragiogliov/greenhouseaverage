@@ -8,10 +8,7 @@ import { NextOutline, PreviousOutline} from '@carbon/react/icons';
 
 import WelcomeHeader from './Welcome_Header';
 
-import WelcomeCountrySelection from './Welcome_CountrySelection';
-import WelcomeRangeDate from './Welcome_RangeDate';
-import WelcomeFootprintsButton from './Welcome_FootprintsButton'
-
+import WelcomeVisualization from './Welcome_Visualization'
 import Waves from '../Waves'
 
 const WelcomePage = () => {
@@ -21,23 +18,21 @@ const WelcomePage = () => {
         <IconsNavigation />
         <section className='global-frame-calculator'>
               <div className='global-block-top'>
-                  <h4>Welcome to the Greenhouse Calculator</h4>
+                  <h4>Welcome to the Greenhouse Average Calculator</h4>
               </div>
             <section className='welcome-inputs-results-container'>
             <WelcomeHeader/>
               <div className='secondary-right-block-inputs'>
                   <div className='secondary-inputs-container'>
-                    <WelcomeCountrySelection />
-                    <WelcomeRangeDate />
-                 
+                   
+                  
+                 <WelcomeVisualization/>
                   </div>
                   <div className='secondary-calculate-button-container'>
-                    <WelcomeFootprintsButton />
                   </div>
               </div>
               <div className='secondary-left-block-results'>
                 <div className='secondary-results-big-container'>
-                   
                 </div>
             
               </div>
