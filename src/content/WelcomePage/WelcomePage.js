@@ -7,7 +7,7 @@ import IconsNavigation from '../IconsNavigation/IconsNavigation';
 import { NextOutline, PreviousOutline} from '@carbon/react/icons';
 
 import WelcomeHeader from './Welcome_Header';
-
+import WelcomeWorldMap from './Welcome_WorldMap';
 import WelcomeVisualization from './Welcome_Visualization'
 import Waves from '../Waves'
 
@@ -27,6 +27,10 @@ const WelcomePage = () => {
                    
                   
                  <WelcomeVisualization/>
+                 <br/>
+                 <br/>
+                 <br/>
+                 < WelcomeWorldMap />
                   </div>
                   <div className='secondary-calculate-button-container'>
                   </div>
