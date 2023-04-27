@@ -59,7 +59,7 @@ const LandingPage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -68,8 +68,18 @@ const LandingPage = () => {
     <section className='landing-main-container'>
       <Tabs>
       <header className='landing-header'>
+      {isLoading ? (
+                    <SkeletonText
+                      style={{
+                        width: '100px',
+                        height: '20px',
+                        borderRadius: '2px',
+                        marginLeft: '28px'
+                      }}
+                    />
+                  ) : (
         <a href="/" className='landing-little-title'>Getting Started</a>
-        
+        )}
         <h1 className='landing-title'>B2C Greenhouse Calculator</h1>
       </header>
      
