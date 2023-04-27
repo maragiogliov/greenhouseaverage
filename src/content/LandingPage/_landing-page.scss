@@ -12,12 +12,15 @@
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
     font-size: 14px;
+    height: 14px;
 }
 .landing-title{
     padding-bottom: 11rem;
     padding-left: 1.5rem;
     //color: black;
     position: relative;
+    max-height: 28.3px;
+    min-height: 30px;
 }
 
 .landing-tablist{
@@ -62,7 +65,7 @@
     align-items: center;
     justify-content: center;
     width: 50%;
-    background-color: rgba(0, 0, 255, 0.714);
+    background-color: #0000ffb6;
 }
 .landing-footer-tiles{
     display: flex;
@@ -70,12 +73,13 @@
     width: 100%;
     margin-top: 2rem;
 }
+
 .landing-tite-title{
     margin-top: 40px;
     margin-bottom: 40px;
-   
-   margin-right: 40px;
+    margin-right: 40px;
 }
+
 .landing-tile{
     height: 30rem;
     border-right: 1px solid grey;
@@ -84,14 +88,15 @@
     padding-left: 12px;
     padding-right: 40p;
 }
-.landing-tile1{
+.landing-tile1 {
     width: 25%;
     min-height: 500px;
     border-right: 1px solid grey;
     padding-left: 2rem;
     padding-right: 40px;
-    //  background-color: aquamarine;
-}
+    background: linear-gradient(to bottom, #0000ffb6 0%, rgba(27, 27, 27, 0) 100%);
+  }
+  
 .landing-button{
     width: 10rem;
     margin: 0;
@@ -136,13 +141,16 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        background-color: rgba(0, 0, 255, 0.714);
         margin-top: 40px;
     }
     .landing-tabpanel-left{
         width: 80%;
         //background-color: blue;
     }
+    .landing-blocks-footer{
+        width: 100%;
+    }
+
   }
 
 
