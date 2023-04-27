@@ -5,6 +5,10 @@ import Button from '@carbon/react/lib/components/Button/Button';
 import { NextOutline } from '@carbon/react/icons';
 import { Tabs, TabList, Tab, TabPanels, TabPanel, Tile} from '@carbon/react';
 import Waves from '../Waves';
+import { SkeletonText } from '@carbon/react';
+import { SkeletonPlaceholder } from '@carbon/react';
+
+
 
 // Define an array of 12 different languages
 const languages = [  
@@ -47,13 +51,18 @@ const LanguageChanger = () => {
 
 </div>
 
-
-
-
-
 ;
 };
 const LandingPage = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
   
   return <>
     <section className='landing-main-container'>
@@ -63,14 +72,17 @@ const LandingPage = () => {
         
         <h1 className='landing-title'>B2C Greenhouse Calculator</h1>
       </header>
+     
         <TabList className={'landing-tablist'} aria-label="List of tabs">
           <Tab className={'landing-tab'}>About</Tab>
           <Tab className={'landing-tab'}>Design</Tab>
           <Tab className={'landing-tab'}>Tools</Tab>
         </TabList>
+         
       
         <TabPanels>
-          <TabPanel>
+        <TabPanel>
+          
             <section className='landing-container'>
 
             <div className='landing-tabpanel-left'>
@@ -78,14 +90,29 @@ const LandingPage = () => {
               <p className='landing-paragraph-question'>
              Greenhouse the ultimate B2C solution for measuring carbon footprints. Our passionate team of researchers, developers, and designers from around the world have come together to develop a user-friendly carbon footprint measurement tool. Join us in our mission to create a more sustainable future for all.
               </p>
-            <Link className='global-buttons-link-back-and-forth' to="/welcome">
-              <Button 
-              className="landing-button"
-              renderIcon={NextOutline}
-              kind='tertiary'
-              >Get Started
-              </Button>
-            </Link>
+              <Link
+                  className="global-buttons-link-back-and-forth"
+                  to="/welcome"
+                >
+                  {isLoading ? (
+                    <SkeletonPlaceholder
+                      style={{
+                        width: '160px',
+                        height: '40px',
+                        borderRadius: '2px',
+                        marginLeft: '28px'
+                      }}
+                    />
+                  ) : (
+                    <Button
+                      className="landing-button"
+                      renderIcon={NextOutline}
+                      kind="tertiary"
+                    >
+                      Get Started
+                    </Button>
+                  )}
+                </Link>
             </div>
 
             <div className='landing-tabpanel-right'>
@@ -93,6 +120,7 @@ const LandingPage = () => {
             </div>
             </section>
             
+      
           </TabPanel>
           <TabPanel></TabPanel>
           <TabPanel></TabPanel>

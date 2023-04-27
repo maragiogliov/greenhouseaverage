@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import mapData from "../../MapData.json";
 import topCarbonEmittersPerCapita from "../../countryAverage";
@@ -6,23 +6,6 @@ import topCarbonEmittersPerCapita from "../../countryAverage";
 function WorldMap() {
   const [tooltipContent, setTooltipContent] = useState("");
   console.log(topCarbonEmittersPerCapita);
-
-
-  // Tooltip ref and positioning state
-  const tooltipRef = useRef(null);
-  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
-
-  // Update tooltip position when the content changes
-  useEffect(() => {
-    if (tooltipRef.current) {
-      const rect = tooltipRef.current.getBoundingClientRect();
-      setTooltipPosition({
-        x: rect.x + window.scrollX + rect.width / 2,
-        y: rect.y + window.scrollY - rect.height - 10,
-      });
-    }
-  }, [tooltipContent]);
-
 
   return (
     <ComposableMap projection="geoMercator" projectionConfig={{ scale: 140 }}>
